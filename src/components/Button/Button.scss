@@ -1,0 +1,41 @@
+@import '../../styles/common.scss';
+
+.basic-button {
+  border-radius: 3px;
+
+  font-weight: bold;
+  border-width: 0.08em;
+
+  &.small {
+    height: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+  }
+
+  &.medium {
+    height: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-size: 1rem;
+  }
+
+  &.large {
+    height: 3rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-size: 1rem;
+  }
+
+  &.white {
+    border-color: $main-purple;
+    background-color: white;
+    color: $main-purple;
+  }
+
+  &.purple {
+    border: none;
+    background-color: $main-purple;
+    color: white;
+  }
+}
