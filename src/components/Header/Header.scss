@@ -1,0 +1,340 @@
+@import '../../styles/common.scss';
+
+header {
+  background-color: white;
+  width: 100vw;
+}
+
+.header-wrapper {
+  background-color: white;
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.user-item {
+  font-weight: 400;
+  letter-spacing: -.3px;
+  height: 37px;
+
+  .list-item {
+    float: right;
+
+    .menu {
+      & > a {
+        font-size: 12px;
+        padding: 0 12px;
+        line-height: 35px;
+      }
+
+      &:after {
+        content: "";
+        float: right;
+        width: 1px;
+        height: 13px;
+        margin-top: 12px;
+        background-color: #d8d8d8;
+      }
+    }
+
+    .last {
+      & > a {
+        padding-right: 5px;
+      }
+
+      &:after {
+        content: "";
+        margin-top: 16px;
+        //float: right;
+        width: 8px;
+        height: 5px;
+        background: url(https://res.kurly.com/pc/ico/1908/ico_down_8x5.png) no-repeat 0 0;
+        background-size: 8px 5px;
+      }
+
+      &:hover .list-item-sub {
+        display: block;
+        z-index: 300;
+      }
+
+      .list-item-sub {
+        display: none;
+        position: absolute;
+        left: auto;
+        top: 34px;
+        width: 82px;
+        padding: 3px 9px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+
+        li {
+          width: 82px;
+          height: 24px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+
+.header-logo {
+  height: 63px;
+  position: relative;
+
+  .logo-image {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 6px;
+    transform: translate(-50%, 0);
+    width: 103px;
+
+    a {
+      display: inline-block;
+    }
+  }
+}
+
+.gnb {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  height: 56px;
+  width: 100%;
+
+  .main-menu {
+    display: inline-block;
+
+    a {
+      width: 124px;
+      float: left;
+      font-size: 16px;
+      color: #333;
+      line-height: 20px;
+      text-align: center;
+
+      span:hover {
+        color: $main-purple;
+        border-bottom: 1px solid $main-purple;
+      }
+    }
+  }
+
+  .gnb-category {
+    width: 148px;
+
+    #three-line {
+      float: left;
+      width: 16px;
+      height: 14px;
+      margin: 5px 14px 0 0;
+      background: url(https://res.kurly.com/pc/service/common/1908/ico_gnb_all_off_x2.png) no-repeat 0 0;
+      background-size: 16px 14px;
+    }
+
+    &:hover {
+      #three-line {
+        background: url(https://res.kurly.com/pc/service/common/1908/ico_gnb_all_x2.png) no-repeat 0 0;
+        background-size: 16px 14px;
+      }
+
+      span:hover {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .other-width {
+    width: 116px;
+  }
+
+  .search {
+    position: relative;
+    display: inline-block;
+    padding-left: 6px;
+
+    input[type="text"] {
+      width: 166px;
+      height: 34px;
+      padding: 0 60px 0 14px;
+      border: 1px solid $gray-background;
+      border-radius: 18px;
+      background-color: $gray-background;
+      font-weight: 400;
+      font-size: 12px;
+      color: #666;
+      line-height: 16px;
+      outline: none;
+
+      &::placeholder {
+        color: #cccccc;
+      }
+
+      &:focus {
+        background-color: white;
+        color: #333;
+      }
+    }
+
+    .search-delete {
+      position: absolute;
+      top: 0;
+      right: 30px;
+      width: 36px;
+      height: 36px;
+      border: 0;
+      background: url(https://res.kurly.com/pc/ico/2010/ico_search_del.svg) no-repeat 50% 50%;
+      background-size: 12px 12px;
+    }
+
+    .search-delete-show {
+      opacity: 1;
+    }
+
+    .search-delete-no {
+      opacity: 0;
+    }
+
+    .search-go {
+      position: absolute;
+      right: 5px;
+      top: 3px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .other-menu {
+    margin-left: auto;
+    display: inline-block;
+  }
+
+  .other-item {
+    display: inline-block;
+    margin-left: 16px;
+
+    a {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      border: none;
+      color: transparent;
+    }
+  }
+
+  .delivery {
+    position: relative;
+
+    &:hover a {
+      background: url(https://res.kurly.com/pc/ico/2010/ico_delivery_setting_on.svg) no-repeat 50% 50%;
+    }
+
+    a {
+      background: url(https://res.kurly.com/pc/ico/2008/ico_delivery_setting.svg?ver=1) no-repeat 50% 50%;
+    }
+  }
+
+  .delivery:hover .delivery-layer {
+    display: block;
+  }
+
+  .delivery-layer {
+    display: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+    line-height: 24px;
+    letter-spacing: -0.34px;
+
+    position: absolute;
+    z-index: 300;
+    right: -66px;
+    top: 56px;
+    width: 275px;
+    padding: 18px 18px 19px 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 66px;
+      top: -50px;
+      width: 36px;
+      height: 50px;
+      background: url(https://res.kurly.com/pc/ico/2011/ico_point_up_18x12.svg) no-repeat 50% 100%;
+    }
+
+    .no-address {
+      .no-address-button {
+        .btn {
+          display: block;
+          width: 100%;
+          height: 36px;
+          margin-top: 17px;
+          padding-bottom: 2px;
+          border-radius: 3px;
+          font-size: 12px;
+          line-height: 32px;
+          letter-spacing: 0;
+          text-align: center;
+
+          border-width: 0.08em;
+        }
+
+        .white-login {
+          float: left;
+          width: 110px;
+          border-color: $main-purple;
+          background-color: white;
+          color: $main-purple;
+        }
+
+        .purple-address {
+          float: right;
+          width: 159px;
+          border: $main-purple;
+          background-color: $main-purple;
+          color: white;
+
+          .search-address {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 6px 0 0 -6px;
+            background: url(https://res.kurly.com/pc/ico/2008/ico_search_40x40.png) no-repeat 50% 50%;
+            background-size: 20px 20px;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+  }
+
+  .gym {
+    &:hover a {
+      background: url(https://res.kurly.com/pc/service/pick/btn-heart-hover.svg) no-repeat 50% 50%;
+    }
+
+    a {
+      background: url(https://res.kurly.com/pc/service/pick/btn-heart-off.svg) no-repeat 50% 50%;
+    }
+  }
+
+  .cart {
+    &:hover a {
+      background: url(https://res.kurly.com/pc/service/common/2011/ico_cart_on.svg?v=1);
+    }
+
+    a {
+      background: url(https://res.kurly.com/pc/service/common/2011/ico_cart.svg);
+    }
+  }
+}
+
+
+.purple {
+  color: $main-purple;
+}
