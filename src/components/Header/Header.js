@@ -19,7 +19,7 @@ export default function Header() {
     }
 
     return (
-        <header>
+        <>
             <div className="header-wrapper">
                 <div className="user-item">
                     <ul className="list-item">
@@ -61,6 +61,8 @@ export default function Header() {
                              height={79}/>
                     </a>
                 </div>
+            </div>
+            <header>
                 <div className="gnb">
                     <ul className="main-menu">
                         <li className="gnb-category">
@@ -129,7 +131,7 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
+        </>
     )
 }
