@@ -144,6 +144,10 @@ header {
         background-size: 16px 14px;
       }
 
+      span {
+        color: $main-purple;
+      }
+
       span:hover {
         border-bottom: none;
       }
