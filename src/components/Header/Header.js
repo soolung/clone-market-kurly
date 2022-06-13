@@ -1,5 +1,6 @@
-import "./Header.scss"
 import {useState} from "react";
+import "./Header.scss";
+import categoryData from "./category.json";
 
 export default function Header() {
 
@@ -20,46 +21,48 @@ export default function Header() {
 
     return (
         <>
-            <div className="header-wrapper">
-                <div className="user-item">
-                    <ul className="list-item">
-                        <li className="menu purple">
-                            <a>회원가입</a>
-                        </li>
-                        <li className="menu">
-                            <a>로그인</a>
-                        </li>
-                        <li className="menu last">
-                            <a>고객센터</a>
-                            <ul className="list-item-sub">
-                                <li>
-                                    <a>공지사항</a>
-                                </li>
-                                <li>
-                                    <a>자주하는 질문</a>
-                                </li>
-                                <li>
-                                    <a>1:1 문의</a>
-                                </li>
-                                <li>
-                                    <a>대량주문 문의</a>
-                                </li>
-                                <li>
-                                    <a>상품 제안</a>
-                                </li>
-                                <li>
-                                    <a>에코포장 피드백</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+            <div className="header-top">
+                <div className="header-inner">
+                    <div className="user-item">
+                        <ul className="list-item">
+                            <li className="menu purple">
+                                <a>회원가입</a>
+                            </li>
+                            <li className="menu">
+                                <a>로그인</a>
+                            </li>
+                            <li className="menu last">
+                                <a>고객센터</a>
+                                <ul className="list-item-sub">
+                                    <li>
+                                        <a>공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a>자주하는 질문</a>
+                                    </li>
+                                    <li>
+                                        <a>1:1 문의</a>
+                                    </li>
+                                    <li>
+                                        <a>대량주문 문의</a>
+                                    </li>
+                                    <li>
+                                        <a>상품 제안</a>
+                                    </li>
+                                    <li>
+                                        <a>에코포장 피드백</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
 
-                <div className="header-logo">
-                    <a>
-                        <img className="logo-image" src={"./logo_x2.webp"} alt="market-kurly-logo" width={103}
-                             height={79}/>
-                    </a>
+                    <div className="header-logo">
+                        <a>
+                            <img className="logo-image" src={"./logo_x2.webp"} alt="market-kurly-logo" width={103}
+                                 height={79}/>
+                        </a>
+                    </div>
                 </div>
             </div>
             <header>
@@ -70,6 +73,24 @@ export default function Header() {
                                 <span id="three-line"/>
                                 <span>전체 카테고리</span>
                             </a>
+                            <div className="category-list-box">
+                                <ul className="category-list">
+                                    {categoryData.category.map(c => (
+                                        <li className="category-list-item" onMouseEnter={() => console.log(c.id)}>
+                                            <img className="category-list-item--icon icon-off" src={c.iconImage} alt="icon"/>
+                                            <img className="category-list-item--icon icon-on" src={c.onIconImage} alt="on-icon"/>
+                                            <span>{c.title}</span>
+                                            <ul className="category-list-item--sub-list">
+                                                {c.sub.map(s => (
+                                                    <li className="category-list-item--sub-list-item">
+                                                        <span>{s.subTitle}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <a>
