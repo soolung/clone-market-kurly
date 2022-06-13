@@ -1,0 +1,661 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "title": "채소",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/25040bd0-5889-4d8c-b863-13f71750a8e6",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/e9ba198b-d9da-46b7-a4a4-6058613732bd",
+      "toLink": "",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "친환경",
+          "toLink": ""
+        },
+        {
+          "id": 2,
+          "subTitle": "고구마 · 감자 · 당근",
+          "toLink": ""
+        },
+        {
+          "id": 3,
+          "subTitle": "시금치 · 쌈채소 · 나물",
+          "toLink": ""
+        },
+        {
+          "id": 4,
+          "subTitle": "브로콜리 · 파프리카 · 양배추",
+          "toLink": ""
+        },
+        {
+          "id": 5,
+          "subTitle": "양파 · 대파 · 마늘 · 배추",
+          "toLink": ""
+        },
+        {
+          "id": 6,
+          "subTitle": "오이 · 호박 · 고추",
+          "toLink": ""
+        },
+        {
+          "id": 7,
+          "subTitle": "냉동 · 이색 · 간편채소",
+          "toLink": ""
+        },
+        {
+          "id": 8,
+          "subTitle": "콩나물 · 버섯",
+          "toLink": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "과일 · 견과 · 쌀",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/f68cee74-477c-44da-8c87-62618e9d55e5",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/474629bc-e53e-4bab-86aa-98a48e52d701",
+      "toLink": "",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "친환경",
+          "toLink": ""
+        },
+        {
+          "id": 2,
+          "subTitle": "제철과일",
+          "toLink": ""
+        },
+        {
+          "id": 3,
+          "subTitle": "국산과일",
+          "toLink": ""
+        },
+        {
+          "id": 4,
+          "subTitle": "수입과일",
+          "toLink": ""
+        },
+        {
+          "id": 5,
+          "subTitle": "간편과일",
+          "toLink": ""
+        },
+        {
+          "id": 6,
+          "subTitle": "냉동 · 건과일",
+          "toLink": ""
+        },
+        {
+          "id": 7,
+          "subTitle": "견과류",
+          "toLink": ""
+        },
+        {
+          "id": 8,
+          "subTitle": "쌀 · 잡곡",
+          "toLink": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "수산 · 해산 · 건어물",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/c4256803-f1ec-4ac5-87a5-b68d3d23f6e0",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/6395a299-344b-4f16-b5e7-d88096037c58",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "제철수산"
+        },
+        {
+          "id": 2,
+          "subTitle": "생선류"
+        },
+        {
+          "id": 3,
+          "subTitle": "굴비 · 반건류"
+        },
+        {
+          "id": 4,
+          "subTitle": "오징어 · 낙지 · 문어"
+        },
+        {
+          "id": 5,
+          "subTitle": "새우 · 게 · 랍스터"
+        },
+        {
+          "id": 6,
+          "subTitle": "해산물 · 조개류"
+        },
+        {
+          "id": 7,
+          "subTitle": "수산가공품"
+        },
+        {
+          "id": 8,
+          "subTitle": "김 · 미역 · 해조류"
+        },
+        {
+          "id": 9,
+          "subTitle": "건어물 · 다시팩"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "정육 · 계란",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/34168b18-94ee-4946-8430-0a6239054ad6",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/238e117a-38df-4e50-b40e-dbe97d0c0b67",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "국내산 소고기"
+        },
+        {
+          "id": 2,
+          "subTitle": "수입산 소고기"
+        },
+        {
+          "id": 3,
+          "subTitle": "돼지고기"
+        },
+        {
+          "id": 4,
+          "subTitle": "계란류"
+        },
+        {
+          "id": 5,
+          "subTitle": "닭 · 오리고기"
+        },
+        {
+          "id": 6,
+          "subTitle": "양념육 · 돈까스"
+        },
+        {
+          "id": 7,
+          "subTitle": "양고기"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "국 · 반찬 · 메인요리",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/3067199c-f080-4205-b7a4-bb1b6eef5d12",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/9311fc30-7666-432b-9b24-ce2e3e0e267c",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "국 · 탕 · 찌개"
+        },
+        {
+          "id": 2,
+          "subTitle": "밀키트 · 메인요리"
+        },
+        {
+          "id": 3,
+          "subTitle": "밑반찬"
+        },
+        {
+          "id": 4,
+          "subTitle": "김치 · 젓갈 · 장류"
+        },
+        {
+          "id": 5,
+          "subTitle": "두부 · 어묵 · 부침개"
+        },
+        {
+          "id": 6,
+          "subTitle": "베이컨 · 햄 · 통조림"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "샐러드 · 간편식",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/82ae12ba-4876-455d-82e8-c6997613559b",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/7b12c11b-7cb5-4f21-a40c-a6a6ef345efd",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "샐러드 · 닭가슴살"
+        },
+        {
+          "id": 2,
+          "subTitle": "도시락 · 밥류"
+        },
+        {
+          "id": 3,
+          "subTitle": "파스타 · 면류"
+        },
+        {
+          "id": 4,
+          "subTitle": "떡볶이 · 튀김 · 순대"
+        },
+        {
+          "id": 5,
+          "subTitle": "피자 · 핫도그 · 만두"
+        },
+        {
+          "id": 6,
+          "subTitle": "폭립 · 떡갈비 · 안주"
+        },
+        {
+          "id": 7,
+          "subTitle": "죽 · 스프 · 카레"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "면 · 양념 · 오일",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/28f2b10d-a0b9-4ecc-bb51-325d01197326",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/433eff6b-f970-4527-91a1-4abf754953a7",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "파스타 · 면류"
+        },
+        {
+          "id": 2,
+          "subTitle": "식초 · 소스 · 드레싱"
+        },
+        {
+          "id": 3,
+          "subTitle": "양념 · 액젓 · 장류"
+        },
+        {
+          "id": 4,
+          "subTitle": "식용유 · 참기름 · 오일"
+        },
+        {
+          "id": 5,
+          "subTitle": "소금 · 설탕 · 향신료"
+        },
+        {
+          "id": 6,
+          "subTitle": "밀가루 · 가루믹스"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "생수 ･ 음료 ･ 우유 ･ 커피",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/df435e92-3356-4717-b765-567ed9fb9fc1",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/7545f807-66e7-4fbf-b658-e7b60d19415d",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "생수 ･ 탄산수"
+        },
+        {
+          "id": 2,
+          "subTitle": "음료 ･ 주스"
+        },
+        {
+          "id": 3,
+          "subTitle": "우유 ･ 두유 ･ 요거트"
+        },
+        {
+          "id": 4,
+          "subTitle": "커피"
+        },
+        {
+          "id": 5,
+          "subTitle": "차"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "간식 ･ 과자 ･ 떡",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/15449666-5758-44db-bb71-620d2736664c",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/e339c1d5-995c-4520-ae34-ff6b854dce08",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "과자 ･ 스낵 ･ 쿠키"
+        },
+        {
+          "id": 2,
+          "subTitle": "초콜릿 ･ 젤리 ･ 캔디"
+        },
+        {
+          "id": 3,
+          "subTitle": "떡 ･ 한과"
+        },
+        {
+          "id": 4,
+          "subTitle": "아이스크림"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "베이커리 ･ 치즈 ･ 델리",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/d0f84ec7-7391-44e7-ad4d-962ba4b52443",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/c91aeedb-1254-4dc9-93c7-befe0cfadec7",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "식빵 ･ 빵류"
+        },
+        {
+          "id": 2,
+          "subTitle": "잼 ･ 버터 ･ 스프레드"
+        },
+        {
+          "id": 3,
+          "subTitle": "케이크 ･ 파이 ･ 디저트"
+        },
+        {
+          "id": 4,
+          "subTitle": "치즈"
+        },
+        {
+          "id": 5,
+          "subTitle": "델리"
+        },
+        {
+          "id": 6,
+          "subTitle": "올리브 ･ 피클"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "건강식품",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/9044b1a5-e992-408d-acda-7acdbd3c8e53",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/0d35a6f4-2310-4228-94e6-f0707b27085d",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "영양제"
+        },
+        {
+          "id": 2,
+          "subTitle": "유산균"
+        },
+        {
+          "id": 3,
+          "subTitle": "홍삼 · 인삼 · 꿀"
+        },
+        {
+          "id": 4,
+          "subTitle": "건강즙 · 건강음료"
+        },
+        {
+          "id": 5,
+          "subTitle": "건강분말 · 건강환"
+        },
+        {
+          "id": 6,
+          "subTitle": "다이어트 · 이너뷰티"
+        },
+        {
+          "id": 7,
+          "subTitle": "유아동"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "와인",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/753de9b2-895c-469a-b7dd-04fe27099f35",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/43a93dc4-cb09-44ba-8bfd-9faea1192ca1",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "레드와인"
+        },
+        {
+          "id": 2,
+          "subTitle": "화이트화인"
+        },
+        {
+          "id": 3,
+          "subTitle": "샴푸 · 스파클링"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "전통주",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/bbb8804f-0606-455f-a002-48e534e30632",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/d8948972-b5e5-4d2e-92e8-c51011c68566",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "막걸리 · 약주"
+        },
+        {
+          "id": 2,
+          "subTitle": "증류주 · 과실주"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "생활용품 · 리빙 · 캠핑",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/69bbc1c2-148f-445a-bef6-dae71034f710",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/1505f40b-43df-4554-b058-72edbd6fea67",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "휴지 · 티슈"
+        },
+        {
+          "id": 2,
+          "subTitle": "여성 · 위생용품"
+        },
+        {
+          "id": 3,
+          "subTitle": "세제 · 청소용품"
+        },
+        {
+          "id": 4,
+          "subTitle": "화훼 · 인테리어소품"
+        },
+        {
+          "id": 5,
+          "subTitle": "의약외품 · 마스크"
+        },
+        {
+          "id": 6,
+          "subTitle": "생활잡화 · 문구"
+        },
+        {
+          "id": 7,
+          "subTitle": "캠핑용품"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "스킨케어 · 메이크업",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/800f92b0-3138-4cda-bc3b-94b174ba7988",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/732807e4-ce2f-4a4d-bc69-2c0ef7fafa0c",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "스킨 · 미스트 · 패드"
+        },
+        {
+          "id": 2,
+          "subTitle": "에센스 · 앰플 · 로션"
+        },
+        {
+          "id": 3,
+          "subTitle": "크림 · 오일"
+        },
+        {
+          "id": 4,
+          "subTitle": "클렌징"
+        },
+        {
+          "id": 5,
+          "subTitle": "마스크팩"
+        },
+        {
+          "id": 6,
+          "subTitle": "선케어"
+        },
+        {
+          "id": 7,
+          "subTitle": "메이크업"
+        },
+        {
+          "id": 8,
+          "subTitle": "맨즈케어"
+        },
+        {
+          "id": 9,
+          "subTitle": "뷰티소품 · 기기"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "헤어 · 바디 · 구강",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/43ccbbc6-d484-45a2-bc23-86451c2793e8",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/d87110fb-6066-4773-96da-bbb1d15971af",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "구강 · 면도"
+        },
+        {
+          "id": 2,
+          "subTitle": "샴푸 · 컨디셔너"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "주방용품",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/58ca8f5e-4dc8-4fee-99d9-bf14092fc29a",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/74e9cf00-7dc3-4c9d-be71-4e6ba1f4febc",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "주방소모품 · 잡화"
+        },
+        {
+          "id": 2,
+          "subTitle": "주방 · 조리도구"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "가전제품",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/de135ae2-216e-4d04-8736-103ecf69d35f",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/82b13da9-7121-4d30-88ea-43634338270c",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "주방가전"
+        },
+        {
+          "id": 2,
+          "subTitle": "생활가전"
+        },
+        {
+          "id": 3,
+          "subTitle": "계절가전"
+        },
+        {
+          "id": 4,
+          "subTitle": "디지털・PC"
+        },
+        {
+          "id": 5,
+          "subTitle": "대형・설치가전"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "반려동물",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/e5fcc642-fded-4e32-9cc3-7184f4209bcf",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/10ae8e68-00cd-4fb3-b099-342867c2559d",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "강아지 간식"
+        },
+        {
+          "id": 2,
+          "subTitle": "강아지 주식"
+        },
+        {
+          "id": 3,
+          "subTitle": "고양이 간식"
+        },
+        {
+          "id": 4,
+          "subTitle": "고양이 주식"
+        },
+        {
+          "id": 5,
+          "subTitle": "반려동물 용품"
+        },
+        {
+          "id": 6,
+          "subTitle": "배변・위생"
+        },
+        {
+          "id": 7,
+          "subTitle": "소용량・샘플"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "베이비 · 키즈 · 완구",
+      "iconImage": "https://img-cf.kurly.com/category/icon/pc/0b8d3f56-5c59-4e1e-9721-3a35b50dbe61",
+      "onIconImage": "https://img-cf.kurly.com/category/icon/pc/fdd7614c-d005-4d5e-ad33-86b94ce6c1c8",
+      "sub": [
+        {
+          "id": 1,
+          "subTitle": "분유 · 간편이유식"
+        },
+        {
+          "id": 2,
+          "subTitle": "이유식재료"
+        },
+        {
+          "id": 3,
+          "subTitle": "간식 · 음식 · 음료"
+        },
+        {
+          "id": 4,
+          "subTitle": "건강식품"
+        },
+        {
+          "id": 5,
+          "subTitle": "이유 · 수유용품"
+        },
+        {
+          "id": 6,
+          "subTitle": "기저귀 · 물티슈"
+        },
+        {
+          "id": 7,
+          "subTitle": "세제 · 위생용품"
+        },
+        {
+          "id": 8,
+          "subTitle": "스킨 · 구강케어"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": "컬리의 추천",
+      "iconImage": "https://res.kurly.com/pc/service/common/1908/ico_recommend_v2.png",
+      "onIconImage": "https://res.kurly.com/pc/service/common/1908/ico_recommend_on_v2.png",
+      "sub": []
+    }
+  ]
+}
