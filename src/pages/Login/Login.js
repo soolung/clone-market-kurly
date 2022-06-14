@@ -2,6 +2,7 @@ import Button from "../../components/Button/Button";
 import './Login.scss'
 import Check from "../../components/Check/Check";
 import {useState} from "react";
+import {Link} from "react-router-dom";
 
 export default function Login() {
 
@@ -67,31 +68,31 @@ export default function Login() {
                                 <label htmlFor="security">보안접속</label>
                             </div>
                             <div className="find">
-                                <a href="">
+                                <Link to="">
                                     <span>아이디 찾기</span>
-                                </a>
+                                </Link>
                                 <span className="bar"/>
-                                <a href="">
+                                <Link to="">
                                     <span>비밀번호 찾기</span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
-                        <a href="">
+                        <Link to="">
                             <Button
                                 color="purple"
                                 text="로그인"
                                 className="login"
                                 willDo={login}
                             />
-                        </a>
-                        <a href="">
+                        </Link>
+                        <Link to="">
                             <Button
                                 color="white"
                                 text="회원가입"
                                 className="join"
                             />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
