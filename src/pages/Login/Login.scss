@@ -1,0 +1,114 @@
+@import "../../styles/common";
+
+section {
+  text-align: center;
+
+  .section-wrapper {
+    width: 1050px;
+    background-color: white;
+    margin: 0 auto;
+    padding-bottom: 60px;
+
+    .section-inner {
+      width: 340px;
+      letter-spacing: -.6px;
+      padding-top: 90px;
+      margin: 0 auto;
+
+      .title {
+        width: 100%;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+      }
+
+      .login-box {
+        width: 340px;
+        padding-top: 36px;
+
+        input[type="text"], input[type="password"] {
+          width: 100%;
+          height: 54px;
+          padding: 0 19px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          background-color: white;
+          font-size: 15px;
+          line-height: 20px;
+          outline: none;
+
+          &::placeholder {
+            color: #ccc;
+          }
+
+          &:focus {
+            border: 1px solid $dark-gray;
+          }
+        }
+
+        input[type="password"] {
+          margin-top: 10px;
+        }
+
+        .check-box {
+          margin-top: 9px;
+          margin-bottom: 36px;
+          height: 16px;
+          width: 100%;
+          font-size: 13px;
+
+          .security-check {
+            display: flex;
+            float: left;
+
+            #security {
+              width: 17px;
+              height: 17px;
+              border-radius: 15%;
+            }
+            label[for="security"] {
+              line-height: 16px;
+              margin-left: 5px;
+
+            }
+          }
+
+          .find {
+            float: right;
+
+            .bar {
+              width: 1px;
+              height: 10px;
+              margin: 3px 6px 0;
+              background-color: $dark-gray;
+              display: inline-block;
+            }
+
+            a > span {
+              color: $dark-gray;
+            }
+          }
+        }
+
+        a {
+          width: 100%;
+          height: 54px;
+
+          .basic-button {
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 51px;
+            letter-spacing: 1px;
+          }
+
+          .join {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
