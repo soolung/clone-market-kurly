@@ -1,6 +1,7 @@
 import {useState} from "react";
 import "./Header.scss";
 import categoryData from "./category.json";
+import {Link} from "react-router-dom";
 
 export default function Header() {
 
@@ -25,32 +26,32 @@ export default function Header() {
                 <div className="header-inner">
                     <div className="user-item">
                         <ul className="list-item">
-                            <li className="menu purple">
-                                <a>회원가입</a>
+                            <li className="menu">
+                                <Link to="" className="purple">회원가입</Link>
                             </li>
                             <li className="menu">
-                                <a>로그인</a>
+                                <Link to="/login">로그인</Link>
                             </li>
                             <li className="menu last">
-                                <a>고객센터</a>
+                                <Link to="">고객센터</Link>
                                 <ul className="list-item-sub">
                                     <li>
-                                        <a>공지사항</a>
+                                        <Link to="">공지사항</Link>
                                     </li>
                                     <li>
-                                        <a>자주하는 질문</a>
+                                        <Link to="">자주하는 질문</Link>
                                     </li>
                                     <li>
-                                        <a>1:1 문의</a>
+                                        <Link to="">1:1 문의</Link>
                                     </li>
                                     <li>
-                                        <a>대량주문 문의</a>
+                                        <Link to="">대량주문 문의</Link>
                                     </li>
                                     <li>
-                                        <a>상품 제안</a>
+                                        <Link to="">상품 제안</Link>
                                     </li>
                                     <li>
-                                        <a>에코포장 피드백</a>
+                                        <Link to="">에코포장 피드백</Link>
                                     </li>
                                 </ul>
                             </li>
@@ -58,10 +59,10 @@ export default function Header() {
                     </div>
 
                     <div className="header-logo">
-                        <a>
+                        <Link to="/">
                             <img className="logo-image" src={"./logo_x2.webp"} alt="market-kurly-logo" width={103}
                                  height={79}/>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -69,16 +70,18 @@ export default function Header() {
                 <div className="gnb">
                     <ul className="main-menu">
                         <li className="gnb-category">
-                            <a>
+                            <Link to="">
                                 <span id="three-line"/>
                                 <span>전체 카테고리</span>
-                            </a>
+                            </Link>
                             <div className="category-list-box">
                                 <ul className="category-list">
                                     {categoryData.category.map(c => (
                                         <li className="category-list-item" onMouseEnter={() => console.log(c.id)}>
-                                            <img className="category-list-item--icon icon-off" src={c.iconImage} alt="icon"/>
-                                            <img className="category-list-item--icon icon-on" src={c.onIconImage} alt="on-icon"/>
+                                            <img className="category-list-item--icon icon-off" src={c.iconImage}
+                                                 alt="icon"/>
+                                            <img className="category-list-item--icon icon-on" src={c.onIconImage}
+                                                 alt="on-icon"/>
                                             <span>{c.title}</span>
                                             <ul className="category-list-item--sub-list">
                                                 {c.sub.map(s => (
@@ -93,24 +96,24 @@ export default function Header() {
                             </div>
                         </li>
                         <li>
-                            <a>
+                            <Link to="">
                                 <span>신상품</span>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a className="other-width">
+                            <Link to="" className="other-width">
                                 <span>베스트</span>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a>
+                            <Link to="">
                                 <span>알뜰쇼핑</span>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a className="other-width">
+                            <Link to="" className="other-width">
                                 <span>특가/혜택</span>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
 
@@ -125,18 +128,22 @@ export default function Header() {
 
                     <div className="other-menu">
                         <div className="delivery other-item">
-                            <a href=""/>
+                            <Link to="" className="delivery-icon"/>
 
                             <div className="delivery-layer">
                                 <div className="no-address">
                                     <span className="purple">배송지를 등록</span>하고<br/>
                                     구매 가능한 상품을 확인하세요!
                                     <div className="no-address-button">
-                                        <button className="btn white-login">로그인</button>
-                                        <button className="btn purple-address">
-                                            <span className="search-address"/>
-                                            주소검색
-                                        </button>
+                                        <Link to="/login">
+                                            <button className="white-login btn">로그인</button>
+                                        </Link>
+                                        <Link to="">
+                                            <button className="purple-address btn">
+                                                <span className="search-address"/>
+                                                주소검색
+                                            </button>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="yes-address">
@@ -145,10 +152,10 @@ export default function Header() {
                             </div>
                         </div>
                         <div className="gym other-item">
-                            <a href=""/>
+                            <Link to=""/>
                         </div>
                         <div className="cart other-item">
-                            <a href=""/>
+                            <Link to=""/>
                         </div>
                     </div>
                 </div>

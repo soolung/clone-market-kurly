@@ -5,6 +5,7 @@ header {
   top: 0;
   background-color: white;
   width: 100vw;
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.15);
 }
 
 .header-top {
@@ -30,6 +31,7 @@ header {
     float: right;
 
     .menu {
+
       & > a {
         font-size: 12px;
         padding: 0 12px;
@@ -118,7 +120,6 @@ header {
   width: 1050px;
   background-color: white;
   margin: 0 auto;
-
 
   .main-menu {
     height: 100%;
@@ -223,6 +224,7 @@ header {
             .icon-on {
               display: block;
             }
+
             .icon-off {
               display: none;
             }
@@ -357,11 +359,11 @@ header {
   .delivery {
     position: relative;
 
-    &:hover a {
+    &:hover .delivery-icon {
       background: url(https://res.kurly.com/pc/ico/2010/ico_delivery_setting_on.svg) no-repeat 50% 50%;
     }
 
-    a {
+    .delivery-icon {
       background: url(https://res.kurly.com/pc/ico/2008/ico_delivery_setting.svg?ver=1) no-repeat 50% 50%;
     }
   }
@@ -399,44 +401,55 @@ header {
 
     .no-address {
       .no-address-button {
-        .btn {
-          display: block;
-          width: 100%;
-          height: 36px;
+        position: relative;
+        width: auto;
+        height: 53px;
+
+        a {
+          width: auto;
+          height: auto;
           margin-top: 17px;
-          padding-bottom: 2px;
-          border-radius: 3px;
-          font-size: 12px;
-          line-height: 32px;
-          letter-spacing: 0;
-          text-align: center;
 
-          border-width: 0.08em;
-        }
+          .btn {
+            display: block;
+            width: 100%;
+            height: 36px;
+            padding-bottom: 2px;
+            border-radius: 3px;
+            font-size: 12px;
+            line-height: 32px;
+            letter-spacing: 0;
+            text-align: center;
 
-        .white-login {
-          float: left;
-          width: 110px;
-          border-color: $main-purple;
-          background-color: white;
-          color: $main-purple;
-        }
+            border-width: 0.08em;
+          }
 
-        .purple-address {
-          float: right;
-          width: 159px;
-          border: $main-purple;
-          background-color: $main-purple;
-          color: white;
+          .white-login {
+            position: absolute;
+            left: 0;
+            width: 110px;
+            border-color: $main-purple;
+            background-color: white;
+            color: $main-purple;
+          }
 
-          .search-address {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            margin: 6px 0 0 -6px;
-            background: url(https://res.kurly.com/pc/ico/2008/ico_search_40x40.png) no-repeat 50% 50%;
-            background-size: 20px 20px;
-            vertical-align: top;
+          .purple-address {
+            position: absolute;
+            right: 0;
+            width: 159px;
+            border: $main-purple;
+            background-color: $main-purple;
+            color: white;
+
+            .search-address {
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              margin: 6px 0 0 -6px;
+              background: url(https://res.kurly.com/pc/ico/2008/ico_search_40x40.png) no-repeat 50% 50%;
+              background-size: 20px 20px;
+              vertical-align: top;
+            }
           }
         }
       }
