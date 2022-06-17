@@ -32,7 +32,7 @@ export default function Product(props) {
                                 <span className="product-price--discount">{props.discount}%</span>
                                 <span className="product-price--price">{props.price.toLocaleString()}원</span>
                                 <span
-                                    className="product-price--price-before-discount">{props.priceBeforeDiscount.toLocaleString()}</span>
+                                    className="product-price--price-before-discount">{props.priceBeforeDiscount.toLocaleString()}원</span>
                             </>
                             :
                             <span className="product-price--price">{props.price.toLocaleString()}원</span>
