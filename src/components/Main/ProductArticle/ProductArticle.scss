@@ -1,0 +1,102 @@
+article {
+  padding: 32px 0 40px;
+  width: 100vw;
+  min-width: 1050px;
+
+  .section-header {
+    width: 100%;
+    margin-bottom: 27px;
+
+    .section-header-title {
+      width: 100%;
+      height: 50px;
+
+      a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .section-title {
+          color: rgb(51, 51, 51);
+          font-size: 28px;
+          letter-spacing: -0.26px;
+          font-weight: 500;
+        }
+
+        .section-title--arrow {
+          display: inline-block;
+        }
+      }
+    }
+
+    .section-description {
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 1.45;
+      letter-spacing: -0.2px;
+      text-align: center;
+      color: rgb(153, 153, 153);
+      margin-top: 2px;
+    }
+  }
+
+  & > .swiper-wrapper {
+    width: 1050px;
+    margin: 0 auto;
+
+    .product-carousel {
+      width: 1050px;
+    }
+
+    .swiper-button-prev {
+      position: absolute;
+      z-index: 100;
+      border: 0;
+      outline: 0;
+      width: 60px;
+      height: 60px;
+      left: 0;
+      transform: translate(-50%, -50%);
+      background: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_list_left_60_60.svg) 50% 50% no-repeat;
+      content: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_list_left_over_60_60.svg);
+      transition: background 0.5s ease 0s
+
+      &:after {
+        display: none;
+      }
+    }
+
+    .swiper-button-next {
+      position: absolute;
+      z-index: 100;
+      border: 0;
+      outline: 0;
+      width: 60px;
+      height: 60px;
+      right: 0;
+      transform: translate(50%, -50%);
+      background: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_list_right_60_60.svg) 50% 50% no-repeat;
+      content: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_list_right_over_60_60.svg);
+      transition: background 0.5s ease 0s;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &:hover {
+      .swiper-button-prev {
+        opacity: 1;
+      }
+
+      .swiper-button-next {
+        opacity: 1;
+      }
+    }
+
+    .swiper-button-disabled {
+      display: none;
+    }
+  }
+}
