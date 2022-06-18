@@ -1,5 +1,6 @@
 .main-banner {
   min-width: 1050px;
+  margin-bottom: 40px;
 
   .main-banner--image {
     display: flex;
@@ -52,6 +53,7 @@
     .swiper-button-prev {
       opacity: 1;
     }
+
     .swiper-button-next {
       opacity: 1;
     }
@@ -82,4 +84,5 @@
       background: rgba(0, 0, 0, 0.15);
     }
   }
+
 }
