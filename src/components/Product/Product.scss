@@ -1,7 +1,9 @@
 @import "../../styles/common";
 
 .product-card {
+  position: relative;
   width: 249px;
+  z-index: 150;
 
   .product-thumbnail {
     position: relative;
@@ -46,6 +48,7 @@
 
 .product-description {
   padding: 14px 10px 0 0;
+  text-align: left;
 
   .product-name {
     font-size: 16px;
