@@ -1,0 +1,164 @@
+.footer{
+    position: fixed;
+    bottom: 0px;
+}
+.footer-top{
+    width: 1050px;
+    margin: 0 auto;
+
+    .inner_footer{
+        padding-bottom: 323px;
+        .footer_cc{
+            float: left;
+            width: 50%;
+            height: 300px;
+    
+            .tit_cc{
+                font-size: 20px;
+                padding: 29px 0 2px;
+                color: black;
+                font-weight: 500;
+            }   
+            .cc_view{
+                padding-top: 20px;
+            }
+            .cc_call{
+                padding-top: 20px;
+            }
+            .phonenum{
+                font-size: 28px;
+            }
+            .list{
+                height: 43px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding-left: 10px;
+                font-size: 14px;
+                line-height: 1px;
+                letter-spacing: 0px;
+            }
+            .tit{
+                width: 140px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #e3e3e3;
+                border-radius: 3px;
+                font-size: 14px;
+                color: black;
+                float: left;
+            } 
+            .tit_num{
+                font-size: 14px;
+                color: black;
+                float: left;
+        
+            }
+            dt{  
+                color: black;     
+            }
+            dd{
+                color: #999;
+            }
+            .txt{
+                padding-top: 13px;
+                color: #999;
+                display: flex;
+                padding-left: 10px;
+                font-size: 14px;
+                letter-spacing: 0px;
+            }
+        }
+        .company{
+            float: right;
+            width: 50%;
+            height: 300px;
+
+            .list{
+                padding: 29px;
+                li{
+                    font-size: 14px;
+                    color: black;
+                    margin: 6px;
+                }
+            }
+            .footer_information{
+                color: #999;
+                padding-left: 35px;
+                p{
+                    padding-top: 6px;
+                }
+                a{
+                    color: #5f0080;
+                }
+            }
+            .list_sns{
+                padding-top: 45px;
+                padding-left:29px;
+                a{
+                    padding: 5px;
+                }
+                img{
+
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }  
+        border-bottom: 1px solid #999;      
+    }
+    .footer_link{
+        height: 90px;
+        padding-top: 20px;
+        padding-bottom: 24px;
+        
+        .all_link{
+            float: left;
+            padding-top: 3px;
+        }
+        img{
+            float: left;
+            height: 34px;
+            margin-right: 10px;
+            
+        }
+        
+        .mark{
+            float: left;
+            width: 267px;
+        }
+        .mark_plus{
+            float: left;
+        }
+        
+        
+        .txt{
+            float: left;
+            color: #999;
+            line-height: 16px;
+            white-space: nowrap;
+            font-size: 10px;
+        }
+        
+    }
+}
+
+.footer_clause{
+    background-color: #f7f7f7;
+    text-align: center;
+    padding-top: 19px;
+    padding-bottom: 27px;
+    .txt{
+        color:#999999;
+        padding-top: 7px;
+        font-size: 10px;
+    }
+    .txt_2{
+        color: #999999;
+        padding-top: 10px;
+        font-size: 10px;
+    }
+
+}
