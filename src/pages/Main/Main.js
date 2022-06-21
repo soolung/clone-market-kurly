@@ -2,6 +2,7 @@ import BannerData from "./banner.json";
 import ProductData from "./productArticleData.json"
 import Banner from "../../components/Main/Banner/Banner"
 import ProductArticle from "../../components/Main/ProductArticle/ProductArticle";
+import "./Main.scss";
 
 export default function Main() {
     let i = 0
