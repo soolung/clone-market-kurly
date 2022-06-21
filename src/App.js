@@ -9,7 +9,7 @@ export const UserContext = createContext({"user": null});
 
 function App() {
 
-    const [user, setUser] = useState({"user": null});
+    const [user, setUser] = useState({});
     const value = useMemo(() => ({ user, setUser}), [user]);
 
 

@@ -29,14 +29,55 @@ export default function Header() {
                 <div className="header-inner">
                     <div className="user-item">
                         <ul className="list-item">
-                            <li className="menu">
-                                <Link to="" className="purple">회원가입</Link>
-                            </li>
-                            <li className="menu">
-                                <Link to="/login">로그인</Link>
-                            </li>
-                            <li className="menu last">
-                                <Link to="">고객센터</Link>
+                            {JSON.stringify(user) === '{}' ?
+                                <>
+                                    <li className="menu">
+                                        <Link to="" className="purple">회원가입</Link>
+                                    </li>
+                                    <li className="menu">
+                                        <Link to="/login">로그인</Link>
+                                    </li>
+                                </>
+                                :
+                                <li className="menu sub-list-menu">
+                                    <spn className="grade">{user.grade}</spn>
+                                    <Link to="">{user.name} 님 ▾</Link>
+                                    <ul className="list-item-sub">
+                                        <li>
+                                            <Link to="">주문 내역</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">선물 내역</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">찜한 상품</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">배송지 관리</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">상품 후기</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">상품 문의</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">적립금</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">쿠폰</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">개인 정보 수정</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">로그아웃</Link>
+                                        </li>
+                                    </ul>
+                                </li>
+                            }
+                            <li className="menu sub-list-menu last">
+                                <Link to="">고객센터 ▾ </Link>
                                 <ul className="list-item-sub">
                                     <li>
                                         <Link to="">공지사항</Link>
@@ -55,9 +96,6 @@ export default function Header() {
                                     </li>
                                     <li>
                                         <Link to="">에코포장 피드백</Link>
-                                    </li>
-                                    <li>
-                                        {user.name}
                                     </li>
                                 </ul>
                             </li>

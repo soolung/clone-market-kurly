@@ -29,11 +29,26 @@ header {
   height: 37px;
 
   .list-item {
-    position: relative;
     float: right;
 
     .menu {
+      display: inline-block;
+      position: relative;
 
+      .grade {
+        display: inline-block;
+        min-width: 38px;
+        height: 16px;
+        padding: 0 4px;
+        border-radius: 30px;
+        font-size: 9px;
+        line-height: 14px;
+        text-align: center;
+
+        border: 1px solid $main-purple;
+        background-color: white;
+        color: $main-purple;
+      }
       & > a {
         font-size: 12px;
         padding: 0 12px;
@@ -61,10 +76,12 @@ header {
         //float: right;
         width: 8px;
         height: 5px;
-        background: url(https://res.kurly.com/pc/ico/1908/ico_down_8x5.png) no-repeat 0 0;
+        background-color: white;
         background-size: 8px 5px;
       }
+    }
 
+    .sub-list-menu {
       &:hover .list-item-sub {
         display: block;
         z-index: 300;
@@ -248,7 +265,7 @@ header {
             left: 219px;
             top: 0;
             width: 228px;
-            height: 684px;
+            height: 695px;
             padding: 11px 0 0 20px;
             background-color: $gray-background;
             border: 1px solid #ddd;
