@@ -418,8 +418,22 @@ header {
       background: url(https://res.kurly.com/pc/ico/2011/ico_point_up_18x12.svg) no-repeat 50% 100%;
     }
 
-    .no-address {
-      .no-address-button {
+    .delivery-layer-inner {
+      span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.34px;
+      }
+      .delivery-type {
+        display: inline-block;
+        padding-top: 8px;
+        font-size: 14px;
+        font-weight: normal;
+        letter-spacing: -0.2px;
+        line-height: normal;
+      }
+      .delivery-layer-button {
         position: relative;
         width: auto;
         height: 53px;
@@ -470,6 +484,13 @@ header {
               vertical-align: top;
             }
           }
+
+          .white-change {
+            width: 275px;
+            border-color: $main-purple;
+            background-color: white;
+            color: $main-purple;
+          }
         }
       }
     }
@@ -486,12 +507,30 @@ header {
   }
 
   .cart {
+    position: relative;
     &:hover a {
       background: url(https://res.kurly.com/pc/service/common/2011/ico_cart_on.svg?v=1);
     }
 
     a {
       background: url(https://res.kurly.com/pc/service/common/2011/ico_cart.svg);
+    }
+
+    .cart-count {
+      position: absolute;
+      left: 19px;
+      top: -1px;
+      min-width: 20px;
+      height: 20px;
+      padding: 0 5px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      background-color: #5f0080;
+      font-size: 9px;
+      color: #fff;
+      line-height: 15px;
+      text-align: center;
+      white-space: nowrap;
     }
   }
 }

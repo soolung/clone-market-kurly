@@ -23,13 +23,15 @@ export default function Header() {
         setSearchText("");
     }
 
+    const checkObjectIsEmpty = obj => JSON.stringify(obj) === '{}';
+
     return (
         <>
             <div className="header-top">
                 <div className="header-inner">
                     <div className="user-item">
                         <ul className="list-item">
-                            {JSON.stringify(user) === '{}' ?
+                            {checkObjectIsEmpty(user) ?
                                 <>
                                     <li className="menu">
                                         <Link to="" className="purple">회원가입</Link>
@@ -175,24 +177,33 @@ export default function Header() {
                             <Link to="" className="delivery-icon"/>
 
                             <div className="delivery-layer">
-                                <div className="no-address">
-                                    <span className="purple">배송지를 등록</span>하고<br/>
-                                    구매 가능한 상품을 확인하세요!
-                                    <div className="no-address-button">
-                                        <Link to="/login">
-                                            <button className="white-login btn">로그인</button>
-                                        </Link>
-                                        <Link to="">
-                                            <button className="purple-address btn">
-                                                <span className="search-address"/>
-                                                주소검색
-                                            </button>
-                                        </Link>
+                                {checkObjectIsEmpty(user) ?
+                                    <div className="delivery-layer-inner">
+                                        <span className="purple">배송지를 등록</span>하고<br/>
+                                        구매 가능한 상품을 확인하세요!
+                                        <div className="delivery-layer-button">
+                                            <Link to="/login">
+                                                <button className="white-login btn">로그인</button>
+                                            </Link>
+                                            <Link to="">
+                                                <button className="purple-address btn">
+                                                    <span className="search-address"/>
+                                                    주소검색
+                                                </button>
+                                            </Link>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="yes-address">
-
-                                </div>
+                                    :
+                                    <div className="delivery-layer-inner">
+                                        <span>{user.delivery.address}</span><br/>
+                                        <span className="delivery-type purple">{user.delivery.type}</span>
+                                        <div className="delivery-layer-button">
+                                            <Link to="">
+                                                <button className="white-change btn">배송지 변경</button>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                }
                             </div>
                         </div>
                         <div className="gym other-item">
@@ -200,6 +211,12 @@ export default function Header() {
                         </div>
                         <div className="cart other-item">
                             <Link to=""/>
+
+                            { checkObjectIsEmpty(user) ?
+                                <></>
+                                :
+                                <span className="cart-count">{user.cart.length}</span>
+                            }
                         </div>
                     </div>
                 </div>

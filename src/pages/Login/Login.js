@@ -29,23 +29,23 @@ export default function Login() {
         if (loginInput.id === "gimhanul" && loginInput.password === "gimhanul") {
             const user = {
                 name: "김한울",
-                numberOfCart: 3,
                 grade: "일반",
                 delivery: {
                     address: "경기도 평택시 상서재로5길 15 (평택센트럴자이1단지) 104동 101호",
                     type: "택배배송",
                 },
+                cart: [],
             }
             setUser(user);
         } else if (loginInput.id === "sookyoungwoo" && loginInput.password === "sookyoungwoo") {
             const user = {
                 name: "우수경",
-                numberOfCart: 0,
                 grade: "더퍼플",
                 delivery: {
                     address: "동래버스에서 내려서 갈 수 있는 온천천 근처 오두막집에서 왼쪼긍로 꺾으렴",
                     type: "샛별배송",
                 },
+                cart: [],
             }
             setUser(user);
         } else {
