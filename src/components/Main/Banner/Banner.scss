@@ -1,0 +1,88 @@
+.main-banner {
+  min-width: 1050px;
+  margin-bottom: 40px;
+
+  .main-banner--image {
+    display: flex;
+    height: 370px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    width: 52px;
+    height: 52px;
+    border: 0px;
+    outline: 0px;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease 0s;
+    opacity: 0;
+    margin: 0 0 0 -590px;
+    background: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_banner_left_52_52.svg) 50% 50% no-repeat;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    width: 52px;
+    height: 52px;
+    border: 0;
+    outline: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease 0s;
+    opacity: 0;
+    margin: 0 0 0 590px;
+    background: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_banner_right_52_52.svg) 50% 50% no-repeat;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  &:hover {
+    .swiper-button-prev {
+      opacity: 1;
+    }
+
+    .swiper-button-next {
+      opacity: 1;
+    }
+  }
+
+  .main-banner--active-index-position-helper {
+    position: relative;
+    width: 1050px;
+    margin: 0 auto;
+
+    .main-banner--active-index {
+      position: absolute;
+      bottom: 20px;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      width: 55px;
+      height: 23px;
+      line-height: 23px;
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      font-weight: 400;
+      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.15);
+    }
+  }
+
+}

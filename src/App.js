@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header/Header";
+import Login from "./pages/Login/Login";
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import Main from "./pages/Main/Main";
+import Footer from "./components/Footer/Footer";
+import {createContext, useMemo, useState} from "react";
+
+export const UserContext = createContext({"user": null});
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [user, setUser] = useState({});
+    const value = useMemo(() => ({ user, setUser}), [user]);
+
+
+    return (
+        <>
+            <UserContext.Provider value={value}>
+                <BrowserRouter>
+                    <Header/>
+                    <Routes>
+                        <Route path="/" element={<Main/>}/>
+                        <Route path="/login" element={<Login/>}/>
+                    </Routes>
+                    <Footer/>
+                </BrowserRouter>
+            </UserContext.Provider>
+        </>
+    );
 }
 
 export default App;

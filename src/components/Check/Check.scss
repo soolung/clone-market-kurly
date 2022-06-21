@@ -1,0 +1,37 @@
+@import '../../styles/common.scss';
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 24px;
+  height: 24px;
+  appearance: none;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  outline: 0;
+  transition: background 0.2s;
+
+  &::after {
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: none;
+    height: 40%;
+    left: 36%;
+    position: relative;
+    top: 20%;
+    transform: rotate(45deg);
+    width: 15%;
+  }
+
+  &:checked {
+    background: $main-purple;
+    border: none;
+  }
+
+  &:checked::after {
+    display: block;
+  }
+}
