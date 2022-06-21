@@ -1,11 +1,13 @@
 import Button from "../../components/Button/Button";
 import './Login.scss'
 import Check from "../../components/Check/Check";
-import {useState} from "react";
+import {useContext, useState} from "react";
 import {Link} from "react-router-dom";
+import {UserContext} from "../../App";
 
 export default function Login() {
 
+    const { setUser } = useContext(UserContext);
     const [securityCheck, setSecurityCheck] = useState(true);
     const [loginInput, setLoginInput] = useState({
         id: "",
@@ -34,8 +36,7 @@ export default function Login() {
                     type: "택배배송",
                 },
             }
-
-            sessionStorage.setItem("currentUser", JSON.stringify(user));
+            setUser(user);
         } else if (loginInput.id === "sookyoungwoo" && loginInput.password === "sookyoungwoo") {
             const user = {
                 name: "우수경",
@@ -46,8 +47,7 @@ export default function Login() {
                     type: "샛별배송",
                 },
             }
-
-            sessionStorage.setItem("currentUser", JSON.stringify(user));
+            setUser(user);
         } else {
             alert("아이디 또는 비밀번호 오류입니다.")
         }
@@ -78,7 +78,7 @@ export default function Login() {
                             </div>
                         </div>
 
-                        <Link to="">
+                        <Link to="/">
                             <Button
                                 color="purple"
                                 text="로그인"

@@ -1,9 +1,12 @@
-import {useState} from "react";
+import {useContext, useState} from "react";
 import "./Header.scss";
 import categoryData from "./category.json";
 import {Link} from "react-router-dom";
+import {UserContext} from "../../App";
 
 export default function Header() {
+
+    const {user} = useContext(UserContext);
 
     const [searchText, setSearchText] = useState("");
     const [searchTextOnFocus, setSearchTextOnFocus] = useState(false);
@@ -52,6 +55,9 @@ export default function Header() {
                                     </li>
                                     <li>
                                         <Link to="">에코포장 피드백</Link>
+                                    </li>
+                                    <li>
+                                        {user.name}
                                     </li>
                                 </ul>
                             </li>
