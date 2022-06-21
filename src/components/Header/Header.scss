@@ -29,11 +29,26 @@ header {
   height: 37px;
 
   .list-item {
-    position: relative;
     float: right;
 
     .menu {
+      display: inline-block;
+      position: relative;
 
+      .grade {
+        display: inline-block;
+        min-width: 38px;
+        height: 16px;
+        padding: 0 4px;
+        border-radius: 30px;
+        font-size: 9px;
+        line-height: 14px;
+        text-align: center;
+
+        border: 1px solid $main-purple;
+        background-color: white;
+        color: $main-purple;
+      }
       & > a {
         font-size: 12px;
         padding: 0 12px;
@@ -61,10 +76,12 @@ header {
         //float: right;
         width: 8px;
         height: 5px;
-        background: url(https://res.kurly.com/pc/ico/1908/ico_down_8x5.png) no-repeat 0 0;
+        background-color: white;
         background-size: 8px 5px;
       }
+    }
 
+    .sub-list-menu {
       &:hover .list-item-sub {
         display: block;
         z-index: 300;
@@ -248,7 +265,7 @@ header {
             left: 219px;
             top: 0;
             width: 228px;
-            height: 684px;
+            height: 695px;
             padding: 11px 0 0 20px;
             background-color: $gray-background;
             border: 1px solid #ddd;
@@ -401,8 +418,22 @@ header {
       background: url(https://res.kurly.com/pc/ico/2011/ico_point_up_18x12.svg) no-repeat 50% 100%;
     }
 
-    .no-address {
-      .no-address-button {
+    .delivery-layer-inner {
+      span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.34px;
+      }
+      .delivery-type {
+        display: inline-block;
+        padding-top: 8px;
+        font-size: 14px;
+        font-weight: normal;
+        letter-spacing: -0.2px;
+        line-height: normal;
+      }
+      .delivery-layer-button {
         position: relative;
         width: auto;
         height: 53px;
@@ -453,6 +484,13 @@ header {
               vertical-align: top;
             }
           }
+
+          .white-change {
+            width: 275px;
+            border-color: $main-purple;
+            background-color: white;
+            color: $main-purple;
+          }
         }
       }
     }
@@ -469,12 +507,30 @@ header {
   }
 
   .cart {
+    position: relative;
     &:hover a {
       background: url(https://res.kurly.com/pc/service/common/2011/ico_cart_on.svg?v=1);
     }
 
     a {
       background: url(https://res.kurly.com/pc/service/common/2011/ico_cart.svg);
+    }
+
+    .cart-count {
+      position: absolute;
+      left: 19px;
+      top: -1px;
+      min-width: 20px;
+      height: 20px;
+      padding: 0 5px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      background-color: #5f0080;
+      font-size: 9px;
+      color: #fff;
+      line-height: 15px;
+      text-align: center;
+      white-space: nowrap;
     }
   }
 }

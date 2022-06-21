@@ -1,9 +1,12 @@
-import {useState} from "react";
+import {useContext, useState} from "react";
 import "./Header.scss";
 import categoryData from "./category.json";
 import {Link} from "react-router-dom";
+import {UserContext} from "../../App";
 
 export default function Header() {
+
+    const {user} = useContext(UserContext);
 
     const [searchText, setSearchText] = useState("");
     const [searchTextOnFocus, setSearchTextOnFocus] = useState(false);
@@ -20,20 +23,63 @@ export default function Header() {
         setSearchText("");
     }
 
+    const checkObjectIsEmpty = obj => JSON.stringify(obj) === '{}';
+
     return (
         <>
             <div className="header-top">
                 <div className="header-inner">
                     <div className="user-item">
                         <ul className="list-item">
-                            <li className="menu">
-                                <Link to="" className="purple">회원가입</Link>
-                            </li>
-                            <li className="menu">
-                                <Link to="/login">로그인</Link>
-                            </li>
-                            <li className="menu last">
-                                <Link to="">고객센터</Link>
+                            {checkObjectIsEmpty(user) ?
+                                <>
+                                    <li className="menu">
+                                        <Link to="" className="purple">회원가입</Link>
+                                    </li>
+                                    <li className="menu">
+                                        <Link to="/login">로그인</Link>
+                                    </li>
+                                </>
+                                :
+                                <li className="menu sub-list-menu">
+                                    <spn className="grade">{user.grade}</spn>
+                                    <Link to="">{user.name} 님 ▾</Link>
+                                    <ul className="list-item-sub">
+                                        <li>
+                                            <Link to="">주문 내역</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">선물 내역</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">찜한 상품</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">배송지 관리</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">상품 후기</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">상품 문의</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">적립금</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">쿠폰</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">개인 정보 수정</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">로그아웃</Link>
+                                        </li>
+                                    </ul>
+                                </li>
+                            }
+                            <li className="menu sub-list-menu last">
+                                <Link to="">고객센터 ▾ </Link>
                                 <ul className="list-item-sub">
                                     <li>
                                         <Link to="">공지사항</Link>
@@ -131,24 +177,33 @@ export default function Header() {
                             <Link to="" className="delivery-icon"/>
 
                             <div className="delivery-layer">
-                                <div className="no-address">
-                                    <span className="purple">배송지를 등록</span>하고<br/>
-                                    구매 가능한 상품을 확인하세요!
-                                    <div className="no-address-button">
-                                        <Link to="/login">
-                                            <button className="white-login btn">로그인</button>
-                                        </Link>
-                                        <Link to="">
-                                            <button className="purple-address btn">
-                                                <span className="search-address"/>
-                                                주소검색
-                                            </button>
-                                        </Link>
+                                {checkObjectIsEmpty(user) ?
+                                    <div className="delivery-layer-inner">
+                                        <span className="purple">배송지를 등록</span>하고<br/>
+                                        구매 가능한 상품을 확인하세요!
+                                        <div className="delivery-layer-button">
+                                            <Link to="/login">
+                                                <button className="white-login btn">로그인</button>
+                                            </Link>
+                                            <Link to="">
+                                                <button className="purple-address btn">
+                                                    <span className="search-address"/>
+                                                    주소검색
+                                                </button>
+                                            </Link>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="yes-address">
-
-                                </div>
+                                    :
+                                    <div className="delivery-layer-inner">
+                                        <span>{user.delivery.address}</span><br/>
+                                        <span className="delivery-type purple">{user.delivery.type}</span>
+                                        <div className="delivery-layer-button">
+                                            <Link to="">
+                                                <button className="white-change btn">배송지 변경</button>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                }
                             </div>
                         </div>
                         <div className="gym other-item">
@@ -156,6 +211,12 @@ export default function Header() {
                         </div>
                         <div className="cart other-item">
                             <Link to=""/>
+
+                            { checkObjectIsEmpty(user) ?
+                                <></>
+                                :
+                                <span className="cart-count">{user.cart.length}</span>
+                            }
                         </div>
                     </div>
                 </div>
