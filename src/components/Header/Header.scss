@@ -2,9 +2,11 @@
 
 header {
   position: sticky;
+  z-index: 200;
   top: 0;
   background-color: white;
   width: 100vw;
+  min-width: 1050px;
   box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.15);
 }
 
