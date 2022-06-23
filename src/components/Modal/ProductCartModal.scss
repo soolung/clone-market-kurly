@@ -120,6 +120,10 @@
           .product-cart-modal--total-accumulation-description {
             font-size: 14px;
             line-height: 20px;
+
+            .product-cart-modal--total-accumulation-price {
+              font-weight: 500;
+            }
           }
         }
       }

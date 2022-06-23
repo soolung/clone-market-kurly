@@ -42,7 +42,7 @@ export default function Header() {
                                 </>
                                 :
                                 <li className="menu sub-list-menu">
-                                    <spn className="grade">{user.grade}</spn>
+                                    <spn className="grade">{user.grade.grade}</spn>
                                     <Link to="">{user.name} 님 ▾</Link>
                                     <ul className="list-item-sub">
                                         <li>

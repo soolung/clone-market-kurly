@@ -13,7 +13,8 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": true
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
@@ -22,7 +23,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
@@ -31,7 +33,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": true
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
@@ -41,7 +44,8 @@
           "isDiscount": true,
           "priceBeforeDiscount": 9900,
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
@@ -51,7 +55,8 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
@@ -60,7 +65,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
@@ -69,7 +75,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
@@ -79,7 +86,8 @@
           "discount": "7",
           "priceBeforeDiscount": 9900,
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
@@ -89,7 +97,8 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
@@ -98,7 +107,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
@@ -107,7 +117,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
@@ -117,7 +128,8 @@
           "priceBeforeDiscount": 9900,
           "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
@@ -127,7 +139,8 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
@@ -136,7 +149,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
@@ -145,7 +159,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
@@ -155,7 +170,8 @@
           "priceBeforeDiscount": 9900,
           "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         }
       ]
     },
@@ -172,7 +188,8 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
@@ -181,7 +198,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
@@ -190,7 +208,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
@@ -200,7 +219,8 @@
           "priceBeforeDiscount": 9900,
           "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
@@ -210,7 +230,8 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
@@ -219,7 +240,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
@@ -228,7 +250,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
@@ -238,7 +261,8 @@
           "priceBeforeDiscount": 9900,
           "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
@@ -248,7 +272,8 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
@@ -257,7 +282,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
@@ -266,7 +292,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
@@ -276,7 +303,8 @@
           "priceBeforeDiscount": 9900,
           "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
@@ -286,7 +314,8 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
@@ -295,7 +324,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
@@ -304,7 +334,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
@@ -314,7 +345,8 @@
           "priceBeforeDiscount": 9900,
           "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         }
       ]
     },
@@ -331,7 +363,8 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
@@ -340,7 +373,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
@@ -349,7 +383,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
@@ -359,7 +394,8 @@
           "priceBeforeDiscount": 9900,
           "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
@@ -369,7 +405,8 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
@@ -378,7 +415,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
@@ -387,7 +425,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
@@ -397,7 +436,8 @@
           "priceBeforeDiscount": 9900,
           "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
@@ -407,7 +447,8 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
@@ -416,7 +457,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
@@ -425,7 +467,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
@@ -435,7 +478,8 @@
           "priceBeforeDiscount": 9900,
           "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
@@ -445,7 +489,8 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
@@ -454,7 +499,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
@@ -463,7 +509,8 @@
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
@@ -473,7 +520,8 @@
           "priceBeforeDiscount": 9900,
           "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         }
       ]
     }

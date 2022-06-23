@@ -29,7 +29,10 @@ export default function Login() {
         if (loginInput.id === "gimhanul" && loginInput.password === "gimhanul") {
             const user = {
                 name: "김한울",
-                grade: "일반",
+                grade: {
+                    grade: "일반",
+                    accumulationPercent: 0.005,
+                },
                 delivery: {
                     address: "경기도 평택시 상서재로5길 15 (평택센트럴자이1단지) 104동 101호",
                     type: "택배배송",
@@ -40,7 +43,10 @@ export default function Login() {
         } else if (loginInput.id === "sookyoungwoo" && loginInput.password === "sookyoungwoo") {
             const user = {
                 name: "우수경",
-                grade: "더퍼플",
+                grade: {
+                    grade: "더퍼플",
+                    accumulationPercent: 0.07,
+                },
                 delivery: {
                     address: "동래버스에서 내려서 갈 수 있는 온천천 근처 오두막집에서 왼쪼긍로 꺾으렴",
                     type: "샛별배송",

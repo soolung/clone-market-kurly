@@ -24,7 +24,8 @@ export default function ProductCartModal(props) {
                     <div className="product-cart-modal--detail-information">
                         {props.product.productName}
                         {!props.product.isAccumulate && !checkObjectIsEmpty(user) &&
-                            <><br/><br/><span className="product-cart-modal--detail-information-no-accumulation">적립제외상품</span></>
+                            <><br/><br/><span
+                                className="product-cart-modal--detail-information-no-accumulation">적립제외상품</span></>
                         }
                     </div>
                     <div className="product-cart-modal--price">
@@ -51,8 +52,16 @@ export default function ProductCartModal(props) {
                     {checkObjectIsEmpty(user) ?
                         <>로그인 후, {props.product.isDiscount && <>회원할인가와</>} 적립혜택 제공</>
                         :
-                        // TODO :: login 했을 때 isAccumulation 검사해서 적립 예쌍 금액 표시
-                        <></>
+                        <>구매 시
+                            <span className="product-cart-modal--total-accumulation-price">
+                            {props.product.isAccumulate ?
+                                <> {Math.round(props.product.price * user.grade.accumulationPercent * amount).toLocaleString()}</>
+                                :
+                                <> 0</>
+                            }
+                                원 적립
+                            </span>
+                        </>
                     }
                     </span>
                 </div>
