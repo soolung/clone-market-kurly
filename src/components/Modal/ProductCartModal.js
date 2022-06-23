@@ -33,7 +33,6 @@ export default function ProductCartModal(props) {
 
         setCart([...updatedCart]);
         props.closeModal();
-        document.body.style.overflow = "unset";
     };
 
     if (props.isOpen) {

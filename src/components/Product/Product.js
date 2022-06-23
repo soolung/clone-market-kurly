@@ -49,7 +49,10 @@ export default function Product(props) {
             </div>
             <ProductCartModal
                 isOpen={cartModalIsOpen}
-                closeModal={() => setCartModalIsOpen(false)}
+                closeModal={() => {
+                    setCartModalIsOpen(false)
+                    document.body.style.overflow = "unset";
+                }}
                 product={props}
                 isAccumulate={false}
             />
