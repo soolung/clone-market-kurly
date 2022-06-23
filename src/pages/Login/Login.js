@@ -37,7 +37,6 @@ export default function Login() {
                     address: "경기도 평택시 상서재로5길 15 (평택센트럴자이1단지) 104동 101호",
                     type: "택배배송",
                 },
-                cart: [],
             }
             setUser(user);
         } else if (loginInput.id === "sookyoungwoo" && loginInput.password === "sookyoungwoo") {
@@ -51,7 +50,6 @@ export default function Login() {
                     address: "동래버스에서 내려서 갈 수 있는 온천천 근처 오두막집에서 왼쪼긍로 꺾으렴",
                     type: "샛별배송",
                 },
-                cart: [],
             }
             setUser(user);
         } else {

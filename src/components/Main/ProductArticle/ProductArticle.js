@@ -44,6 +44,7 @@ export default function ProductArticle(props) {
                         props.products.map(p => (
                             <SwiperSlide>
                                 <Product
+                                    id={p.id}
                                     productImage={p.productImage}
                                     productName={p.productName}
                                     price={p.price}

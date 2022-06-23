@@ -2,11 +2,12 @@ import {useContext, useState} from "react";
 import "./Header.scss";
 import categoryData from "./category.json";
 import {Link} from "react-router-dom";
-import {UserContext} from "../../App";
+import {CartContext, UserContext} from "../../App";
 
 export default function Header() {
 
     const {user} = useContext(UserContext);
+    const {cart} = useContext(CartContext);
 
     const [searchText, setSearchText] = useState("");
     const [searchTextOnFocus, setSearchTextOnFocus] = useState(false);
@@ -215,7 +216,7 @@ export default function Header() {
                             { checkObjectIsEmpty(user) ?
                                 <></>
                                 :
-                                <span className="cart-count">{user.cart.length}</span>
+                                <span className="cart-count">{cart.length}</span>
                             }
                         </div>
                     </div>

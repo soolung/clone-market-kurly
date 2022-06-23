@@ -3,14 +3,36 @@ import './ProductCartModal.scss';
 import {useContext, useState} from "react";
 import AmountButton from "../AmountButton/AmountButton";
 import Button from "../Button/Button";
-import {UserContext} from "../../App";
+import {UserContext, CartContext} from "../../App";
 
 export default function ProductCartModal(props) {
     const [amount, setAmount] = useState(1)
-    const putProductToCart = () => 1;
 
-    const {user} = useContext(UserContext);
+    const {user, setUser} = useContext(UserContext);
+    const {cart, setCart} = useContext(CartContext);
     const checkObjectIsEmpty = obj => JSON.stringify(obj) === '{}';
+    const getProductIndexInCart = () => {
+        for (let i = 0; i < cart.length; i++) {
+            if (props.product.id === cart[i].product.id) {
+                return i;
+            }
+        }
+        return -1;
+    }
+    const putProductToCart = () => {
+        let updatedCart = [...cart];
+        let productIndex = getProductIndexInCart();
+        if (productIndex === -1) {
+            updatedCart.push({
+                product: props.product,
+                amount: amount,
+            });
+        } else {
+            cart[productIndex].amount += amount;
+        }
+
+        setCart([...updatedCart]);
+    };
 
     return (
         <Modal
@@ -74,7 +96,6 @@ export default function ProductCartModal(props) {
                     text="취소"
                 />
                 <Button
-                    // TODO :: 장바구니 추가
                     className="product-cart-modal--button-put-to-cart"
                     willDo={putProductToCart}
                     color="purple"
