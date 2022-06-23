@@ -44,6 +44,7 @@ export default function ProductArticle(props) {
                         props.products.map(p => (
                             <SwiperSlide>
                                 <Product
+                                    id={p.id}
                                     productImage={p.productImage}
                                     productName={p.productName}
                                     price={p.price}
@@ -52,6 +53,7 @@ export default function ProductArticle(props) {
                                     priceBeforeDiscount={p.priceBeforeDiscount}
                                     hasCoupon={p.hasCoupon}
                                     coupon={p.coupon}
+                                    isAccumulate={p.isAccumulate}
                                 />
                             </SwiperSlide>
                         ))

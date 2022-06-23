@@ -6,16 +6,20 @@ import Footer from "./components/Footer/Footer";
 import {createContext, useMemo, useState} from "react";
 
 export const UserContext = createContext({"user": null});
+export const CartContext = createContext([]);
 
 function App() {
 
     const [user, setUser] = useState({});
-    const value = useMemo(() => ({ user, setUser}), [user]);
+    const [cart, setCart] = useState([]);
+    const cartValue = useMemo(() => ({ cart, setCart }), [cart]);
+    const userValue = useMemo(() => ({ user, setUser }), [user]);
 
 
     return (
         <>
-            <UserContext.Provider value={value}>
+            <UserContext.Provider value={userValue}>
+                <CartContext.Provider value={cartValue}>
                 <BrowserRouter>
                     <Header/>
                     <Routes>
@@ -24,6 +28,7 @@ function App() {
                     </Routes>
                     <Footer/>
                 </BrowserRouter>
+                </CartContext.Provider>
             </UserContext.Provider>
         </>
     );

@@ -2,11 +2,12 @@ import {useContext, useState} from "react";
 import "./Header.scss";
 import categoryData from "./category.json";
 import {Link} from "react-router-dom";
-import {UserContext} from "../../App";
+import {CartContext, UserContext} from "../../App";
 
 export default function Header() {
 
     const {user} = useContext(UserContext);
+    const {cart} = useContext(CartContext);
 
     const [searchText, setSearchText] = useState("");
     const [searchTextOnFocus, setSearchTextOnFocus] = useState(false);
@@ -42,7 +43,7 @@ export default function Header() {
                                 </>
                                 :
                                 <li className="menu sub-list-menu">
-                                    <spn className="grade">{user.grade}</spn>
+                                    <spn className="grade">{user.grade.grade}</spn>
                                     <Link to="">{user.name} 님 ▾</Link>
                                     <ul className="list-item-sub">
                                         <li>
@@ -212,10 +213,10 @@ export default function Header() {
                         <div className="cart other-item">
                             <Link to=""/>
 
-                            { checkObjectIsEmpty(user) ?
+                            { cart.length === 0 ?
                                 <></>
                                 :
-                                <span className="cart-count">{user.cart.length}</span>
+                                <span className="cart-count">{cart.length}</span>
                             }
                         </div>
                     </div>

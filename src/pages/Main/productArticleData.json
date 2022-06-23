@@ -6,6 +6,7 @@
       "description": "",
       "products": [
         {
+          "id": 1,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
           "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
           "price": 4606,
@@ -13,27 +14,33 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": true
         },
         {
+          "id": 2,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
           "productName": "[상하목장] 마시는 유기농 요구르트 (100mL X 5개)",
           "price": 2040,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
+          "id": 3,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
           "productName": "[콜린스 다이닝] 슈퍼 곡물 샐러드",
           "price": 5865,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": true
         },
         {
+          "id": 4,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
           "productName": "저탄소 GAP 성주참외 1.1kg (4입)",
           "discount": "7",
@@ -41,9 +48,11 @@
           "isDiscount": true,
           "priceBeforeDiscount": 9900,
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         },
         {
+          "id": 1,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
           "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
           "price": 4606,
@@ -51,37 +60,45 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": true
         },
         {
+          "id": 2,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
           "productName": "[상하목장] 마시는 유기농 요구르트 (100mL X 5개)",
           "price": 2040,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
+          "id": 3,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
           "productName": "[콜린스 다이닝] 슈퍼 곡물 샐러드",
           "price": 5865,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": true
         },
         {
+          "id": 4,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
           "productName": "저탄소 GAP 성주참외 1.1kg (4입)",
+          "discount": "7",
           "price": 9207,
           "isDiscount": true,
-          "discount": "7",
           "priceBeforeDiscount": 9900,
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         },
         {
+          "id": 1,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
           "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
           "price": 4606,
@@ -89,37 +106,45 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": true
         },
         {
+          "id": 2,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
           "productName": "[상하목장] 마시는 유기농 요구르트 (100mL X 5개)",
           "price": 2040,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
+          "id": 3,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
           "productName": "[콜린스 다이닝] 슈퍼 곡물 샐러드",
           "price": 5865,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": true
         },
         {
+          "id": 4,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
           "productName": "저탄소 GAP 성주참외 1.1kg (4입)",
+          "discount": "7",
           "price": 9207,
           "isDiscount": true,
           "priceBeforeDiscount": 9900,
-          "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         },
         {
+          "id": 1,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
           "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
           "price": 4606,
@@ -127,35 +152,42 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": true
         },
         {
+          "id": 2,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
           "productName": "[상하목장] 마시는 유기농 요구르트 (100mL X 5개)",
           "price": 2040,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
+          "id": 3,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
           "productName": "[콜린스 다이닝] 슈퍼 곡물 샐러드",
           "price": 5865,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": true
         },
         {
+          "id": 4,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
           "productName": "저탄소 GAP 성주참외 1.1kg (4입)",
+          "discount": "7",
           "price": 9207,
           "isDiscount": true,
           "priceBeforeDiscount": 9900,
-          "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         }
       ]
     },
@@ -163,8 +195,10 @@
       "title": "이거 사려고 컬리에 가입했다!",
       "hasListPage": true,
       "description": "2022년 신규 고객의 첫구매 제품 TOP 25",
+
       "products": [
         {
+          "id": 1,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
           "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
           "price": 4606,
@@ -172,37 +206,45 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": true
         },
         {
+          "id": 2,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
           "productName": "[상하목장] 마시는 유기농 요구르트 (100mL X 5개)",
           "price": 2040,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
+          "id": 3,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
           "productName": "[콜린스 다이닝] 슈퍼 곡물 샐러드",
           "price": 5865,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": true
         },
         {
+          "id": 4,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
           "productName": "저탄소 GAP 성주참외 1.1kg (4입)",
+          "discount": "7",
           "price": 9207,
           "isDiscount": true,
           "priceBeforeDiscount": 9900,
-          "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         },
         {
+          "id": 1,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
           "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
           "price": 4606,
@@ -210,37 +252,45 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": true
         },
         {
+          "id": 2,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
           "productName": "[상하목장] 마시는 유기농 요구르트 (100mL X 5개)",
           "price": 2040,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
+          "id": 3,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
           "productName": "[콜린스 다이닝] 슈퍼 곡물 샐러드",
           "price": 5865,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": true
         },
         {
+          "id": 4,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
           "productName": "저탄소 GAP 성주참외 1.1kg (4입)",
+          "discount": "7",
           "price": 9207,
           "isDiscount": true,
           "priceBeforeDiscount": 9900,
-          "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         },
         {
+          "id": 1,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
           "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
           "price": 4606,
@@ -248,37 +298,45 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": true
         },
         {
+          "id": 2,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
           "productName": "[상하목장] 마시는 유기농 요구르트 (100mL X 5개)",
           "price": 2040,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
+          "id": 3,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
           "productName": "[콜린스 다이닝] 슈퍼 곡물 샐러드",
           "price": 5865,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": true
         },
         {
+          "id": 4,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
           "productName": "저탄소 GAP 성주참외 1.1kg (4입)",
+          "discount": "7",
           "price": 9207,
           "isDiscount": true,
           "priceBeforeDiscount": 9900,
-          "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         },
         {
+          "id": 1,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
           "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
           "price": 4606,
@@ -286,35 +344,42 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": true
         },
         {
+          "id": 2,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
           "productName": "[상하목장] 마시는 유기농 요구르트 (100mL X 5개)",
           "price": 2040,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
+          "id": 3,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
           "productName": "[콜린스 다이닝] 슈퍼 곡물 샐러드",
           "price": 5865,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": true
         },
         {
+          "id": 4,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
           "productName": "저탄소 GAP 성주참외 1.1kg (4입)",
+          "discount": "7",
           "price": 9207,
           "isDiscount": true,
           "priceBeforeDiscount": 9900,
-          "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         }
       ]
     },
@@ -322,8 +387,10 @@
       "title": "지금 가장 핫한 상품",
       "hasListPage": true,
       "description": "",
+
       "products": [
         {
+          "id": 1,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
           "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
           "price": 4606,
@@ -331,37 +398,45 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": true
         },
         {
+          "id": 2,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
           "productName": "[상하목장] 마시는 유기농 요구르트 (100mL X 5개)",
           "price": 2040,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
+          "id": 3,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
           "productName": "[콜린스 다이닝] 슈퍼 곡물 샐러드",
           "price": 5865,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": true
         },
         {
+          "id": 4,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
           "productName": "저탄소 GAP 성주참외 1.1kg (4입)",
+          "discount": "7",
           "price": 9207,
           "isDiscount": true,
           "priceBeforeDiscount": 9900,
-          "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         },
         {
+          "id": 1,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
           "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
           "price": 4606,
@@ -369,37 +444,45 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": true
         },
         {
+          "id": 2,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
           "productName": "[상하목장] 마시는 유기농 요구르트 (100mL X 5개)",
           "price": 2040,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
+          "id": 3,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
           "productName": "[콜린스 다이닝] 슈퍼 곡물 샐러드",
           "price": 5865,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": true
         },
         {
+          "id": 4,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
           "productName": "저탄소 GAP 성주참외 1.1kg (4입)",
+          "discount": "7",
           "price": 9207,
           "isDiscount": true,
           "priceBeforeDiscount": 9900,
-          "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         },
         {
+          "id": 1,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
           "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
           "price": 4606,
@@ -407,37 +490,45 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": true
         },
         {
+          "id": 2,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
           "productName": "[상하목장] 마시는 유기농 요구르트 (100mL X 5개)",
           "price": 2040,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
+          "id": 3,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
           "productName": "[콜린스 다이닝] 슈퍼 곡물 샐러드",
           "price": 5865,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": true
         },
         {
+          "id": 4,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
           "productName": "저탄소 GAP 성주참외 1.1kg (4입)",
+          "discount": "7",
           "price": 9207,
           "isDiscount": true,
           "priceBeforeDiscount": 9900,
-          "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         },
         {
+          "id": 1,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
           "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
           "price": 4606,
@@ -445,35 +536,42 @@
           "discount": "6",
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
-          "coupon": 15
+          "coupon": 15,
+          "isAccumulate": true
         },
         {
+          "id": 2,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
           "productName": "[상하목장] 마시는 유기농 요구르트 (100mL X 5개)",
           "price": 2040,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 2400,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": false
         },
         {
+          "id": 3,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
           "productName": "[콜린스 다이닝] 슈퍼 곡물 샐러드",
           "price": 5865,
           "isDiscount": true,
           "discount": "15",
           "priceBeforeDiscount": 6900,
-          "hasCoupon": false
+          "hasCoupon": false,
+          "isAccumulate": true
         },
         {
+          "id": 4,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
           "productName": "저탄소 GAP 성주참외 1.1kg (4입)",
+          "discount": "7",
           "price": 9207,
           "isDiscount": true,
           "priceBeforeDiscount": 9900,
-          "discount": "7",
           "hasCoupon": true,
-          "coupon": 30
+          "coupon": 30,
+          "isAccumulate": false
         }
       ]
     }
