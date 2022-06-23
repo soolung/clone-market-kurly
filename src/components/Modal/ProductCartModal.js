@@ -8,7 +8,7 @@ import {UserContext, CartContext} from "../../App";
 export default function ProductCartModal(props) {
     const [amount, setAmount] = useState(1)
 
-    const {user, setUser} = useContext(UserContext);
+    const {user} = useContext(UserContext);
     const {cart, setCart} = useContext(CartContext);
     const checkObjectIsEmpty = obj => JSON.stringify(obj) === '{}';
     const getProductIndexInCart = () => {
@@ -33,7 +33,12 @@ export default function ProductCartModal(props) {
 
         setCart([...updatedCart]);
         props.closeModal();
+        document.body.style.overflow = "unset";
     };
+
+    if (props.isOpen) {
+        document.body.style.overflow = "hidden";
+    }
 
     return (
         <Modal
