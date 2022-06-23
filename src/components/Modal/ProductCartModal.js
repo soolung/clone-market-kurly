@@ -32,6 +32,7 @@ export default function ProductCartModal(props) {
         }
 
         setCart([...updatedCart]);
+        props.closeModal();
     };
 
     return (

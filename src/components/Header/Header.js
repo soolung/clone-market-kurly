@@ -213,7 +213,7 @@ export default function Header() {
                         <div className="cart other-item">
                             <Link to=""/>
 
-                            { checkObjectIsEmpty(user) ?
+                            { cart.length === 0 ?
                                 <></>
                                 :
                                 <span className="cart-count">{cart.length}</span>
