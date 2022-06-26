@@ -9,15 +9,22 @@ export default function CartProductType(props) {
     const [contentShow, setContentShow] = useState(true);
 
     const changeAmount = (id, amount) => {
-        const index = cart.findIndex(c => c.product.id === id);
         setCart(
             [...cart],
-            cart[index].amount = amount
+            cart[cart.findIndex(c => c.product.id === id)].amount = amount
         );
     }
 
     const deleteProduct = deleteId => {
         setCart(cart.filter((c) => c.product.id !== deleteId));
+    }
+
+    const toggleCheck = id => {
+        let current = cart[cart.findIndex(c => c.product.id === id)].isChecked;
+        setCart(
+            [...cart],
+            cart[cart.findIndex(c => c.product.id === id)].isChecked = !current
+        )
     }
 
     return (
@@ -36,6 +43,8 @@ export default function CartProductType(props) {
                         {props.content.map(fc =>
                             (
                                 <CartProduct
+                                    isChecked={fc.isChecked}
+                                    toggleCheck={() => toggleCheck(fc.product.id)}
                                     product={fc.product}
                                     amount={fc.amount}
                                     amountPlus={() => changeAmount(fc.product.id, fc.amount + 1)}
