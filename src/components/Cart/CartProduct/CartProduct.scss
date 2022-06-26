@@ -1,0 +1,55 @@
+@import "../../../styles/common";
+
+.cart-product {
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+  width: 700px;
+
+  img {
+    width: 60px;
+    height: 78px;
+    margin-right: 20px;
+  }
+
+  .cart-product-name {
+    width: 327px;
+    color: $dark-gray;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 43px;
+    text-align: left;
+  }
+
+  .cart-product-price {
+    width: 116px;
+    text-align: right;
+
+    .cart-product-price-price {
+      display: block;
+      width: 100%;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .cart-product-price-discount {
+      display: block;
+      width: 100%;
+      font-size: 14px;
+      color: $light-gray;
+      text-decoration: line-through;
+      padding-top: 6px;
+    }
+  }
+
+  .cart-product-delete {
+    border: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url(https://res.kurly.com/pc/service/cart/2007/ico_delete.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    margin-left: 16px;
+  }
+}
