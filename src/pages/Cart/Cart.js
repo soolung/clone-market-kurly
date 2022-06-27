@@ -63,7 +63,6 @@ export default function Cart() {
         tempTotalPrice.totalPrice = tempTotalPrice.itemSum + tempTotalPrice.discountSum + tempTotalPrice.delivery
         tempTotalPrice.accumulationSum = Math.round(tempTotalPrice.accumulationSum * accumulationPercent);
         setTotalPrice(tempTotalPrice)
-        console.log(totalPrice);
     }, [cart]);
 
     useEffect(() => {
@@ -202,11 +201,11 @@ export default function Cart() {
                         <Button
                             className={`cart-result-order-button ${(cart.length === 0 || checkObjectIsEmpty(user) || checkedItemCount === 0) && "de-cart"}`}
                             color="purple"
-                            willdo={() => console.log("dd")}
+                            willdo={() => console.log("구현X")}
                             text={cart.length > 0 ? checkObjectIsEmpty(user) ? "로그인 해주세요" : checkedItemCount > 0 ? "주문하기" : "상품을 선택해주세요" : "상품을 담아주세요"}
                         />
                         <div className="cart-result-notice">
-                            {checkObjectIsEmpty(user) &&
+                            {!checkObjectIsEmpty(user) &&
                                 <div className="cart-result-notice--notice">
                                     <span className="cart-result-notice--notice-dot">·</span>
                                     <span className="cart-result-notice--notice-content">쿠폰/적립금은 주문서에서 사용 가능합니다.</span>

@@ -124,7 +124,7 @@ export default function Header() {
                             <div className="category-list-box">
                                 <ul className="category-list">
                                     {categoryData.category.map(c => (
-                                        <li className="category-list-item" onMouseEnter={() => console.log(c.id)}>
+                                        <li className="category-list-item">
                                             <img className="category-list-item--icon icon-off" src={c.iconImage}
                                                  alt="icon"/>
                                             <img className="category-list-item--icon icon-on" src={c.onIconImage}
