@@ -43,7 +43,7 @@ export default function Header() {
                                 </>
                                 :
                                 <li className="menu sub-list-menu">
-                                    <spn className="grade">{user.grade.grade}</spn>
+                                    <span className="grade">{user.grade.grade}</span>
                                     <Link to="">{user.name} 님 ▾</Link>
                                     <ul className="list-item-sub">
                                         <li>
@@ -211,7 +211,7 @@ export default function Header() {
                             <Link to=""/>
                         </div>
                         <div className="cart other-item">
-                            <Link to=""/>
+                            <Link to="/cart"/>
 
                             { cart.length === 0 ?
                                 <></>
