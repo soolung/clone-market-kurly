@@ -1,0 +1,28 @@
+@import "../../../styles/common";
+
+.cart-select-all {
+  font-weight: 500;
+  font-size: 14px;
+  color: $main-gray;
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+
+  .cart-select-all-button {
+    margin-right: 12px;
+  }
+
+  .bar {
+    width: 1px;
+    height: 14px;
+    background-color: #ccc;
+    display: inline-block;
+    margin: 0 20px;
+  }
+
+  .cart-select-delete {
+    cursor: pointer;
+  }
+}
+
+

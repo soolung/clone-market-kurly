@@ -54,6 +54,7 @@ export default function ProductArticle(props) {
                                     hasCoupon={p.hasCoupon}
                                     coupon={p.coupon}
                                     isAccumulate={p.isAccumulate}
+                                    type={p.type}
                                 />
                             </SwiperSlide>
                         ))
