@@ -4,7 +4,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Main from "./pages/Main/Main";
 import Footer from "./components/Footer/Footer";
 import {createContext, useMemo, useState} from "react";
-
+import ProductDetail from "./pages/ProductDetail/ProductDetail";
 export const UserContext = createContext({"user": null});
 export const CartContext = createContext([]);
 
@@ -25,6 +25,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Main/>}/>
                         <Route path="/login" element={<Login/>}/>
+                        <Route path="/product/detail" element={<ProductDetail />}/>
                     </Routes>
                     <Footer/>
                 </BrowserRouter>
