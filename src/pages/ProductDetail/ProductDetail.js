@@ -2,15 +2,16 @@ import "./ProductDetail.scss";
 import productData from "./productDetail.json";
 import { useContext, useState } from "react";
 import {UserContext, CartContext} from "../../App";
-import Amountbutton from "../../components/AmountButton/AmountButton";
+import AmountButton from "../../components/AmountButton/AmountButton";
 
 export default function ProduceDetail(props) {
-    // const {user} = useContext(UserContext);
+
+    const {user} = useContext(UserContext);
+    const {cart, setCart} = useContext(CartContext);
+
     const [amount, setAmount] = useState(1);
     const [gym, setGym] = useState(false);
-    
-    
-    const {cart, setCart} = useContext(CartContext);
+
     const getProductIndexInCart = () => {
         for (let i = 0; i < cart.length; i++) {
             if (props.product.id === cart[i].product.id) {
@@ -19,6 +20,7 @@ export default function ProduceDetail(props) {
         }
         return -1;
     }
+
     const putProductToCart = () => {
         let updatedCart = [...cart];
         let productIndex = getProductIndexInCart();
@@ -35,26 +37,19 @@ export default function ProduceDetail(props) {
         props.closeModal();
     };
 
-    const user = {
-        grade: {
-            grade: "일반",
-            "accumulationPercent": 0.005,
-        }
-    }
+    const checkObjectIsEmpty = obj => JSON.stringify(obj) === '{}';
 
-    const checkObjectIsEmpty = obj => false;
-    // const checkObjectIsEmpty = obj => JSON.stringify(obj) === '{}';
     return (
         <section>
             <div className="Detail_page">
                 <div className="product_detail_image">
-                    <img src={productData.productImage} className="product_image"></img>
+                    <img src={productData.productImage} className="product_image" alt="product"/>
                 </div>
                 <div className="product_information">
                     <p className="detail_title">
                         <span className="share_button">
                             <button type="button" className="share">
-                                <img src="https://res.kurly.com/mobile/service/goodsview/1910/ico_view_sns.png" ></img>
+                                <img src="https://res.kurly.com/mobile/service/goodsview/1910/ico_view_sns.png" alt="share"/>
                             </button>
                         </span>
                         <div className="name_pro"><span className="product_name">{productData.productName}</span></div>
@@ -68,7 +63,7 @@ export default function ProduceDetail(props) {
                                 {(productData.price).toLocaleString()}
                                     <span className="won">원</span>
                             </div>
-                        
+
                         </span>
                         <span className="benefit">
 
@@ -83,7 +78,7 @@ export default function ProduceDetail(props) {
                             : <div className="ylog_message">
                                 <span className="Rating">
                                     {user.grade.grade}&nbsp;
-                                    {user.grade.accumulationPercent}
+                                    {user.grade.accumulationPercent * 100}
                                     <span>%</span>
                                 </span>
                                 <span className="nlog_bar">
@@ -128,7 +123,7 @@ export default function ProduceDetail(props) {
                         <dl className="sales_Unit">
                             <dt>구매수량</dt>
                             <dd className="amount_sale">
-                                <Amountbutton
+                                <AmountButton
                                     className="product-cart-modal--price-amount"
                                     amount={amount}
                                     plus={() => setAmount(amount + 1)}
@@ -165,26 +160,26 @@ export default function ProduceDetail(props) {
                                         </span>
                                 </p>
                             </div>
-                        </p> 
-                    </div>                  
+                        </p>
+                    </div>
                     <div className="total_button">
                         <p className="button_list">
                             <div className="heart">
                                 <button onClick={() => setGym(!gym)}>
-                                    <img src={gym ? "https://res.kurly.com/pc/service/pick/btn-itemdetail-like-on.svg" : "https://res.kurly.com/pc/service/pick/btn-itemdetail-like.svg"}></img>
+                                    <img src={gym ? "https://res.kurly.com/pc/service/pick/btn-itemdetail-like-on.svg" : "https://res.kurly.com/pc/service/pick/btn-itemdetail-like.svg"} alt="gym" />
                                 </button>
-                                
+
                             </div>
                             <div className="bell">
                                 <button>
-                                    <img src="https://res.kurly.com/pc/service/goodsview/btn-itemdetail-restock-dim.svg"></img>
+                                    <img src="https://res.kurly.com/pc/service/goodsview/btn-itemdetail-restock-dim.svg" alt="bell"/>
                                 </button>
                             </div>
                         </p>
                         <p className="cart_button">
                         <button
                             className="product-cart-modal--button-put-to-cart"
-                            onCLick={putProductToCart}
+                            onClick={putProductToCart}
                         >장바구니 담기</button>
                         </p>
                     </div>
