@@ -10,7 +10,7 @@ export default function Product(props) {
     return (
         <>
             <div className="product-card">
-                <Link to="">
+                <Link to="/product/detail">
                     <div className="product-thumbnail">
                         <div className="product-thumbnail--image-wrapper">
                             <img className="product-thumbnail--image" src={props.productImage} alt="product" width={249}

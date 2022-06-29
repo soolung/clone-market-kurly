@@ -1,0 +1,20 @@
+{
+    "id": 1,
+    "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
+    "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
+    "productMessage": "손으로 정성껏 만들어낸 바삭한 감자칩!",
+    "price": 4606,
+    "isDiscount": true,
+    "discount": "6",
+    "priceBeforeDiscount": 4900,
+    "hasCoupon": true,
+    "coupon": 15,
+    "isAccumulate": true,
+    "salesUnit": "1봉",
+    "capacity": "150g",
+    "deliveryType": "샛별배송/택배배송",
+    "pakcage": {
+        "packType": "상온/종이포장",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+    }
+}
