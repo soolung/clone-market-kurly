@@ -43,7 +43,7 @@ export default function Header() {
                                 </>
                                 :
                                 <li className="menu sub-list-menu">
-                                    <spn className="grade">{user.grade.grade}</spn>
+                                    <span className="grade">{user.grade.grade}</span>
                                     <Link to="">{user.name} 님 ▾</Link>
                                     <ul className="list-item-sub">
                                         <li>
@@ -124,7 +124,7 @@ export default function Header() {
                             <div className="category-list-box">
                                 <ul className="category-list">
                                     {categoryData.category.map(c => (
-                                        <li className="category-list-item" onMouseEnter={() => console.log(c.id)}>
+                                        <li className="category-list-item">
                                             <img className="category-list-item--icon icon-off" src={c.iconImage}
                                                  alt="icon"/>
                                             <img className="category-list-item--icon icon-on" src={c.onIconImage}
@@ -211,7 +211,7 @@ export default function Header() {
                             <Link to=""/>
                         </div>
                         <div className="cart other-item">
-                            <Link to=""/>
+                            <Link to="/cart"/>
 
                             { cart.length === 0 ?
                                 <></>

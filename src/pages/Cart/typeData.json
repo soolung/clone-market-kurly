@@ -1,0 +1,16 @@
+{
+  "types": [
+    {
+      "iconImage": "https://res.kurly.com/pc/service/cart/2007/ico_cold.svg",
+      "type": "냉장"
+    },
+    {
+      "iconImage": "https://res.kurly.com/pc/service/cart/2007/ico_frozen.svg",
+      "type": "냉동"
+    },
+    {
+      "iconImage": "https://res.kurly.com/pc/service/cart/2009/ico_room_v2.svg?v=1",
+      "type": "상온"
+    }
+  ]
+}

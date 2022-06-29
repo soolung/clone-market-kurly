@@ -5,6 +5,8 @@ import Main from "./pages/Main/Main";
 import Footer from "./components/Footer/Footer";
 import {createContext, useMemo, useState} from "react";
 import ProductDetail from "./pages/ProductDetail/ProductDetail";
+import Cart from "./pages/Cart/Cart";
+
 export const UserContext = createContext({"user": null});
 export const CartContext = createContext([]);
 
@@ -26,6 +28,7 @@ function App() {
                         <Route path="/" element={<Main/>}/>
                         <Route path="/login" element={<Login/>}/>
                         <Route path="/product/detail" element={<ProductDetail />}/>
+                        <Route path="/cart" element={<Cart/>}/>
                     </Routes>
                     <Footer/>
                 </BrowserRouter>

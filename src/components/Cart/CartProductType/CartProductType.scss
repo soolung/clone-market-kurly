@@ -1,0 +1,54 @@
+@import "../../../styles/common";
+
+.cart-product-type {
+  width: 742px;
+  border-top: 1px solid $dark-gray;
+
+.cart-product-type--header {
+    height: 60px;
+    padding: 14px 5px 15px 0;
+
+  .cart-product-type--type-place {
+    display: inline-flex;
+    align-items: center;
+    width: 300px;
+    float: left;
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .cart-product-type--header-type {
+      font-size: 18px;
+      font-weight: 500;
+      color: $dark-gray;
+    }
+  }
+
+    .cart-product-type--header-content-xor {
+      display: block;
+      overflow: hidden;
+      float: right;
+      width: 30px;
+      height: 30px;
+      border: 0;
+      background-image: url(https://res.kurly.com/pc/service/cart/2007/ico_dropup.svg);
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-size: 30px 30px;
+      background-position: 50% 50%;
+
+      &.upside-down {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .cart-product-type--content {
+    &.none {
+      display: none;
+    }
+  }
+}

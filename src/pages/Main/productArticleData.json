@@ -15,7 +15,8 @@
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
           "coupon": 15,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "상온"
         },
         {
           "id": 2,
@@ -26,7 +27,8 @@
           "discount": "15",
           "priceBeforeDiscount": 2400,
           "hasCoupon": false,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
         },
         {
           "id": 3,
@@ -37,7 +39,8 @@
           "discount": "15",
           "priceBeforeDiscount": 6900,
           "hasCoupon": false,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "냉장"
         },
         {
           "id": 4,
@@ -49,7 +52,18 @@
           "priceBeforeDiscount": 9900,
           "hasCoupon": true,
           "coupon": 30,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
+        },
+        {
+          "id": 5,
+          "productImage": "https://img-cf.kurly.com/shop/data/goods/1653038246918y0.jpeg",
+          "productName": "춘천 국물 닭갈비 떡볶이",
+          "price": 11900,
+          "isDiscount": false,
+          "hasCoupon": false,
+          "isAccumulate": true,
+          "type": "냉동"
         },
         {
           "id": 1,
@@ -61,7 +75,8 @@
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
           "coupon": 15,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "상온"
         },
         {
           "id": 2,
@@ -72,7 +87,8 @@
           "discount": "15",
           "priceBeforeDiscount": 2400,
           "hasCoupon": false,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
         },
         {
           "id": 3,
@@ -83,7 +99,8 @@
           "discount": "15",
           "priceBeforeDiscount": 6900,
           "hasCoupon": false,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "냉장"
         },
         {
           "id": 4,
@@ -95,9 +112,19 @@
           "priceBeforeDiscount": 9900,
           "hasCoupon": true,
           "coupon": 30,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
         },
         {
+          "id": 5,
+          "productImage": "https://img-cf.kurly.com/shop/data/goods/1653038246918y0.jpeg",
+          "productName": "춘천 국물 닭갈비 떡볶이",
+          "price": 11900,
+          "isDiscount": false,
+          "hasCoupon": false,
+          "isAccumulate": true,
+          "type": "냉동"
+        },{
           "id": 1,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
           "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
@@ -107,7 +134,8 @@
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
           "coupon": 15,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "상온"
         },
         {
           "id": 2,
@@ -118,7 +146,8 @@
           "discount": "15",
           "priceBeforeDiscount": 2400,
           "hasCoupon": false,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
         },
         {
           "id": 3,
@@ -129,7 +158,8 @@
           "discount": "15",
           "priceBeforeDiscount": 6900,
           "hasCoupon": false,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "냉장"
         },
         {
           "id": 4,
@@ -141,9 +171,19 @@
           "priceBeforeDiscount": 9900,
           "hasCoupon": true,
           "coupon": 30,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
         },
         {
+          "id": 5,
+          "productImage": "https://img-cf.kurly.com/shop/data/goods/1653038246918y0.jpeg",
+          "productName": "춘천 국물 닭갈비 떡볶이",
+          "price": 11900,
+          "isDiscount": false,
+          "hasCoupon": false,
+          "isAccumulate": true,
+          "type": "냉동"
+        },{
           "id": 1,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
           "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
@@ -153,7 +193,8 @@
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
           "coupon": 15,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "상온"
         },
         {
           "id": 2,
@@ -164,7 +205,8 @@
           "discount": "15",
           "priceBeforeDiscount": 2400,
           "hasCoupon": false,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
         },
         {
           "id": 3,
@@ -175,7 +217,8 @@
           "discount": "15",
           "priceBeforeDiscount": 6900,
           "hasCoupon": false,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "냉장"
         },
         {
           "id": 4,
@@ -187,7 +230,18 @@
           "priceBeforeDiscount": 9900,
           "hasCoupon": true,
           "coupon": 30,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
+        },
+        {
+          "id": 5,
+          "productImage": "https://img-cf.kurly.com/shop/data/goods/1653038246918y0.jpeg",
+          "productName": "춘천 국물 닭갈비 떡볶이",
+          "price": 11900,
+          "isDiscount": false,
+          "hasCoupon": false,
+          "isAccumulate": true,
+          "type": "냉동"
         }
       ]
     },
@@ -195,7 +249,6 @@
       "title": "이거 사려고 컬리에 가입했다!",
       "hasListPage": true,
       "description": "2022년 신규 고객의 첫구매 제품 TOP 25",
-
       "products": [
         {
           "id": 1,
@@ -207,7 +260,8 @@
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
           "coupon": 15,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "상온"
         },
         {
           "id": 2,
@@ -218,7 +272,8 @@
           "discount": "15",
           "priceBeforeDiscount": 2400,
           "hasCoupon": false,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
         },
         {
           "id": 3,
@@ -229,7 +284,8 @@
           "discount": "15",
           "priceBeforeDiscount": 6900,
           "hasCoupon": false,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "냉장"
         },
         {
           "id": 4,
@@ -241,7 +297,18 @@
           "priceBeforeDiscount": 9900,
           "hasCoupon": true,
           "coupon": 30,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
+        },
+        {
+          "id": 5,
+          "productImage": "https://img-cf.kurly.com/shop/data/goods/1653038246918y0.jpeg",
+          "productName": "춘천 국물 닭갈비 떡볶이",
+          "price": 11900,
+          "isDiscount": false,
+          "hasCoupon": false,
+          "isAccumulate": true,
+          "type": "냉동"
         },
         {
           "id": 1,
@@ -253,7 +320,8 @@
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
           "coupon": 15,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "상온"
         },
         {
           "id": 2,
@@ -264,7 +332,8 @@
           "discount": "15",
           "priceBeforeDiscount": 2400,
           "hasCoupon": false,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
         },
         {
           "id": 3,
@@ -275,7 +344,8 @@
           "discount": "15",
           "priceBeforeDiscount": 6900,
           "hasCoupon": false,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "냉장"
         },
         {
           "id": 4,
@@ -287,9 +357,19 @@
           "priceBeforeDiscount": 9900,
           "hasCoupon": true,
           "coupon": 30,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
         },
         {
+          "id": 5,
+          "productImage": "https://img-cf.kurly.com/shop/data/goods/1653038246918y0.jpeg",
+          "productName": "춘천 국물 닭갈비 떡볶이",
+          "price": 11900,
+          "isDiscount": false,
+          "hasCoupon": false,
+          "isAccumulate": true,
+          "type": "냉동"
+        },{
           "id": 1,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
           "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
@@ -299,7 +379,8 @@
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
           "coupon": 15,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "상온"
         },
         {
           "id": 2,
@@ -310,7 +391,8 @@
           "discount": "15",
           "priceBeforeDiscount": 2400,
           "hasCoupon": false,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
         },
         {
           "id": 3,
@@ -321,7 +403,8 @@
           "discount": "15",
           "priceBeforeDiscount": 6900,
           "hasCoupon": false,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "냉장"
         },
         {
           "id": 4,
@@ -333,9 +416,19 @@
           "priceBeforeDiscount": 9900,
           "hasCoupon": true,
           "coupon": 30,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
         },
         {
+          "id": 5,
+          "productImage": "https://img-cf.kurly.com/shop/data/goods/1653038246918y0.jpeg",
+          "productName": "춘천 국물 닭갈비 떡볶이",
+          "price": 11900,
+          "isDiscount": false,
+          "hasCoupon": false,
+          "isAccumulate": true,
+          "type": "냉동"
+        },{
           "id": 1,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
           "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
@@ -345,7 +438,8 @@
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
           "coupon": 15,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "상온"
         },
         {
           "id": 2,
@@ -356,7 +450,8 @@
           "discount": "15",
           "priceBeforeDiscount": 2400,
           "hasCoupon": false,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
         },
         {
           "id": 3,
@@ -367,7 +462,8 @@
           "discount": "15",
           "priceBeforeDiscount": 6900,
           "hasCoupon": false,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "냉장"
         },
         {
           "id": 4,
@@ -379,7 +475,18 @@
           "priceBeforeDiscount": 9900,
           "hasCoupon": true,
           "coupon": 30,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
+        },
+        {
+          "id": 5,
+          "productImage": "https://img-cf.kurly.com/shop/data/goods/1653038246918y0.jpeg",
+          "productName": "춘천 국물 닭갈비 떡볶이",
+          "price": 11900,
+          "isDiscount": false,
+          "hasCoupon": false,
+          "isAccumulate": true,
+          "type": "냉동"
         }
       ]
     },
@@ -387,7 +494,6 @@
       "title": "지금 가장 핫한 상품",
       "hasListPage": true,
       "description": "",
-
       "products": [
         {
           "id": 1,
@@ -399,7 +505,8 @@
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
           "coupon": 15,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "상온"
         },
         {
           "id": 2,
@@ -410,7 +517,8 @@
           "discount": "15",
           "priceBeforeDiscount": 2400,
           "hasCoupon": false,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
         },
         {
           "id": 3,
@@ -421,7 +529,8 @@
           "discount": "15",
           "priceBeforeDiscount": 6900,
           "hasCoupon": false,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "냉장"
         },
         {
           "id": 4,
@@ -433,7 +542,18 @@
           "priceBeforeDiscount": 9900,
           "hasCoupon": true,
           "coupon": 30,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
+        },
+        {
+          "id": 5,
+          "productImage": "https://img-cf.kurly.com/shop/data/goods/1653038246918y0.jpeg",
+          "productName": "춘천 국물 닭갈비 떡볶이",
+          "price": 11900,
+          "isDiscount": false,
+          "hasCoupon": false,
+          "isAccumulate": true,
+          "type": "냉동"
         },
         {
           "id": 1,
@@ -445,7 +565,8 @@
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
           "coupon": 15,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "상온"
         },
         {
           "id": 2,
@@ -456,7 +577,8 @@
           "discount": "15",
           "priceBeforeDiscount": 2400,
           "hasCoupon": false,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
         },
         {
           "id": 3,
@@ -467,7 +589,8 @@
           "discount": "15",
           "priceBeforeDiscount": 6900,
           "hasCoupon": false,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "냉장"
         },
         {
           "id": 4,
@@ -479,9 +602,19 @@
           "priceBeforeDiscount": 9900,
           "hasCoupon": true,
           "coupon": 30,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
         },
         {
+          "id": 5,
+          "productImage": "https://img-cf.kurly.com/shop/data/goods/1653038246918y0.jpeg",
+          "productName": "춘천 국물 닭갈비 떡볶이",
+          "price": 11900,
+          "isDiscount": false,
+          "hasCoupon": false,
+          "isAccumulate": true,
+          "type": "냉동"
+        },{
           "id": 1,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
           "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
@@ -491,7 +624,8 @@
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
           "coupon": 15,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "상온"
         },
         {
           "id": 2,
@@ -502,7 +636,8 @@
           "discount": "15",
           "priceBeforeDiscount": 2400,
           "hasCoupon": false,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
         },
         {
           "id": 3,
@@ -513,7 +648,8 @@
           "discount": "15",
           "priceBeforeDiscount": 6900,
           "hasCoupon": false,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "냉장"
         },
         {
           "id": 4,
@@ -525,9 +661,19 @@
           "priceBeforeDiscount": 9900,
           "hasCoupon": true,
           "coupon": 30,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
         },
         {
+          "id": 5,
+          "productImage": "https://img-cf.kurly.com/shop/data/goods/1653038246918y0.jpeg",
+          "productName": "춘천 국물 닭갈비 떡볶이",
+          "price": 11900,
+          "isDiscount": false,
+          "hasCoupon": false,
+          "isAccumulate": true,
+          "type": "냉동"
+        },{
           "id": 1,
           "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
           "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
@@ -537,7 +683,8 @@
           "priceBeforeDiscount": 4900,
           "hasCoupon": true,
           "coupon": 15,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "상온"
         },
         {
           "id": 2,
@@ -548,7 +695,8 @@
           "discount": "15",
           "priceBeforeDiscount": 2400,
           "hasCoupon": false,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
         },
         {
           "id": 3,
@@ -559,7 +707,8 @@
           "discount": "15",
           "priceBeforeDiscount": 6900,
           "hasCoupon": false,
-          "isAccumulate": true
+          "isAccumulate": true,
+          "type": "냉장"
         },
         {
           "id": 4,
@@ -571,7 +720,18 @@
           "priceBeforeDiscount": 9900,
           "hasCoupon": true,
           "coupon": 30,
-          "isAccumulate": false
+          "isAccumulate": false,
+          "type": "냉장"
+        },
+        {
+          "id": 5,
+          "productImage": "https://img-cf.kurly.com/shop/data/goods/1653038246918y0.jpeg",
+          "productName": "춘천 국물 닭갈비 떡볶이",
+          "price": 11900,
+          "isDiscount": false,
+          "hasCoupon": false,
+          "isAccumulate": true,
+          "type": "냉동"
         }
       ]
     }
