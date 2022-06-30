@@ -1,0 +1,50 @@
+.amount-count {
+  width: 88px;
+  height: 30px;
+  border: 1px solid #dddfe1;
+  border-radius: 3px;
+
+  .amount-count-button {
+    float: left;
+    width: 28px;
+    height: 28px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+  }
+  .amount-count-minus {
+    background: #fff url(https://res.kurly.com/pc/ico/2010/ico_minus.svg) no-repeat 50% 50%;
+    background-size: 30px 30px;
+
+    &.on {
+      background-image: url(https://res.kurly.com/pc/ico/2010/ico_minus_on.svg);
+    }
+  }
+
+  .amount-count-value {
+    float: left;
+    width: 30px;
+    height: 28px;
+    border: 0;
+    background-color: #fff;
+    font-size: 14px;
+    color: #000;
+    line-height: 18px;
+    text-align: center;
+
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+
+  .amount-count-plus {
+    float: right;
+    background: #fff url(https://res.kurly.com/pc/ico/2010/ico_plus.svg) no-repeat 50% 50%;
+    background-size: 30px 30px;
+
+    &.on {
+      background-image: url(https://res.kurly.com/pc/ico/2010/ico_plus_on.svg);
+    }
+  }
+}

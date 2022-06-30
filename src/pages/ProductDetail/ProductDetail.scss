@@ -1,0 +1,259 @@
+@import "../../styles/common.scss";
+
+.Detail_page{
+    padding-top: 20px;
+    width: 1050px;
+    height: 800px;
+    margin: 0 auto;
+    .product_detail_image{
+        width: 45%;
+        float: left;
+        display: inline-flex;
+        justify-content: left;
+        .product_image{
+            width: 430px;
+        }
+    }
+    .product_information{
+        float: right;
+
+        width: 55%;
+        .detail_title{
+            
+            padding: 10px 0px 29px 0px;
+            
+            .share_button{
+                display: block;
+                position: relative;
+                .share{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    border: none;
+                    background-color: transparent;
+                }
+            }
+            .name_pro{
+                display: block;
+                .product_name{
+                    width: 100%;
+                    display: flex;
+                    left: 0;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 34px;
+                }
+            }
+            .explain{
+                
+                display: block;
+                left: 0;
+                .product_explain{   
+                    display: flex;
+                    left: 0;             
+                    width: 100%;
+                    font-size: 14px;
+                    color : #999;
+                }
+                line-height: 20px;
+            }
+        }
+        
+        .product_price{
+        padding-bottom: 18px;
+        border-bottom: 1px solid rgb(230, 230, 230);
+        .price_tit{
+            
+            .price{
+                
+                display: flex;
+                left: 0;
+                color: black;
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 30px;
+                .won{
+                    padding: 0 7px 0 2px;
+                    font-size: 18px;
+                    line-height: 30px;
+                    vertical-align: 3px;
+                }
+            }
+        }
+        .benefit{
+            .nlog_message{
+                display: flex;
+                left: 0;
+                .nlog_ment{
+                        
+                    display: block;
+                    padding-top: 7px;
+                    font-size: 14px;
+                    color: #5f0080;
+                    line-height: 20px;
+                }
+            }
+            .ylog_message{
+                display: flex;
+                left: 0;
+                padding-top: 10px;
+                .nlog_bar{
+                    color: rgb(215 , 215, 215);
+                    padding: 0px 5px 0px 5px;
+                }
+                .Rating{
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #949296;
+                    
+                }
+                .Accumulate{
+                    font-size: 14px;
+                    color: black;
+                    .accumulate_price{
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        }
+        .product_detail_info{
+        .list{
+            padding-bottom: 18px;
+            border-bottom: 1px solid #f4f4f4;
+        }
+        
+        .sales_Unit{
+            padding-bottom: 18px;
+            border-bottom: 1px solid #f4f4f4;
+        }
+        dl{
+            padding-top: 18px;
+            dt{
+                text-align: left;
+                float: left;
+                width: 128px;
+                font-size: 14px;
+                color: #666;
+                line-height: 20px;
+            }
+            .amount_sale{
+                padding-bottom: 5px;
+            }
+            dd{
+                text-align: left;
+                overflow: hidden;
+                font-size: 14px;
+                line-height: 20px;
+                
+                span{
+                // display: block;
+                    padding-top: 4px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: #666;
+                    line-height: 16px;
+                    display: flex;
+                    justify-content: left;
+                }
+            }
+        }
+        }
+        .buy_info{
+        .tit_buy{
+                padding: 30px 0 20px;
+                text-align: right;
+                color: black;
+                .total_price_ment{
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 20px;
+                    vertical-align: 2px;
+                }
+                .total_price{
+                    padding-left: 8px;
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 32px;
+                }
+                .won{
+                    padding-left: 2px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    vertical-align: -1px;
+                }
+                .cart_button{
+                    .point_txt{
+                        padding-top: 13px;
+                        font-size: 13px;
+                        .icon{
+                            padding-right: 3px;
+                            .accumulate-icon{
+                                display: inline-block;
+                                width: 38px;
+                                height: 20px;
+                                margin-right: 2px;
+                                border-radius: 10px;
+                                background-color: #ffbf00;
+                                font-weight: 700;
+                                font-size: 11px;
+                                color: #fff;
+                                line-height: 20px;
+                                text-align: center;
+                                vertical-align: 1px;
+                            }
+                        }
+                        .accumulate-ment{
+                        }
+                        .total-accumulate-price{
+                            font-weight: 500;
+                        }
+                    }
+                }
+        }
+        }
+        .total_button{
+            .button_list{
+                margin-left: 18px;
+                .heart{
+                    
+                    display: inline-block;
+                    float: left;
+                }
+                .bell{
+                    display: inline-block;
+                    float: left;
+                    margin-left: 8px;
+                }
+                button{
+                    
+                    width: 56px;
+                    height: 56px;                    
+                    border: 1px solid #ddd;
+                    border-radius: 3px;
+                    color: transparent;
+                    background-size: 32px;
+                    background-color: transparent;   
+                }
+            }
+            
+            .cart_button{
+                text-align: right;
+                .product-cart-modal--button-put-to-cart{
+                    width: 432px;
+                    height: 56px;
+                    border: none;
+                    border-radius: 3px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: normal;
+                    color: #fff;
+                    background-color: $main-purple;
+                    
+                }
+            }
+        }
+    }
+}

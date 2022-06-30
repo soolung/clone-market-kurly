@@ -1,0 +1,162 @@
+@import '../../styles/common.scss';
+
+.ReactModalPortal {
+  position: relative;
+  z-index: 9999;
+  padding: 0 30px;
+
+  .product-cart-modal--overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .product-cart-modal {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
+      border: 1px solid rgb(204, 204, 204);
+      background: white;
+      opacity: 1;
+      overflow: auto;
+      border-radius: 9px;
+      outline: none;
+      padding: 0 30px;
+
+      .product-cart-modal--information-wrapper {
+        padding-top: 30px;
+        min-height: 148px;
+
+        .product-cart-modal--information {
+          width: 380px;
+          padding: 11px 0;
+          font-size: 14px;
+          letter-spacing: 0;
+
+          .product-cart-modal--detail-information {
+
+            .product-cart-modal--detail-information-no-accumulation {
+              padding-top: -3px;
+              font-size: 12px;
+              color: #999;
+            }
+          }
+
+          .product-cart-modal--price {
+            width: 100%;
+            height: 37px;
+            padding-top: 7px;
+
+            .product-cart-modal--price-price {
+              float: left;
+              padding: 7px 0 0;
+              font-size: 14px;
+              font-weight: 700;
+              letter-spacing: 0;
+            }
+
+            .product-cart-modal--price-amount {
+              float: right;
+            }
+          }
+        }
+      }
+
+      .product-cart-modal--total {
+        width: 100%;
+        height: 70px;
+        padding-top: 20px;
+
+        .product-cart-modal--total-wrapper {
+          height: 24px;
+
+          .product-cart-modal--total-total {
+            float: left;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -.67px;
+            font-weight: 500;
+          }
+
+          .product-cart-modal--total-amount {
+            float: right;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: -1px;
+            font-weight: 700;
+            padding-right: 3px;
+          }
+
+          .product-cart-modal--total-won {
+            float: right;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -.67px;
+            vertical-align: 3px;
+            font-weight: 500;
+          }
+        }
+
+        .product-cart-modal--total-accumulation {
+          padding-top: 6px;
+          text-align: right;
+
+          .product-cart-modal--total-accumulation-badge {
+            display: inline-block;
+            width: 38px;
+            height: 20px;
+            margin-right: 4px;
+            border-radius: 10px;
+            background-color: #ffbf00;
+            font-weight: 700;
+            font-size: 11px;
+            color: white;
+            line-height: 20px;
+            text-align: center;
+            vertical-align: 1px;
+          }
+
+          .product-cart-modal--total-accumulation-description {
+            font-size: 14px;
+            line-height: 20px;
+
+            .product-cart-modal--total-accumulation-price {
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      .product-cart-modal--button {
+        width: 100%;
+        padding: 20px 0 30px;
+        height: 106px;
+
+        .basic-button {
+          font-size: 17px;
+          font-weight: 500;
+          letter-spacing: 0;
+        }
+
+        .product-cart-modal--button-cancel {
+          float: left;
+          width: 49%;
+          height: 56px;
+          color: $dark-gray;
+          border: 1px solid #ddd;
+        }
+
+        .product-cart-modal--button-put-to-cart {
+          float: right;
+          width: 49%;
+          height: 56px;
+        }
+      }
+    }
+  }
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}

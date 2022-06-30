@@ -4,26 +4,35 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Main from "./pages/Main/Main";
 import Footer from "./components/Footer/Footer";
 import {createContext, useMemo, useState} from "react";
+import ProductDetail from "./pages/ProductDetail/ProductDetail";
+import Cart from "./pages/Cart/Cart";
 
 export const UserContext = createContext({"user": null});
+export const CartContext = createContext([]);
 
 function App() {
 
     const [user, setUser] = useState({});
-    const value = useMemo(() => ({ user, setUser}), [user]);
+    const [cart, setCart] = useState([]);
+    const cartValue = useMemo(() => ({ cart, setCart }), [cart]);
+    const userValue = useMemo(() => ({ user, setUser }), [user]);
 
 
     return (
         <>
-            <UserContext.Provider value={value}>
+            <UserContext.Provider value={userValue}>
+                <CartContext.Provider value={cartValue}>
                 <BrowserRouter>
                     <Header/>
                     <Routes>
                         <Route path="/" element={<Main/>}/>
                         <Route path="/login" element={<Login/>}/>
+                        <Route path="/product/:id" element={<ProductDetail />}/>
+                        <Route path="/cart" element={<Cart/>}/>
                     </Routes>
                     <Footer/>
                 </BrowserRouter>
+                </CartContext.Provider>
             </UserContext.Provider>
         </>
     );

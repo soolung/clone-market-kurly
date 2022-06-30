@@ -2,11 +2,13 @@ import {useContext, useState} from "react";
 import "./Header.scss";
 import categoryData from "./category.json";
 import {Link} from "react-router-dom";
-import {UserContext} from "../../App";
+import {CartContext, UserContext} from "../../App";
+import {checkObjectIsEmpty} from "../../utils/checkObjectIsEmpty";
 
 export default function Header() {
 
     const {user} = useContext(UserContext);
+    const {cart} = useContext(CartContext);
 
     const [searchText, setSearchText] = useState("");
     const [searchTextOnFocus, setSearchTextOnFocus] = useState(false);
@@ -22,8 +24,6 @@ export default function Header() {
     const resetSearchText = e => {
         setSearchText("");
     }
-
-    const checkObjectIsEmpty = obj => JSON.stringify(obj) === '{}';
 
     return (
         <>
@@ -42,7 +42,7 @@ export default function Header() {
                                 </>
                                 :
                                 <li className="menu sub-list-menu">
-                                    <spn className="grade">{user.grade}</spn>
+                                    <span className="grade">{user.grade.grade}</span>
                                     <Link to="">{user.name} 님 ▾</Link>
                                     <ul className="list-item-sub">
                                         <li>
@@ -123,7 +123,7 @@ export default function Header() {
                             <div className="category-list-box">
                                 <ul className="category-list">
                                     {categoryData.category.map(c => (
-                                        <li className="category-list-item" onMouseEnter={() => console.log(c.id)}>
+                                        <li className="category-list-item">
                                             <img className="category-list-item--icon icon-off" src={c.iconImage}
                                                  alt="icon"/>
                                             <img className="category-list-item--icon icon-on" src={c.onIconImage}
@@ -210,12 +210,12 @@ export default function Header() {
                             <Link to=""/>
                         </div>
                         <div className="cart other-item">
-                            <Link to=""/>
+                            <Link to="/cart"/>
 
-                            { checkObjectIsEmpty(user) ?
+                            { cart.length === 0 ?
                                 <></>
                                 :
-                                <span className="cart-count">{user.cart.length}</span>
+                                <span className="cart-count">{cart.length}</span>
                             }
                         </div>
                     </div>

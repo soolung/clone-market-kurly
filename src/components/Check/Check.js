@@ -4,6 +4,7 @@ export default function Check(props) {
 
     return (
         <input
+            className={props.className}
             type="checkbox"
             checked={props.isChecked}
             onChange={props.willDo}
