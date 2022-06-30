@@ -6,6 +6,7 @@ import SelectAll from "../../components/Cart/SelectAll/SelectAll";
 import typeData from "./typeData.json";
 import Button from "../../components/Button/Button";
 import {Link} from "react-router-dom";
+import {checkObjectIsEmpty} from "../../utils/checkObjectIsEmpty";
 
 export default function Cart() {
 
@@ -70,8 +71,6 @@ export default function Cart() {
         checkAllCart.forEach(c => c.isChecked = true);
         setCart(checkAllCart);
     }, [])
-
-    const checkObjectIsEmpty = obj => JSON.stringify(obj) === '{}';
 
     return (
         <section>
