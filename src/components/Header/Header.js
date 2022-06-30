@@ -3,6 +3,7 @@ import "./Header.scss";
 import categoryData from "./category.json";
 import {Link} from "react-router-dom";
 import {CartContext, UserContext} from "../../App";
+import {checkObjectIsEmpty} from "../../utils/checkObjectIsEmpty";
 
 export default function Header() {
 
@@ -23,8 +24,6 @@ export default function Header() {
     const resetSearchText = e => {
         setSearchText("");
     }
-
-    const checkObjectIsEmpty = obj => JSON.stringify(obj) === '{}';
 
     return (
         <>

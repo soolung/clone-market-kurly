@@ -4,14 +4,13 @@ import {useContext, useState} from "react";
 import AmountButton from "../AmountButton/AmountButton";
 import Button from "../Button/Button";
 import {CartContext, UserContext} from "../../App";
+import {checkObjectIsEmpty} from "../../utils/checkObjectIsEmpty";
 
 export default function ProductCartModal(props) {
     const [amount, setAmount] = useState(1)
 
     const {user} = useContext(UserContext);
     const {cart, setCart} = useContext(CartContext);
-
-    const checkObjectIsEmpty = obj => JSON.stringify(obj) === '{}';
 
     const getProductIndexInCart = () => {
         for (let i = 0; i < cart.length; i++) {

@@ -4,6 +4,7 @@ import {CartContext, UserContext} from "../../App";
 import AmountButton from "../../components/AmountButton/AmountButton";
 import {useParams} from "react-router-dom";
 import {getProductDetailById} from "./getProductDetailService";
+import {checkObjectIsEmpty} from "../../utils/checkObjectIsEmpty";
 
 export default function ProduceDetail() {
 
@@ -41,8 +42,6 @@ export default function ProduceDetail() {
         setCart([...updatedCart]);
     };
 
-    const checkObjectIsEmpty = obj => JSON.stringify(obj) === '{}';
-
     return (
         <section>
             <div className="Detail_page">
@@ -53,7 +52,8 @@ export default function ProduceDetail() {
                     <p className="detail_title">
                         <span className="share_button">
                             <button type="button" className="share">
-                                <img src="https://res.kurly.com/mobile/service/goodsview/1910/ico_view_sns.png" alt="share"/>
+                                <img src="https://res.kurly.com/mobile/service/goodsview/1910/ico_view_sns.png"
+                                     alt="share"/>
                             </button>
                         </span>
                         <div className="name_pro"><span className="product_name">{product.productName}</span></div>
@@ -65,38 +65,38 @@ export default function ProduceDetail() {
                         <span className="price_tit">
                             <div className="price">
                                 {(product.price).toLocaleString()}
-                                    <span className="won">원</span>
+                                <span className="won">원</span>
                             </div>
 
                         </span>
                         <span className="benefit">
 
                            {
-                            checkObjectIsEmpty(user) ?
-                            // user X
-                            <div className="nlog_message">
+                               checkObjectIsEmpty(user) ?
+                                   // user X
+                                   <div className="nlog_message">
                                 <span className="nlog_ment">
                                     로그인 후, 적립혜택이 제공됨니다.
                                 </span>
-                            </div>
-                            : <div className="ylog_message">
+                                   </div>
+                                   : <div className="ylog_message">
                                 <span className="Rating">
                                     {user.grade.grade}&nbsp;
                                     {user.grade.accumulationPercent * 100}
                                     <span>%</span>
                                 </span>
-                                <span className="nlog_bar">
+                                       <span className="nlog_bar">
                                     |
                                 </span>
-                                <span className="Accumulate">
+                                       <span className="Accumulate">
                                     개당&nbsp;
-                                    <span className="accumulate_price">
+                                           <span className="accumulate_price">
                                     {Math.round(product.price * user.grade.accumulationPercent)}
-                                     원 적립
+                                               원 적립
                                     </span>
                                 </span>
-                            </div>
-                            }
+                                   </div>
+                           }
                         </span>
                     </p>
                     <div className="product_detail_info">
@@ -146,17 +146,17 @@ export default function ProduceDetail() {
                                         <span className="icon">
                                             <span className="accumulate-icon">적립</span>
                                         </span>
-                                        <span>
+                                    <span>
                                         {
                                             checkObjectIsEmpty(user) ?
                                                 <span className="accumulate-ment">
                                                     로그인 후, 적립혜택 제공
                                                 </span>
-                                            :
-                                            <span>
+                                                :
+                                                <span>
                                                 <span className="accumulate-ment">구매 시</span> &nbsp;
-                                                <span className="total-accumulate-price">
-                                                    {Math.round((product.price * user.grade.accumulationPercent)* amount)}원 적립
+                                                    <span className="total-accumulate-price">
+                                                    {Math.round((product.price * user.grade.accumulationPercent) * amount)}원 적립
                                                 </span>
                                             </span>
                                         }
@@ -169,21 +169,25 @@ export default function ProduceDetail() {
                         <p className="button_list">
                             <div className="heart">
                                 <button onClick={() => setGym(!gym)}>
-                                    <img src={gym ? "https://res.kurly.com/pc/service/pick/btn-itemdetail-like-on.svg" : "https://res.kurly.com/pc/service/pick/btn-itemdetail-like.svg"} alt="gym" />
+                                    <img
+                                        src={gym ? "https://res.kurly.com/pc/service/pick/btn-itemdetail-like-on.svg" : "https://res.kurly.com/pc/service/pick/btn-itemdetail-like.svg"}
+                                        alt="gym"/>
                                 </button>
 
                             </div>
                             <div className="bell">
                                 <button>
-                                    <img src="https://res.kurly.com/pc/service/goodsview/btn-itemdetail-restock-dim.svg" alt="bell"/>
+                                    <img src="https://res.kurly.com/pc/service/goodsview/btn-itemdetail-restock-dim.svg"
+                                         alt="bell"/>
                                 </button>
                             </div>
                         </p>
                         <p className="cart_button">
-                        <button
-                            className="product-cart-modal--button-put-to-cart"
-                            onClick={putProductToCart}
-                        >장바구니 담기</button>
+                            <button
+                                className="product-cart-modal--button-put-to-cart"
+                                onClick={putProductToCart}
+                            >장바구니 담기
+                            </button>
                         </p>
                     </div>
                 </div>
