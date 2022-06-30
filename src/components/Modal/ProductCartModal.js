@@ -3,14 +3,16 @@ import './ProductCartModal.scss';
 import {useContext, useState} from "react";
 import AmountButton from "../AmountButton/AmountButton";
 import Button from "../Button/Button";
-import {UserContext, CartContext} from "../../App";
+import {CartContext, UserContext} from "../../App";
 
 export default function ProductCartModal(props) {
     const [amount, setAmount] = useState(1)
 
     const {user} = useContext(UserContext);
     const {cart, setCart} = useContext(CartContext);
+
     const checkObjectIsEmpty = obj => JSON.stringify(obj) === '{}';
+
     const getProductIndexInCart = () => {
         for (let i = 0; i < cart.length; i++) {
             if (props.product.id === cart[i].product.id) {
@@ -19,6 +21,7 @@ export default function ProductCartModal(props) {
         }
         return -1;
     }
+
     const putProductToCart = () => {
         let updatedCart = [...cart];
         let productIndex = getProductIndexInCart();
@@ -34,10 +37,6 @@ export default function ProductCartModal(props) {
         setCart([...updatedCart]);
         props.closeModal();
     };
-
-    if (props.isOpen) {
-        document.body.style.overflow = "hidden";
-    }
 
     return (
         <Modal

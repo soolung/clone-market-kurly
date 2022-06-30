@@ -1,10 +1,13 @@
 import "./ProductDetail.scss";
-import productData from "./productDetail.json";
-import { useContext, useState } from "react";
-import {UserContext, CartContext} from "../../App";
+import {useContext, useState} from "react";
+import {CartContext, UserContext} from "../../App";
 import AmountButton from "../../components/AmountButton/AmountButton";
+import {useParams} from "react-router-dom";
+import {getProductDetailById} from "./getProductDetailService";
 
-export default function ProduceDetail(props) {
+export default function ProduceDetail() {
+
+    const {id} = useParams();
 
     const {user} = useContext(UserContext);
     const {cart, setCart} = useContext(CartContext);
@@ -12,9 +15,11 @@ export default function ProduceDetail(props) {
     const [amount, setAmount] = useState(1);
     const [gym, setGym] = useState(false);
 
+    const product = getProductDetailById(id);
+
     const getProductIndexInCart = () => {
         for (let i = 0; i < cart.length; i++) {
-            if (props.product.id === cart[i].product.id) {
+            if (product.id === cart[i].product.id) {
                 return i;
             }
         }
@@ -26,7 +31,7 @@ export default function ProduceDetail(props) {
         let productIndex = getProductIndexInCart();
         if (productIndex === -1) {
             updatedCart.push({
-                product: props.product,
+                product: product,
                 amount: amount,
             });
         } else {
@@ -34,7 +39,6 @@ export default function ProduceDetail(props) {
         }
 
         setCart([...updatedCart]);
-        props.closeModal();
     };
 
     const checkObjectIsEmpty = obj => JSON.stringify(obj) === '{}';
@@ -43,7 +47,7 @@ export default function ProduceDetail(props) {
         <section>
             <div className="Detail_page">
                 <div className="product_detail_image">
-                    <img src={productData.productImage} className="product_image" alt="product"/>
+                    <img src={product.productImage} className="product_image" alt="product"/>
                 </div>
                 <div className="product_information">
                     <p className="detail_title">
@@ -52,15 +56,15 @@ export default function ProduceDetail(props) {
                                 <img src="https://res.kurly.com/mobile/service/goodsview/1910/ico_view_sns.png" alt="share"/>
                             </button>
                         </span>
-                        <div className="name_pro"><span className="product_name">{productData.productName}</span></div>
+                        <div className="name_pro"><span className="product_name">{product.productName}</span></div>
                         <div className="explain">
-                            <span className="product_explain">{productData.productMessage}</span>
+                            <span className="product_explain">{product.productMessage}</span>
                         </div>
                     </p>
                     <p className="product_price">
                         <span className="price_tit">
                             <div className="price">
-                                {(productData.price).toLocaleString()}
+                                {(product.price).toLocaleString()}
                                     <span className="won">원</span>
                             </div>
 
@@ -87,36 +91,35 @@ export default function ProduceDetail(props) {
                                 <span className="Accumulate">
                                     개당&nbsp;
                                     <span className="accumulate_price">
-                                    {Math.round(productData.price * user.grade.accumulationPercent)}
+                                    {Math.round(product.price * user.grade.accumulationPercent)}
                                      원 적립
                                     </span>
                                 </span>
                             </div>
-                            // user O
                             }
                         </span>
                     </p>
                     <div className="product_detail_info">
                         <dl className="sales_Unit">
                             <dt>판매단위</dt>
-                            <dd>{productData.salesUnit}</dd>
+                            <dd>{product.salesUnit}</dd>
                         </dl>
                         <dl className="list">
                             <dt>중량/용량</dt>
-                            <dd>{productData.capacity}</dd>
+                            <dd>{product.capacity}</dd>
                         </dl>
                         <dl className="list">
                             <dt>배송구분</dt>
-                            <dd>{productData.deliveryType}</dd>
+                            <dd>{product.deliveryType}</dd>
                         </dl>
                         <dl className="list">
                             <dt>포장타입</dt>
                             <dd>
                                 <div className="type">
-                                    {productData.pakcage.packType}
+                                    {product.package.packType}
                                 </div>
                                 <span className="pack_message">
-                                    {productData.pakcage.message}
+                                    {product.package.message}
                                 </span>
                             </dd>
                         </dl>
@@ -135,7 +138,7 @@ export default function ProduceDetail(props) {
                     <div className="buy_info">
                         <p className="tit_buy">
                             <span className="total_price_ment">총 상품금액 : </span>
-                            <span className="total_price">{(Math.round(productData.price * amount)).toLocaleString()}
+                            <span className="total_price">{(Math.round(product.price * amount)).toLocaleString()}
                             </span>
                             <span className="won">원</span>
                             <div className="cart_button">
@@ -153,7 +156,7 @@ export default function ProduceDetail(props) {
                                             <span>
                                                 <span className="accumulate-ment">구매 시</span> &nbsp;
                                                 <span className="total-accumulate-price">
-                                                    {Math.round((productData.price * user.grade.accumulationPercent)* amount)}원 적립
+                                                    {Math.round((product.price * user.grade.accumulationPercent)* amount)}원 적립
                                                 </span>
                                             </span>
                                         }
