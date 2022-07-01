@@ -49,7 +49,7 @@ export default function ProduceDetail() {
                     <img src={product.productImage} className="product_image" alt="product"/>
                 </div>
                 <div className="product_information">
-                    <p className="detail_title">
+                    <div className="detail_title">
                         <span className="share_button">
                             <button type="button" className="share">
                                 <img src="https://res.kurly.com/mobile/service/goodsview/1910/ico_view_sns.png"
@@ -60,8 +60,8 @@ export default function ProduceDetail() {
                         <div className="explain">
                             <span className="product_explain">{product.productMessage}</span>
                         </div>
-                    </p>
-                    <p className="product_price">
+                    </div>
+                    <div className="product_price">
                         <span className="price_tit">
                             <div className="price">
                                 {(product.price).toLocaleString()}
@@ -98,7 +98,7 @@ export default function ProduceDetail() {
                                    </div>
                            }
                         </span>
-                    </p>
+                    </div>
                     <div className="product_detail_info">
                         <dl className="sales_Unit">
                             <dt>판매단위</dt>
@@ -136,13 +136,13 @@ export default function ProduceDetail() {
                         </dl>
                     </div>
                     <div className="buy_info">
-                        <p className="tit_buy">
+                        <div className="tit_buy">
                             <span className="total_price_ment">총 상품금액 : </span>
                             <span className="total_price">{(Math.round(product.price * amount)).toLocaleString()}
                             </span>
                             <span className="won">원</span>
                             <div className="cart_button">
-                                <p className="point_txt">
+                                <div className="point_txt">
                                         <span className="icon">
                                             <span className="accumulate-icon">적립</span>
                                         </span>
@@ -161,12 +161,12 @@ export default function ProduceDetail() {
                                             </span>
                                         }
                                         </span>
-                                </p>
+                                </div>
                             </div>
-                        </p>
+                        </div>
                     </div>
                     <div className="total_button">
-                        <p className="button_list">
+                        <div className="button_list">
                             <div className="heart">
                                 <button onClick={() => setGym(!gym)}>
                                     <img
@@ -181,14 +181,14 @@ export default function ProduceDetail() {
                                          alt="bell"/>
                                 </button>
                             </div>
-                        </p>
-                        <p className="cart_button">
+                        </div>
+                        <div className="cart_button">
                             <button
                                 className="product-cart-modal--button-put-to-cart"
                                 onClick={putProductToCart}
                             >장바구니 담기
                             </button>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
