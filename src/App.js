@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import {createContext, useMemo, useState} from "react";
 import ProductDetail from "./pages/ProductDetail/ProductDetail";
 import Cart from "./pages/Cart/Cart";
+import ScrollToTop from "./utils/ScrollToTop";
 
 export const UserContext = createContext({"user": null});
 export const CartContext = createContext([]);
@@ -14,24 +15,25 @@ function App() {
 
     const [user, setUser] = useState({});
     const [cart, setCart] = useState([]);
-    const cartValue = useMemo(() => ({ cart, setCart }), [cart]);
-    const userValue = useMemo(() => ({ user, setUser }), [user]);
-
+    const cartValue = useMemo(() => ({cart, setCart}), [cart]);
+    const userValue = useMemo(() => ({user, setUser}), [user]);
 
     return (
         <>
             <UserContext.Provider value={userValue}>
                 <CartContext.Provider value={cartValue}>
-                <BrowserRouter>
-                    <Header/>
-                    <Routes>
-                        <Route path="/" element={<Main/>}/>
-                        <Route path="/login" element={<Login/>}/>
-                        <Route path="/product/:id" element={<ProductDetail />}/>
-                        <Route path="/cart" element={<Cart/>}/>
-                    </Routes>
-                    <Footer/>
-                </BrowserRouter>
+                    <BrowserRouter>
+                        <Header/>
+                        <ScrollToTop>
+                            <Routes>
+                                <Route path="/" element={<Main/>}/>
+                                <Route path="/login" element={<Login/>}/>
+                                <Route path="/product/:id" element={<ProductDetail/>}/>
+                                <Route path="/cart" element={<Cart/>}/>
+                            </Routes>
+                        </ScrollToTop>
+                        <Footer/>
+                    </BrowserRouter>
                 </CartContext.Provider>
             </UserContext.Provider>
         </>
