@@ -62,15 +62,21 @@ export default function ProduceDetail() {
                         </div>
                     </div>
                     <div className="product_price">
-                        <span className="price_tit">
+                        <div className="price_tit">
                             <div className="price">
-                                {(product.price).toLocaleString()}
+                                {product.isDiscount &&
+                                    <span className="price-discount-percent">
+                                        {product.discount}%
+                                    </span>
+                                }
+                                {product.price.toLocaleString()}
                                 <span className="won">원</span>
                             </div>
-
-                        </span>
-                        <span className="benefit">
-
+                        </div>
+                        <div className="price-before-discount">
+                            {product.priceBeforeDiscount.toLocaleString()}원
+                        </div>
+                        <div className="benefit">
                            {checkObjectIsEmpty(user) ?
                                // user X
                                <div className="nlog_message">
@@ -97,7 +103,7 @@ export default function ProduceDetail() {
                                 </span>
                                </div>
                            }
-                        </span>
+                        </div>
                     </div>
                     <div className="product_detail_info">
                         <dl className="sales_Unit">

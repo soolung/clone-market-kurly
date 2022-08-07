@@ -71,31 +71,46 @@
       border-bottom: 1px solid rgb(230, 230, 230);
 
       .price_tit {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+
         .price {
-          display: flex;
           left: 0;
           color: black;
-          font-weight: 500;
           font-size: 28px;
           line-height: 30px;
+          font-weight: 600;
+
+          .price-discount-percent {
+            color: $point-orange;
+            padding-right: 9px;
+          }
 
           .won {
-            padding: 0 7px 0 2px;
+            padding-left: 4px;
             font-size: 18px;
-            line-height: 30px;
-            vertical-align: 3px;
           }
         }
       }
 
+      .price-before-discount {
+        text-align: left;
+        color: #999;
+        font-size: 16px;
+        text-decoration: line-through;
+        padding-top: 9px;
+      }
+
       .benefit {
+        margin-top: 14px;
+
         .nlog_message {
           display: flex;
           left: 0;
 
           .nlog_ment {
             display: block;
-            padding-top: 7px;
             font-size: 14px;
             color: #5f0080;
             line-height: 20px;
@@ -106,11 +121,10 @@
           display: flex;
           align-items: center;
           left: 0;
-          padding-top: 10px;
 
           .nlog_bar {
             color: rgb(215, 215, 215);
-            padding: 0px 5px 0px 5px;
+            padding: 0 5px 0 5px;
           }
 
           .Rating {
