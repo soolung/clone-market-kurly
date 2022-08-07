@@ -71,31 +71,31 @@ export default function ProduceDetail() {
                         </span>
                         <span className="benefit">
 
-                           {
-                               checkObjectIsEmpty(user) ?
-                                   // user X
-                                   <div className="nlog_message">
+                           {checkObjectIsEmpty(user) ?
+                               // user X
+                               <div className="nlog_message">
                                 <span className="nlog_ment">
                                     로그인 후, 적립혜택이 제공됨니다.
                                 </span>
-                                   </div>
-                                   : <div className="ylog_message">
+                               </div>
+                               :
+                               <div className="ylog_message">
                                 <span className="Rating">
                                     {user.grade.grade}&nbsp;
                                     {user.grade.accumulationPercent * 100}
                                     <span>%</span>
                                 </span>
-                                       <span className="nlog_bar">
+                                   <span className="nlog_bar">
                                     |
                                 </span>
-                                       <span className="Accumulate">
+                                   <span className="Accumulate">
                                     개당&nbsp;
-                                           <span className="accumulate_price">
+                                       <span className="accumulate_price">
                                     {Math.round(product.price * user.grade.accumulationPercent)}
-                                               원 적립
+                                           원 적립
                                     </span>
                                 </span>
-                                   </div>
+                               </div>
                            }
                         </span>
                     </div>
@@ -147,15 +147,14 @@ export default function ProduceDetail() {
                                             <span className="accumulate-icon">적립</span>
                                         </span>
                                     <span>
-                                        {
-                                            checkObjectIsEmpty(user) ?
-                                                <span className="accumulate-ment">
+                                        {checkObjectIsEmpty(user) ?
+                                            <span className="accumulate-ment">
                                                     로그인 후, 적립혜택 제공
-                                                </span>
-                                                :
-                                                <span>
+                                            </span>
+                                            :
+                                            <span>
                                                 <span className="accumulate-ment">구매 시</span> &nbsp;
-                                                    <span className="total-accumulate-price">
+                                                <span className="total-accumulate-price">
                                                     {Math.round((product.price * user.grade.accumulationPercent) * amount)}원 적립
                                                 </span>
                                             </span>
