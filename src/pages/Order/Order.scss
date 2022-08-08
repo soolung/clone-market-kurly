@@ -1,0 +1,22 @@
+@import "../../styles/common";
+
+section {
+
+  .order-title {
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 28px;
+  }
+
+  .order-article--content {
+    width: 100%;
+    border-bottom: 1px solid #f4f4f4;
+
+    .order-product--light {
+      padding: 28px 0;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+    }
+  }
+}

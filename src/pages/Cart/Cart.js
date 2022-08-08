@@ -5,13 +5,15 @@ import CartProductType from "../../components/Cart/CartProductType/CartProductTy
 import SelectAll from "../../components/Cart/SelectAll/SelectAll";
 import typeData from "./typeData.json";
 import Button from "../../components/Button/Button";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {checkObjectIsEmpty} from "../../utils/checkObjectIsEmpty";
 
 export default function Cart() {
 
     const {cart, setCart} = useContext(CartContext);
     const {user} = useContext(UserContext);
+
+    const navigation = useNavigate();
 
     const [checkedItemCount, setCheckedItemCount] = useState(cart.length);
     const [allChecked, setAllChecked] = useState(true);
@@ -200,7 +202,7 @@ export default function Cart() {
                         <Button
                             className={`cart-result-order-button ${(cart.length === 0 || checkObjectIsEmpty(user) || checkedItemCount === 0) && "de-cart"}`}
                             color="purple"
-                            willdo={() => console.log("구현X")}
+                            willDo={() => navigation("/order")}
                             text={cart.length > 0 ? checkObjectIsEmpty(user) ? "로그인 해주세요" : checkedItemCount > 0 ? "주문하기" : "상품을 선택해주세요" : "상품을 담아주세요"}
                         />
                         <div className="cart-result-notice">
