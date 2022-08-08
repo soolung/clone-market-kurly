@@ -36,7 +36,16 @@ export default function Login() {
                 delivery: {
                     address: "경기도 평택시 상서재로5길 15 (평택센트럴자이1단지) 104동 101호",
                     type: "택배배송",
+                    more: {
+                        recipient: "김한울",
+                        phoneNumber: "010-1234-5678",
+                        pickUpLocation: "문 앞",
+                        commonDoor: "자유 출입 가능",
+                        finishedMessageTime: "배송 직후",
+                    },
                 },
+                phoneNumber: "010-1234-5678",
+                email: "dev.gimhanul@gmail.com",
             }
             setUser(user);
         } else if (loginInput.id === "sookyoungwoo" && loginInput.password === "sookyoungwoo") {
@@ -49,6 +58,15 @@ export default function Login() {
                 delivery: {
                     address: "동래버스에서 내려서 갈 수 있는 온천천 근처 오두막집에서 왼쪼긍로 꺾으렴",
                     type: "샛별배송",
+                },
+                phoneNumber: "010-5678-1234",
+                email: "sookyung@wo.o",
+                more: {
+                    recipient: "우수경",
+                    phoneNumber: "010-5678-1234",
+                    pickUpLocation: "택배함",
+                    commonDoor: "공동현관 비밀번호",
+                    finishedMessageTime: "오전 7시",
                 },
             }
             setUser(user);

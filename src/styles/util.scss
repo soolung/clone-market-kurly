@@ -1,6 +1,6 @@
 @import "./common";
 
-.purple {
+.text-purple {
   color: $main-purple;
 }
 
@@ -12,8 +12,14 @@
   background-repeat: no-repeat;
   background-size: 30px 30px;
   background-position: 50% 50%;
+  border: none;
+  outline: none;
 
   &.upside-down {
     transform: rotate(180deg);
   }
+}
+
+.bottom-bar {
+  border-bottom: 1px solid #f4f4f4;
 }

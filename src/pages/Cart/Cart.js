@@ -122,7 +122,7 @@ export default function Cart() {
                                 <div className="cart-result-box--delivery-content">
                                     {checkObjectIsEmpty(user) ?
                                         <>
-                                            <span className="purple">배송지를 입력</span>하고 <br/>
+                                            <span className="text-purple">배송지를 입력</span>하고 <br/>
                                             배송유형을 확인해 보세요!
                                             <Link to="">
                                                 <button className="cart-result-box--delivery-content-btn">

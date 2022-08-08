@@ -33,6 +33,12 @@
     color: $main-purple;
   }
 
+  &.white-gray {
+    background-color: white;
+    color: $dark-gray;
+    border: 1px solid #ddd;
+  }
+
   &.purple {
     border: none;
     background-color: $main-purple;
