@@ -87,6 +87,148 @@ section {
     width: 100%;
   }
 
+  .order-price-area {
+    display: inline-block;
+
+    .order-price-area--order-article {
+      width: 742px;
+      display: inline-block;
+      float: left;
+
+      .order-price-area--order-article--coupon {
+        position: relative;
+        width: 100%;
+        height: 44px;
+        padding: 0 54px 0 16px;
+        border: 1px solid #ddd;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        background: #fafafa;
+        color: #ccc;
+        margin-bottom: 10px;
+
+        .order-price-area--order-article--coupon-drop-down {
+          position: absolute;
+          top: 10px;
+          right: 16px;
+        }
+      }
+
+      .order-price-area--order-article--coupon-more {
+        color: $main-purple;
+      }
+
+      .order-price-area--order-article--accumulate-price {
+        color: #ccc;
+        background-color: #fafafa;
+        border-radius: 3px;
+        font-size: 14px;
+        height: 44px;
+        width: 168px;
+        margin-right: 8px;
+        padding: 0 11px 1px 15px;
+        border: 1px solid #ddd;
+        font-weight: 400;
+        line-height: 42px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .order-price-area--order-article--accumulate-price-use-all {
+        color: #ddd;
+        padding: 0 10px;
+        width: 100px;
+        height: 44px;
+        border-radius: 3px;
+        background-color: #fff;
+        font-size: 14px;
+        cursor: default;
+        border: 1px solid #ddd;
+        font-weight: 600;
+        letter-spacing: normal;
+      }
+
+      .order-price-area--order-article--accumulate-price-possible-to-use {
+        margin: 10px 0 16px;
+        font-size: 14px;
+        line-height: 20px;
+        color: $medium-gray;
+
+        .possible-to-use-price {
+          font-weight: bold;
+          color: $dark-gray;
+        }
+      }
+
+      .order-price-area--order-article--payment {
+        width: 414px;
+
+        .order-price-area--order-article--payment-collection {
+          width: 100%;
+          display: flex;
+          margin-top: 12px;
+
+          .order-price-area--order-article--payment-method:not(:last-of-type) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+
+          .order-price-area--order-article--payment-method:not(:first-of-type) {
+            border-left: none;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+          }
+        }
+
+        .order-price-area--order-article--payment-method {
+          width: 100%;
+          height: 48px;
+          border: 1px solid #ddd;
+          font-size: 14px;
+          font-weight: 600;
+          border-radius: 3px;
+          background-color: transparent;
+          letter-spacing: normal;
+
+          &.checked {
+            border: none;
+            background-color: $main-purple;
+            color: white;
+          }
+
+          &.kakopay {
+            &.checked {
+              background-color: #F6E500;
+            }
+          }
+        }
+      }
+
+      .order-price-area--order-article--payment-more {
+        padding-top: 20px;
+        text-align: left;
+      }
+    }
+
+    .order-price-area--order-price-box {
+      width: 284px;
+      display: inline-block;
+      float: right;
+
+      .order-price-area--order-price-box--title {
+        padding: 16px 0;
+        font-weight: 500;
+        font-size: 20px;
+        color: $dark-gray;
+        line-height: 29px;
+        text-align: left;
+      }
+    }
+  }
+
   .order-article--content-small-text {
     font-size: 12px;
     line-height: 21px;
