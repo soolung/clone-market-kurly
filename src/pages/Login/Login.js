@@ -31,7 +31,7 @@ export default function Login() {
                 name: "김한울",
                 grade: {
                     grade: "일반",
-                    accumulationPercent: 0.005,
+                    accumulationPercent: 0.001,
                 },
                 delivery: {
                     address: "경기도 평택시 상서재로5길 15 (평택센트럴자이1단지) 104동 101호",

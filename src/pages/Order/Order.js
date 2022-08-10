@@ -204,8 +204,57 @@ export default function Order() {
                         <div className="order-price-area--order-price-box--title">결제 금액</div>
                         <div className="order-price-area--order-price-box--box">
                             <dl className="order-price-area--order-price-box--box-price">
-
+                                <dt>주문금액</dt>
+                                <dd>
+                                    {(totalPrice.itemSum + totalPrice.discountSum).toLocaleString()}
+                                    <span className="won"> 원</span>
+                                </dd>
                             </dl>
+                            <div className="order-price-area--order-price-box--box-price-more-wrapper">
+                                <dl className="order-price-area--order-price-box--box-price-more">
+                                    <dt>상품금액</dt>
+                                    <dd>{totalPrice.itemSum.toLocaleString()} 원</dd>
+                                </dl>
+                                <dl className="order-price-area--order-price-box--box-price-more">
+                                    <dt>상품할인금액</dt>
+                                    <dd>{totalPrice.discountSum.toLocaleString()} 원</dd>
+                                </dl>
+                            </div>
+                            <dl className="order-price-area--order-price-box--box-price">
+                                <dt>배송비</dt>
+                                <dd>
+                                    {totalPrice.delivery > 0 && <>+ </>}
+                                    {(totalPrice.delivery).toLocaleString()}
+                                    <span className="won"> 원</span>
+                                </dd>
+                            </dl>
+                            <dl className="order-price-area--order-price-box--box-price">
+                                <dt>쿠폰할인</dt>
+                                <dd>
+                                    0
+                                    <span className="won"> 원</span>
+                                </dd>
+                            </dl>
+                            <dl className="order-price-area--order-price-box--box-price">
+                                <dt>적립금사용</dt>
+                                <dd>
+                                    0
+                                    <span className="won"> 원</span>
+                                </dd>
+                            </dl>
+                            <dl className="order-price-area--order-price-box--box-price price-total-result">
+                                <dt>결제예정금액</dt>
+                                <dd>
+                                    {(totalPrice.totalPrice).toLocaleString()}
+                                    <span className="won"> 원</span>
+                                </dd>
+                            </dl>
+                            <div className="order-price-area--order-price-box--box-price-accumulation clear">
+                                <span className="badge">적립</span>
+                                구매 시
+                                <span
+                                    className="bold"> {(totalPrice.accumulationSum).toLocaleString()}원({user.grade.accumulationPercent * 100}%)</span>
+                            </div>
                         </div>
                     </div>
                 </div>
