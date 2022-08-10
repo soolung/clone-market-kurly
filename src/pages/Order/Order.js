@@ -43,8 +43,13 @@ export default function Order() {
     const toggleAllCheck = () => {
         let checkAllAgree = [...agree];
         checkAllAgree.forEach(a => a.isChecked = !allChecked);
-        setAllChecked(!allChecked);
         setAgree(checkAllAgree);
+    }
+
+    const setAllCheckFalse = () => {
+        let falseAllAgree = [...agree];
+        falseAllAgree.forEach(a => a.isChecked = false);
+        setAgree(falseAllAgree);
     }
 
     const deleteCheckedItem = () => {
@@ -52,6 +57,10 @@ export default function Order() {
     }
 
     useEffect(() => {
+        setProductShow(false);
+        setPayment("kakaopay");
+        setNextPayment(true);
+        setAllCheckFalse();
         setTotalPrice(getTotalPrice(user, checkedProduct));
     }, []);
 
