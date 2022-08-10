@@ -239,7 +239,6 @@ section {
 
       .order-price-area--order-article--payment-more {
         padding-top: 20px;
-        text-align: left;
       }
     }
 
@@ -399,7 +398,6 @@ section {
 
   .order-price-area--order-article--agree-more {
     padding-top: 20px;
-    text-align: left;
   }
 
   .order-request-button {
@@ -416,10 +414,12 @@ section {
     font-size: 12px;
     line-height: 21px;
     color: $medium-gray;
+    text-align: left;
   }
 
   .order-request-more {
     line-height: 20px;
     font-size: 14px;
+    text-align: center;
   }
 }
