@@ -48,6 +48,24 @@ section {
     }
   }
 
+  .order-article--header-delivery {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: $light-gray;
+    text-align: right;
+    cursor: pointer;
+
+    span {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-top: 2px;
+      background: url(https://res.kurly.com/mobile/ico/2010/ico_question_v2.svg) 100% 50% / 20px 20px no-repeat;
+    }
+  }
+
   .order-article--content-delivery {
     .order-article--content-delivery-more {
       color: $medium-gray;
@@ -161,6 +179,17 @@ section {
         .possible-to-use-price {
           font-weight: bold;
           color: $dark-gray;
+        }
+      }
+
+      .order-price-area--order-article--payment-next {
+        padding: 14px 0 9px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+
+        span {
+          margin-left: 8px;
         }
       }
 
@@ -373,9 +402,24 @@ section {
     text-align: left;
   }
 
+  .order-request-button {
+    padding: 0 10px;
+    width: 240px;
+    height: 56px;
+    margin: 40px auto 30px;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: normal;
+  }
+
   .order-article--content-small-text {
     font-size: 12px;
     line-height: 21px;
     color: $medium-gray;
+  }
+
+  .order-request-more {
+    line-height: 20px;
+    font-size: 14px;
   }
 }

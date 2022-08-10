@@ -178,7 +178,7 @@ export default function Cart() {
                         <Button
                             className={`cart-result-order-button ${(cart.length === 0 || checkObjectIsEmpty(user) || checkedItemCount === 0) && "de-cart"}`}
                             color="purple"
-                            willDo={() => navigation("/order")}
+                            willDo={() => !checkObjectIsEmpty(user) && checkedItemCount > 0 && navigation("/order")}
                             text={cart.length > 0 ? checkObjectIsEmpty(user) ? "로그인 해주세요" : checkedItemCount > 0 ? "주문하기" : "상품을 선택해주세요" : "상품을 담아주세요"}
                         />
                         <div className="cart-result-notice">

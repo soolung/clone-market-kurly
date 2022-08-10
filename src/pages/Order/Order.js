@@ -18,6 +18,7 @@ export default function Order() {
 
     const [productShow, setProductShow] = useState(false);
     const [payment, setPayment] = useState("kakaopay");
+    const [nextPayment, setNextPayment] = useState(true);
     const [allChecked, setAllChecked] = useState(true);
     const [checkedItemCount, setCheckedItemCount] = useState(0);
     const [agree, setAgree] = useState(agreeData);
@@ -114,7 +115,15 @@ export default function Order() {
                     </div>
                 </div>
 
-                <OrderArticleHeader title="배송 정보"/>
+                <OrderArticleHeader
+                    title="배송 정보"
+                    right={
+                        <div className="order-article--header-delivery">
+                            배송지 변경 안내
+                            <span/>
+                        </div>
+                    }
+                />
                 <div className="order-article--content-delivery">
                     <div className="order-article--content bottom-bar">
                         <span className="order-article--content-title">배송지</span>
@@ -180,7 +189,18 @@ export default function Order() {
                             </div>
                         </div>
 
-                        <OrderArticleHeader title="결제 수단"/>
+                        <OrderArticleHeader
+                            title="결제 수단"
+                            right={
+                                <div className="order-price-area--order-article--payment-next">
+                                    <Check
+                                        isChecked={nextPayment}
+                                        willDo={() => setNextPayment(!nextPayment)}
+                                    />
+                                    <span>선택한 결제 수단을 다음에도 사용</span>
+                                </div>
+                            }
+                        />
                         <div className="order-article--content bottom-bar">
                             <span className="order-article--content-title">결제수단 선택</span>
                             <div className="order-article--content-content">
@@ -304,10 +324,24 @@ export default function Order() {
                     ))
                     }
                 </div>
-                <div className="order-price-area--order-article--agree-more">
-                    <p className="order-article--content-small-text">※ 마켓컬리에서 판매되는 상품 중에는 마켓컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.</p>
-                    <p className="order-article--content-small-text">※ 마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불 등 의무와 책임을 부담하지 않습니다.</p>
+                <div className="rder-price-area--order-article--agree-more">
+                    <p className="order-article--content-small-text">※ 마켓컬리에서 판매되는 상품 중에는 마켓컬리에 입점한 개별 판매자가 판매하는
+                        마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.</p>
+                    <p className="order-article--content-small-text">※ 마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가
+                        아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불 등 의무와 책임을 부담하지 않습니다.</p>
                 </div>
+                <Button
+                    color="purple"
+                    className="order-request-button"
+                    willDo={() => console.log("order")}
+                    text={`${totalPrice.totalPrice.toLocaleString()}원 결제하기`}
+                />
+                <p className="order-article--content-small-text order-request-more">
+                    [주문완료] 상태일 경우에만 주문 취소 가능합니다.<br/>
+                    미성년자가 결제 시 법정대리인이 그 거래를 취소할 수 있습니다.<br/>
+                    상품 미배송 시, 결제수단으로 환불됩니다.<br/>
+                    카카오페이, 차이, 토스, 네이버페이, 페이코 결제 시, 결제하신 수단으로만 환불됩니다.
+                </p>
             </div>
         </section>
     )
