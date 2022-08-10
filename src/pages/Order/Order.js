@@ -1,9 +1,10 @@
 import "./Order.scss";
-import {useContext, useState} from "react";
+import {useContext, useState, useEffect} from "react";
 import {CartContext, UserContext} from "../../App";
 import OrderArticleHeader from "../../components/Order/OrderArticleHeader/OrderArticleHeader";
 import ReadOnlyProduct from "../../components/Order/ReadOnlyProduct/ReadOnlyProduct";
 import Button from "../../components/Button/Button";
+import {getTotalPrice} from "../../utils/getTotalPrice";
 
 export default function Order() {
 
@@ -14,6 +15,17 @@ export default function Order() {
 
     const [productShow, setProductShow] = useState(false);
     const [payment, setPayment] = useState("kakaopay")
+    const [totalPrice, setTotalPrice] = useState({
+        itemSum: 0,
+        discountSum: 0,
+        accumulationSum: 0,
+        delivery: 0,
+        totalPrice: 0,
+    });
+
+    useEffect(() => {
+        setTotalPrice(getTotalPrice(user, checkedProduct));
+    }, []);
 
     return (
         <section>
@@ -190,6 +202,11 @@ export default function Order() {
                     </div>
                     <div className="order-price-area--order-price-box">
                         <div className="order-price-area--order-price-box--title">결제 금액</div>
+                        <div className="order-price-area--order-price-box--box">
+                            <dl className="order-price-area--order-price-box--box-price">
+
+                            </dl>
+                        </div>
                     </div>
                 </div>
                 <OrderArticleHeader title="개인정보 수집/제공"/>

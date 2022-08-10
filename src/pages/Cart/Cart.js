@@ -7,6 +7,7 @@ import typeData from "./typeData.json";
 import Button from "../../components/Button/Button";
 import {Link, useNavigate} from "react-router-dom";
 import {checkObjectIsEmpty} from "../../utils/checkObjectIsEmpty";
+import {getTotalPrice} from "../../utils/getTotalPrice";
 
 export default function Cart() {
 
@@ -40,32 +41,7 @@ export default function Cart() {
     useEffect(() => setAllChecked(checkedItemCount === cart.length), [checkedItemCount]);
 
     useEffect(() => {
-        let tempTotalPrice = {
-            itemSum: 0,
-            discountSum: 0,
-            accumulationSum: 0,
-            delivery: 0,
-            totalPrice: 0,
-        };
-
-        let accumulationPercent = checkObjectIsEmpty(user) ? 0 : user.grade.accumulationPercent;
-        const checkedItem = cart.filter(c => c.isChecked);
-
-        for (let i of checkedItem) {
-            if (i.product.isDiscount) {
-                tempTotalPrice.itemSum += i.amount * i.product.priceBeforeDiscount;
-                if (!checkObjectIsEmpty(user)) tempTotalPrice.discountSum += i.amount * (i.product.price - i.product.priceBeforeDiscount);
-            } else {
-                tempTotalPrice.itemSum += i.amount * i.product.price;
-            }
-
-            if (i.product.isAccumulate) tempTotalPrice.accumulationSum += i.product.price * i.amount;
-        }
-
-        if (tempTotalPrice.itemSum > 0 && tempTotalPrice.itemSum + tempTotalPrice.discountSum < 40000) tempTotalPrice.delivery = 3000;
-        tempTotalPrice.totalPrice = tempTotalPrice.itemSum + tempTotalPrice.discountSum + tempTotalPrice.delivery
-        tempTotalPrice.accumulationSum = Math.round(tempTotalPrice.accumulationSum * accumulationPercent);
-        setTotalPrice(tempTotalPrice)
+        setTotalPrice(getTotalPrice(user, cart.filter(c => c.isChecked)));
     }, [cart]);
 
     useEffect(() => {
