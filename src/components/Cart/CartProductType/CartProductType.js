@@ -36,7 +36,7 @@ export default function CartProductType(props) {
                             <img src={props.type.iconImage} alt="type"/>
                             <span className="cart-product-type--header-type">{props.type.type} 상품</span>
                         </div>
-                        <button className={`cart-product-type--header-content-xor ${contentShow ? "" : "upside-down"}`}
+                        <button className={`cart-product-type--header-content-xor arrow ${contentShow ? "" : "upside-down"}`}
                                 onClick={() => setContentShow(!contentShow)}/>
                     </div>
                     <div className={`cart-product-type--content ${contentShow ? "" : "none"}`}>

@@ -95,7 +95,7 @@ export default function ProductCartModal(props) {
                 <Button
                     className="product-cart-modal--button-cancel"
                     willDo={props.closeModal}
-                    color="white"
+                    color="white-gray"
                     text="취소"
                 />
                 <Button

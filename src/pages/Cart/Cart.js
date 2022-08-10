@@ -5,13 +5,16 @@ import CartProductType from "../../components/Cart/CartProductType/CartProductTy
 import SelectAll from "../../components/Cart/SelectAll/SelectAll";
 import typeData from "./typeData.json";
 import Button from "../../components/Button/Button";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {checkObjectIsEmpty} from "../../utils/checkObjectIsEmpty";
+import {getTotalPrice} from "../../utils/getTotalPrice";
 
 export default function Cart() {
 
     const {cart, setCart} = useContext(CartContext);
     const {user} = useContext(UserContext);
+
+    const navigation = useNavigate();
 
     const [checkedItemCount, setCheckedItemCount] = useState(cart.length);
     const [allChecked, setAllChecked] = useState(true);
@@ -38,32 +41,7 @@ export default function Cart() {
     useEffect(() => setAllChecked(checkedItemCount === cart.length), [checkedItemCount]);
 
     useEffect(() => {
-        let tempTotalPrice = {
-            itemSum: 0,
-            discountSum: 0,
-            accumulationSum: 0,
-            delivery: 0,
-            totalPrice: 0,
-        };
-
-        let accumulationPercent = checkObjectIsEmpty(user) ? 0 : user.grade.accumulationPercent;
-        const checkedItem = cart.filter(c => c.isChecked);
-
-        for (let i of checkedItem) {
-            if (i.product.isDiscount) {
-                tempTotalPrice.itemSum += i.amount * i.product.priceBeforeDiscount;
-                if (!checkObjectIsEmpty(user)) tempTotalPrice.discountSum += i.amount * (i.product.price - i.product.priceBeforeDiscount);
-            } else {
-                tempTotalPrice.itemSum += i.amount * i.product.price;
-            }
-
-            if (i.product.isAccumulate) tempTotalPrice.accumulationSum += i.product.price * i.amount;
-        }
-
-        if (tempTotalPrice.itemSum > 0 && tempTotalPrice.itemSum + tempTotalPrice.discountSum < 40000) tempTotalPrice.delivery = 3000;
-        tempTotalPrice.totalPrice = tempTotalPrice.itemSum + tempTotalPrice.discountSum + tempTotalPrice.delivery
-        tempTotalPrice.accumulationSum = Math.round(tempTotalPrice.accumulationSum * accumulationPercent);
-        setTotalPrice(tempTotalPrice)
+        setTotalPrice(getTotalPrice(user, cart.filter(c => c.isChecked)));
     }, [cart]);
 
     useEffect(() => {
@@ -120,7 +98,7 @@ export default function Cart() {
                                 <div className="cart-result-box--delivery-content">
                                     {checkObjectIsEmpty(user) ?
                                         <>
-                                            <span className="purple">배송지를 입력</span>하고 <br/>
+                                            <span className="text-purple">배송지를 입력</span>하고 <br/>
                                             배송유형을 확인해 보세요!
                                             <Link to="">
                                                 <button className="cart-result-box--delivery-content-btn">
@@ -200,7 +178,7 @@ export default function Cart() {
                         <Button
                             className={`cart-result-order-button ${(cart.length === 0 || checkObjectIsEmpty(user) || checkedItemCount === 0) && "de-cart"}`}
                             color="purple"
-                            willdo={() => console.log("구현X")}
+                            willDo={() => !checkObjectIsEmpty(user) && checkedItemCount > 0 && navigation("/order")}
                             text={cart.length > 0 ? checkObjectIsEmpty(user) ? "로그인 해주세요" : checkedItemCount > 0 ? "주문하기" : "상품을 선택해주세요" : "상품을 담아주세요"}
                         />
                         <div className="cart-result-notice">

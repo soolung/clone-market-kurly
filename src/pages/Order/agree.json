@@ -1,0 +1,14 @@
+[
+    {
+        "isChecked": false,
+        "text": "(필수) 개인정보 수집∙이용 및 처리 동의"
+    },
+    {
+        "isChecked": false,
+        "text": "(필수) 개인정보 제3자 제공 동의"
+    },
+    {
+        "isChecked": false,
+        "text": "(필수) 전자지급 결제대행 서비스 이용약관 동의"
+    }
+]

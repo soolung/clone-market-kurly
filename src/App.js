@@ -7,6 +7,8 @@ import {createContext, useMemo, useState} from "react";
 import ProductDetail from "./pages/ProductDetail/ProductDetail";
 import Cart from "./pages/Cart/Cart";
 import ScrollToTop from "./utils/ScrollToTop";
+import Order from "./pages/Order/Order";
+import "./styles/util.scss";
 
 export const UserContext = createContext({"user": null});
 export const CartContext = createContext([]);
@@ -30,6 +32,7 @@ function App() {
                                 <Route path="/login" element={<Login/>}/>
                                 <Route path="/product/:id" element={<ProductDetail/>}/>
                                 <Route path="/cart" element={<Cart/>}/>
+                                <Route path="/order" element={<Order/>}/>
                             </Routes>
                         </ScrollToTop>
                         <Footer/>
