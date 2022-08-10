@@ -335,11 +335,47 @@ section {
         }
       }
     }
+  }
 
-    .order-article--content-small-text {
-      font-size: 12px;
-      line-height: 21px;
-      color: $medium-gray;
+  .order-price-area--order-article--agree-all-wrapper {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 12px;
+      line-height: normal;
+      color: $dark-gray;
+      font-weight: 500;
+      font-size: 18px;
     }
+  }
+
+  .order-price-area--order-article--agree-wrapper {
+    padding: 10px 0 20px;
+
+    .order-price-area--order-article--agree {
+      display: flex;
+      align-items: center;
+      margin-top: 6px;
+
+      span {
+        margin-left: 12px;
+        display: inline-block;
+        text-decoration: underline;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .order-price-area--order-article--agree-more {
+    padding-top: 20px;
+    text-align: left;
+  }
+
+  .order-article--content-small-text {
+    font-size: 12px;
+    line-height: 21px;
+    color: $medium-gray;
   }
 }

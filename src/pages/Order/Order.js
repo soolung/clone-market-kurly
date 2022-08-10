@@ -5,6 +5,9 @@ import OrderArticleHeader from "../../components/Order/OrderArticleHeader/OrderA
 import ReadOnlyProduct from "../../components/Order/ReadOnlyProduct/ReadOnlyProduct";
 import Button from "../../components/Button/Button";
 import {getTotalPrice} from "../../utils/getTotalPrice";
+import agreeData from "./agree.json";
+import LightCheck from "../../components/LightCheck/LightCheck";
+import Check from "../../components/Check/Check";
 
 export default function Order() {
 
@@ -14,7 +17,10 @@ export default function Order() {
     const checkedProduct = cart.filter(x => x.isChecked);
 
     const [productShow, setProductShow] = useState(false);
-    const [payment, setPayment] = useState("kakaopay")
+    const [payment, setPayment] = useState("kakaopay");
+    const [allChecked, setAllChecked] = useState(true);
+    const [checkedItemCount, setCheckedItemCount] = useState(0);
+    const [agree, setAgree] = useState(agreeData);
     const [totalPrice, setTotalPrice] = useState({
         itemSum: 0,
         discountSum: 0,
@@ -23,9 +29,27 @@ export default function Order() {
         totalPrice: 0,
     });
 
+    const toggleCheck = index => {
+        let current = agree[index].isChecked;
+        setAgree(
+            [...agree],
+            agree[index].isChecked = !current
+        )
+    }
+
+    const toggleAllCheck = () => {
+        let checkAllAgree = [...agree];
+        checkAllAgree.forEach(a => a.isChecked = !allChecked);
+        setAllChecked(!allChecked);
+        setAgree(checkAllAgree);
+    }
+
     useEffect(() => {
         setTotalPrice(getTotalPrice(user, checkedProduct));
     }, []);
+
+    useEffect(() => setCheckedItemCount(agree.filter(a => a.isChecked).length), [agree]);
+    useEffect(() => setAllChecked(checkedItemCount === agree.length), [checkedItemCount]);
 
     return (
         <section>
@@ -258,8 +282,32 @@ export default function Order() {
                         </div>
                     </div>
                 </div>
-                <OrderArticleHeader title="개인정보 수집/제공"/>
 
+                <OrderArticleHeader title="개인정보 수집/제공"/>
+                <div className="order-price-area--order-article--agree-all-wrapper">
+                    <Check
+                        className="order-price-area--order-article--agree-all"
+                        isChecked={allChecked}
+                        willDo={toggleAllCheck}
+                    />
+                    <span>결제 진행 필수 전체 동의</span>
+                </div>
+                <div className="order-price-area--order-article--agree-wrapper bottom-bar">
+                    {agree.map((a, index) => (
+                        <p className="order-price-area--order-article--agree">
+                            <LightCheck
+                                isChecked={a.isChecked}
+                                willDo={() => toggleCheck(index)}
+                            />
+                            <span>{a.text}</span>
+                        </p>
+                    ))
+                    }
+                </div>
+                <div className="order-price-area--order-article--agree-more">
+                    <p className="order-article--content-small-text">※ 마켓컬리에서 판매되는 상품 중에는 마켓컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.</p>
+                    <p className="order-article--content-small-text">※ 마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불 등 의무와 책임을 부담하지 않습니다.</p>
+                </div>
             </div>
         </section>
     )
