@@ -2,6 +2,7 @@ footer{
     margin: 0;
     padding: 0;
     height: 100%;
+    border-top: 1px solid #f7f7f7;
 }
 .footer{
     width: 100%;
@@ -18,13 +19,13 @@ footer{
             float: left;
             width: 50%;
             height: 300px;
-    
+
             .tit_cc{
                 font-size: 20px;
                 padding: 29px 0 2px;
                 color: black;
                 font-weight: 500;
-            }   
+            }
             .cc_view{
                 padding-top: 20px;
             }
@@ -55,15 +56,15 @@ footer{
                 font-size: 14px;
                 color: black;
                 float: left;
-            } 
+            }
             .tit_num{
                 font-size: 14px;
                 color: black;
                 float: left;
-        
+
             }
-            dt{  
-                color: black;     
+            dt{
+                color: black;
             }
             dd{
                 color: #999;
@@ -112,14 +113,14 @@ footer{
                     height: 30px;
                 }
             }
-        }  
-        border-bottom: 1px solid #999;      
+        }
+        border-bottom: 1px solid #eee;
     }
     .footer_link{
         height: 90px;
         padding-top: 20px;
         padding-bottom: 24px;
-        
+
         .all_link{
             float: left;
             padding-top: 3px;
@@ -128,9 +129,9 @@ footer{
             float: left;
             height: 34px;
             margin-right: 10px;
-            
+
         }
-        
+
         .mark{
             float: left;
             width: 267px;
@@ -138,8 +139,8 @@ footer{
         .mark_plus{
             float: left;
         }
-        
-        
+
+
         .txt{
             float: left;
             color: #999;
@@ -147,7 +148,7 @@ footer{
             white-space: nowrap;
             font-size: 10px;
         }
-        
+
     }
 }
 
