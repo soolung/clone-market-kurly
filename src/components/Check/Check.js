@@ -4,7 +4,7 @@ export default function Check(props) {
 
     return (
         <input
-            className={props.className}
+            className={`check ${props.className}`}
             type="checkbox"
             checked={props.isChecked}
             onChange={props.willDo}
