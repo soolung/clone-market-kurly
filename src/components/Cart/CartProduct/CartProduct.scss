@@ -11,19 +11,25 @@
     margin-right: 18px;
   }
 
-  img {
-    width: 60px;
-    height: 78px;
-    margin-right: 20px;
-  }
-
-  .cart-product-name {
-    width: 327px;
-    color: $dark-gray;
-    font-size: 15px;
-    font-weight: 500;
+  a {
+    width: 407px;
     margin-right: 43px;
     text-align: left;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 60px;
+      height: 78px;
+      margin-right: 20px;
+    }
+
+    .cart-product-name {
+      width: 327px;
+      color: $dark-gray;
+      font-size: 15px;
+      font-weight: 500;
+    }
   }
 
   .cart-product-price {
