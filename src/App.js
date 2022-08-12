@@ -9,7 +9,7 @@ import Cart from "./pages/Cart/Cart";
 import ScrollToTop from "./utils/ScrollToTop";
 import Order from "./pages/Order/Order";
 import "./styles/util.scss";
-
+import NewProduct from "./pages/Newproduct/Newproduct";
 export const UserContext = createContext({"user": null});
 export const CartContext = createContext([]);
 
@@ -33,6 +33,7 @@ function App() {
                                 <Route path="/product/:id" element={<ProductDetail/>}/>
                                 <Route path="/cart" element={<Cart/>}/>
                                 <Route path="/order" element={<Order/>}/>
+                                <Route path="/newproduct" element={<NewProduct/>}/>
                             </Routes>
                         </ScrollToTop>
                         <Footer/>

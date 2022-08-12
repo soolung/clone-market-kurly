@@ -1,0 +1,18 @@
+@import "../../../styles//common.scss";
+
+article {
+  padding: 0px 0px 40px;
+  width: 100vw;
+  min-width: 1050px;
+  .newproduct_product{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 46px;
+    .product-product{
+    }
+  }
+  & > .newproduct_product {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
