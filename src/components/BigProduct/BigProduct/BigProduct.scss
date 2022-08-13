@@ -1,13 +1,14 @@
-@import "../../../styles//common.scss";
+@import "../../../styles/common.scss";
 
-.newproduct-card {
+.big-product-card {
   position: relative;
-  width: 310px;
+  width: 338px;
+  height: 682px;
   z-index: 150;
 
-  .newproduct-thumbnail {
+  .big-product-thumbnail {
     position: relative;
-    height: 320px;
+    height: 435px;
 
     .product-thumbnail--coupon {
       position: absolute;
@@ -37,31 +38,32 @@
         transition: all 0.3s ease-in-out 0s;
       }
     }
-  }
 
-  .product-thumbnail--cart {
-    position: absolute;
-    bottom: -100px;
-    right: -10px;
+    .product-thumbnail--cart {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+    }
   }
 }
 
-.newproduct-description {
-  padding: 128px 10px 0 0;
+.big-product-description {
+  padding: 14px 10px 0 0;
   text-align: left;
+
   .delivery_sat{
     font-size: 14px;
     color: rgb(153, 153, 153);
     line-height: 19px;
     letter-spacing: -0.5px;
   }
-  .newproduct-name {
-    padding-top: 5px;
+
+  .big-product-name {
     font-size: 20px;
     line-height: 1.45;
     color: $dark-gray;
     font-weight: 400;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -100,5 +102,13 @@
       text-decoration: line-through;
       margin-top: 2px;
     }
+  }
+
+  .product-message {
+    padding-top: 12px;
+    font-size: 13px;
+    color: $light-gray;
+    line-height: 18px;
+    letter-spacing: normal;
   }
 }

@@ -1,16 +1,16 @@
 import {Link} from "react-router-dom";
-import "./NewProduct_info.scss";
+import "./BigProduct.scss";
 import ProductCartModal from "../../Modal/ProductCartModal";
 import {useState} from "react";
 
-export default function Product(props) {
+export default function BigProduct(props) {
 
     const [cartModalIsOpen, setCartModalIsOpen] = useState(false);
 
     return (
         <>
-            <div className="newproduct-card">
-                <div className="newproduct-thumbnail">
+            <div className="big-product-card">
+                <div className="big-product-thumbnail">
                     <Link to={`/product/${props.id}`}>
                         <div className="product-thumbnail--image-wrapper">
                             <img className="product-thumbnail--image" src={props.productImage} alt="product" width={338}
@@ -30,9 +30,9 @@ export default function Product(props) {
                     </button>
                 </div>
 
-                <div className="newproduct-description">
+                <div className="big-product-description">
                     <span className="delivery_sat">샛별배송</span>
-                    <span className="newproduct-name">{props.productName}</span>
+                    <span className="big-product-name">{props.productName}</span>
 
                     <div className="product-price">
                         {props.isDiscount ?
@@ -46,6 +46,7 @@ export default function Product(props) {
                             <span className="product-price--price">{props.price.toLocaleString()}원</span>
                         }
                     </div>
+                    <p className="product-message">{props.productMessage}</p>
                 </div>
             </div>
             <ProductCartModal

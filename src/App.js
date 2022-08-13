@@ -9,7 +9,7 @@ import Cart from "./pages/Cart/Cart";
 import ScrollToTop from "./utils/ScrollToTop";
 import Order from "./pages/Order/Order";
 import "./styles/util.scss";
-import NewProduct from "./pages/Newproduct/Newproduct";
+import NewProduct from "./pages/NewProduct/NewProduct";
 export const UserContext = createContext({"user": null});
 export const CartContext = createContext([]);
 
