@@ -147,7 +147,7 @@ export default function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link to="" className="other-width">
+                            <Link to="/best" className="other-width">
                                 <span>베스트</span>
                             </Link>
                         </li>
