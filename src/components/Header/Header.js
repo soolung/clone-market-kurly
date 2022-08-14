@@ -152,7 +152,7 @@ export default function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link to="">
+                            <Link to="/thrifty">
                                 <span>알뜰쇼핑</span>
                             </Link>
                         </li>

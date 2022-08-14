@@ -11,6 +11,7 @@ import Order from "./pages/Order/Order";
 import "./styles/util.scss";
 import NewProduct from "./pages/NewProduct/NewProduct";
 import Best from "./pages/Best/Best";
+import Thrifty from "./pages/Thrifty_shopping/Thrifty_shopping";
 export const UserContext = createContext({"user": null});
 export const CartContext = createContext([]);
 
@@ -36,6 +37,7 @@ function App() {
                                 <Route path="/order" element={<Order/>}/>
                                 <Route path="/newproduct" element={<NewProduct/>}/>
                                 <Route path="/best" element={<Best/>}/>
+                                <Route path="/thrifty" element={<Thrifty/>}/>
                             </Routes>
                         </ScrollToTop>
                         <Footer/>
