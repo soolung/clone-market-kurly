@@ -1,8 +1,15 @@
 import BigProductArticle from "../BigProduct/BigProductArticle/BigProductArticle";
-import sortKey from "./sortKeyData.json";
 import "./GoodsList.scss";
+import SortKeyData from "./sortKeyData.json";
+import {useEffect, useState} from "react";
 
 export default function GoodsList(props) {
+
+    const [sortKey, setSortKey] = useState(props.sortKey)
+
+    useEffect(() => {
+        setSortKey(props.sortKey);
+    }, [])
 
     return (
         <section>
@@ -20,9 +27,14 @@ export default function GoodsList(props) {
                         <div className="products_button_total">
                             <p className='total_button'>
                                 <ul className='button_list'>
-                                    {sortKey.map((s, index) => (
+                                    {SortKeyData.map((s, index) => (
                                         <li className={index === 0 ? "" : "bar_before"}>
-                                            <a className={s === props.sortKey ? "checked" : ""}>{s}</a>
+                                            <a
+                                                className={s === sortKey ? "checked" : ""}
+                                                onClick={() => setSortKey(s)}
+                                            >
+                                                {s}
+                                            </a>
                                         </li>
                                     ))}
                                 </ul>
