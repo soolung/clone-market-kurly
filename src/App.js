@@ -11,7 +11,7 @@ import Order from "./pages/Order/Order";
 import "./styles/util.scss";
 import NewProduct from "./pages/NewProduct/NewProduct";
 import Best from "./pages/Best/Best";
-import Thrifty from "./pages/Thrifty_shopping/Thrifty_shopping";
+import Thrifty from "./pages/ThriftyShopping/ThriftyShopping";
 export const UserContext = createContext({"user": null});
 export const CartContext = createContext([]);
 

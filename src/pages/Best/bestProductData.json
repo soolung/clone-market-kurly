@@ -1,5 +1,6 @@
 {
-  "title": "신상품",
+  "title": "베스트",
+  "sortKey": "추천순",
   "products": [
     {
       "id": 1,

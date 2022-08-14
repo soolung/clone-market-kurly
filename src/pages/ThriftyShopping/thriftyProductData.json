@@ -1,5 +1,6 @@
 {
-  "title": "신상품",
+  "title": "알뜰쇼핑",
+  "sortKey": "혜택순",
   "products": [
     {
       "id": 1,

@@ -1,5 +1,6 @@
 {
   "title": "신상품",
+  "sortKey": "신상품순",
   "products": [
     {
       "id": 1,

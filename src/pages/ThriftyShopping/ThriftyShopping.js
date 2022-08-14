@@ -1,7 +1,7 @@
-import ProductData from "./bestProductData.json"
+import ProductData from "./thriftyProductData.json"
 import GoodsList from "../../components/GoodsList/GoodsList";
 
-export default function Best() {
+export default function ThriftyShopping() {
 
     return (
         <GoodsList
