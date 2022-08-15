@@ -142,17 +142,17 @@ export default function Header() {
                             </div>
                         </li>
                         <li>
-                            <Link to="">
+                            <Link to="/newproduct">
                                 <span>신상품</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="" className="other-width">
+                            <Link to="/best" className="other-width">
                                 <span>베스트</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="">
+                            <Link to="/thrifty">
                                 <span>알뜰쇼핑</span>
                             </Link>
                         </li>

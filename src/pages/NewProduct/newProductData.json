@@ -1,0 +1,419 @@
+{
+  "title": "신상품",
+  "sortKey": "신상품순",
+  "products": [
+    {
+      "id": 1,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
+      "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
+      "productMessage": "손으로 정성껏 만들어낸 바삭한 감자칩!",
+      "price": 4606,
+      "isDiscount": true,
+      "discount": "6",
+      "priceBeforeDiscount": 4900,
+      "hasCoupon": true,
+      "coupon": 15,
+      "isAccumulate": true,
+      "type": "상온",
+      "salesUnit": "1봉",
+      "capacity": "150g",
+      "deliveryType": "샛별배송/택배배송",
+      "package": {
+        "packType": "상온/종이포장",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 2,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
+      "productName": "[상하목장] 마시는 유기농 요구르트 (100mL X 5개)",
+      "productMessage": "정직하게 만든 유기농 요구르트",
+      "price": 2400,
+      "isDiscount": false,
+      "hasCoupon": false,
+      "isAccumulate": false,
+      "type": "냉장",
+      "salesUnit": "1팩",
+      "capacity": "100mLX5개입",
+      "deliveryType": "샛별배송 ONLY",
+      "package": {
+        "packType": "냉장/스티로폼",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 3,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
+      "productName": "[콜린스 다이닝] 슈퍼 곡물 샐러드",
+      "productMessage": "5가지 이상 슈퍼 곡물을 한 그릇에",
+      "price": 5865,
+      "isDiscount": true,
+      "discount": "15",
+      "priceBeforeDiscount": 6900,
+      "hasCoupon": false,
+      "isAccumulate": true,
+      "type": "냉장",
+      "salesUnit": "1팩",
+      "capacity": "200g/팩",
+      "deliveryType": "샛별배송/택배배송",
+      "package": {
+        "packType": "냉장/스티로폼",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 4,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
+      "productName": "저탄소 GAP 성주참외 1.1kg (4입)",
+      "productMessage": "아삭하게 즐기는 별미",
+      "discount": "7",
+      "price": 9207,
+      "isDiscount": true,
+      "priceBeforeDiscount": 9900,
+      "hasCoupon": true,
+      "coupon": 30,
+      "isAccumulate": false,
+      "type": "냉장",
+      "salesUnit": "1봉",
+      "capacity": "1.1kg 내외/4입",
+      "deliveryType": "샛별배송/택배배송",
+      "package": {
+        "packType": "냉장/스티로폼",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 5,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/1653038246918y0.jpeg",
+      "productName": "춘천 국물 닭갈비 떡볶이",
+      "productMessage": "닭갈비와 떡볶이의 오묘한 조화",
+      "price": 11900,
+      "isDiscount": false,
+      "hasCoupon": false,
+      "isAccumulate": true,
+      "type": "냉동",
+      "salesUnit": "1개",
+      "capacity": "950g",
+      "deliveryType": "샛별배송/택배배송",
+      "package": {
+        "packType": "냉장/스티로폼",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 1,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
+      "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
+      "productMessage": "손으로 정성껏 만들어낸 바삭한 감자칩!",
+      "price": 4606,
+      "isDiscount": true,
+      "discount": "6",
+      "priceBeforeDiscount": 4900,
+      "hasCoupon": true,
+      "coupon": 15,
+      "isAccumulate": true,
+      "type": "상온",
+      "salesUnit": "1봉",
+      "capacity": "150g",
+      "deliveryType": "샛별배송/택배배송",
+      "package": {
+        "packType": "상온/종이포장",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 2,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
+      "productName": "[상하목장] 마시는 유기농 요구르트 (100mL X 5개)",
+      "productMessage": "정직하게 만든 유기농 요구르트",
+      "price": 2400,
+      "isDiscount": false,
+      "hasCoupon": false,
+      "isAccumulate": false,
+      "type": "냉장",
+      "salesUnit": "1팩",
+      "capacity": "100mLX5개입",
+      "deliveryType": "샛별배송 ONLY",
+      "package": {
+        "packType": "냉장/스티로폼",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 3,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
+      "productName": "[콜린스 다이닝] 슈퍼 곡물 샐러드",
+      "productMessage": "5가지 이상 슈퍼 곡물을 한 그릇에",
+      "price": 5865,
+      "isDiscount": true,
+      "discount": "15",
+      "priceBeforeDiscount": 6900,
+      "hasCoupon": false,
+      "isAccumulate": true,
+      "type": "냉장",
+      "salesUnit": "1팩",
+      "capacity": "200g/팩",
+      "deliveryType": "샛별배송/택배배송",
+      "package": {
+        "packType": "냉장/스티로폼",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 4,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
+      "productName": "저탄소 GAP 성주참외 1.1kg (4입)",
+      "productMessage": "아삭하게 즐기는 별미",
+      "discount": "7",
+      "price": 9207,
+      "isDiscount": true,
+      "priceBeforeDiscount": 9900,
+      "hasCoupon": true,
+      "coupon": 30,
+      "isAccumulate": false,
+      "type": "냉장",
+      "salesUnit": "1봉",
+      "capacity": "1.1kg 내외/4입",
+      "deliveryType": "샛별배송/택배배송",
+      "package": {
+        "packType": "냉장/스티로폼",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 5,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/1653038246918y0.jpeg",
+      "productName": "춘천 국물 닭갈비 떡볶이",
+      "productMessage": "닭갈비와 떡볶이의 오묘한 조화",
+      "price": 11900,
+      "isDiscount": false,
+      "hasCoupon": false,
+      "isAccumulate": true,
+      "type": "냉동",
+      "salesUnit": "1개",
+      "capacity": "950g",
+      "deliveryType": "샛별배송/택배배송",
+      "package": {
+        "packType": "냉장/스티로폼",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 1,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
+      "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
+      "productMessage": "손으로 정성껏 만들어낸 바삭한 감자칩!",
+      "price": 4606,
+      "isDiscount": true,
+      "discount": "6",
+      "priceBeforeDiscount": 4900,
+      "hasCoupon": true,
+      "coupon": 15,
+      "isAccumulate": true,
+      "type": "상온",
+      "salesUnit": "1봉",
+      "capacity": "150g",
+      "deliveryType": "샛별배송/택배배송",
+      "package": {
+        "packType": "상온/종이포장",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 2,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
+      "productName": "[상하목장] 마시는 유기농 요구르트 (100mL X 5개)",
+      "productMessage": "정직하게 만든 유기농 요구르트",
+      "price": 2400,
+      "isDiscount": false,
+      "hasCoupon": false,
+      "isAccumulate": false,
+      "type": "냉장",
+      "salesUnit": "1팩",
+      "capacity": "100mLX5개입",
+      "deliveryType": "샛별배송 ONLY",
+      "package": {
+        "packType": "냉장/스티로폼",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 3,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
+      "productName": "[콜린스 다이닝] 슈퍼 곡물 샐러드",
+      "productMessage": "5가지 이상 슈퍼 곡물을 한 그릇에",
+      "price": 5865,
+      "isDiscount": true,
+      "discount": "15",
+      "priceBeforeDiscount": 6900,
+      "hasCoupon": false,
+      "isAccumulate": true,
+      "type": "냉장",
+      "salesUnit": "1팩",
+      "capacity": "200g/팩",
+      "deliveryType": "샛별배송/택배배송",
+      "package": {
+        "packType": "냉장/스티로폼",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 4,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
+      "productName": "저탄소 GAP 성주참외 1.1kg (4입)",
+      "productMessage": "아삭하게 즐기는 별미",
+      "discount": "7",
+      "price": 9207,
+      "isDiscount": true,
+      "priceBeforeDiscount": 9900,
+      "hasCoupon": true,
+      "coupon": 30,
+      "isAccumulate": false,
+      "type": "냉장",
+      "salesUnit": "1봉",
+      "capacity": "1.1kg 내외/4입",
+      "deliveryType": "샛별배송/택배배송",
+      "package": {
+        "packType": "냉장/스티로폼",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 5,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/1653038246918y0.jpeg",
+      "productName": "춘천 국물 닭갈비 떡볶이",
+      "productMessage": "닭갈비와 떡볶이의 오묘한 조화",
+      "price": 11900,
+      "isDiscount": false,
+      "hasCoupon": false,
+      "isAccumulate": true,
+      "type": "냉동",
+      "salesUnit": "1개",
+      "capacity": "950g",
+      "deliveryType": "샛별배송/택배배송",
+      "package": {
+        "packType": "냉장/스티로폼",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 1,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
+      "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
+      "productMessage": "손으로 정성껏 만들어낸 바삭한 감자칩!",
+      "price": 4606,
+      "isDiscount": true,
+      "discount": "6",
+      "priceBeforeDiscount": 4900,
+      "hasCoupon": true,
+      "coupon": 15,
+      "isAccumulate": true,
+      "type": "상온",
+      "salesUnit": "1봉",
+      "capacity": "150g",
+      "deliveryType": "샛별배송/택배배송",
+      "package": {
+        "packType": "상온/종이포장",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 2,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/1622166405389l0.jpg",
+      "productName": "[상하목장] 마시는 유기농 요구르트 (100mL X 5개)",
+      "productMessage": "정직하게 만든 유기농 요구르트",
+      "price": 2400,
+      "isDiscount": false,
+      "hasCoupon": false,
+      "isAccumulate": false,
+      "type": "냉장",
+      "salesUnit": "1팩",
+      "capacity": "100mLX5개입",
+      "deliveryType": "샛별배송 ONLY",
+      "package": {
+        "packType": "냉장/스티로폼",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 3,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/149507097276l0.jpg",
+      "productName": "[콜린스 다이닝] 슈퍼 곡물 샐러드",
+      "productMessage": "5가지 이상 슈퍼 곡물을 한 그릇에",
+      "price": 5865,
+      "isDiscount": true,
+      "discount": "15",
+      "priceBeforeDiscount": 6900,
+      "hasCoupon": false,
+      "isAccumulate": true,
+      "type": "냉장",
+      "salesUnit": "1팩",
+      "capacity": "200g/팩",
+      "deliveryType": "샛별배송/택배배송",
+      "package": {
+        "packType": "냉장/스티로폼",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 4,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/1647569733676l0.jpg",
+      "productName": "저탄소 GAP 성주참외 1.1kg (4입)",
+      "productMessage": "아삭하게 즐기는 별미",
+      "discount": "7",
+      "price": 9207,
+      "isDiscount": true,
+      "priceBeforeDiscount": 9900,
+      "hasCoupon": true,
+      "coupon": 30,
+      "isAccumulate": false,
+      "type": "냉장",
+      "salesUnit": "1봉",
+      "capacity": "1.1kg 내외/4입",
+      "deliveryType": "샛별배송/택배배송",
+      "package": {
+        "packType": "냉장/스티로폼",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 5,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/1653038246918y0.jpeg",
+      "productName": "춘천 국물 닭갈비 떡볶이",
+      "productMessage": "닭갈비와 떡볶이의 오묘한 조화",
+      "price": 11900,
+      "isDiscount": false,
+      "hasCoupon": false,
+      "isAccumulate": true,
+      "type": "냉동",
+      "salesUnit": "1개",
+      "capacity": "950g",
+      "deliveryType": "샛별배송/택배배송",
+      "package": {
+        "packType": "냉장/스티로폼",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    },
+    {
+      "id": 1,
+      "productImage": "https://img-cf.kurly.com/shop/data/goods/1648202987244l0.jpg",
+      "productName": "[라아부엘라니에베스] 스페인 수제 감자칩",
+      "productMessage": "손으로 정성껏 만들어낸 바삭한 감자칩!",
+      "price": 4606,
+      "isDiscount": true,
+      "discount": "6",
+      "priceBeforeDiscount": 4900,
+      "hasCoupon": true,
+      "coupon": 15,
+      "isAccumulate": true,
+      "type": "상온",
+      "salesUnit": "1봉",
+      "capacity": "150g",
+      "deliveryType": "샛별배송/택배배송",
+      "package": {
+        "packType": "상온/종이포장",
+        "message": "택배배송은 에코포장이 스티로폼으로 대체됩니다."
+      }
+    }
+  ]
+}
