@@ -73,9 +73,11 @@ export default function ProduceDetail() {
                                 <span className="won">원</span>
                             </div>
                         </div>
-                        <div className="price-before-discount">
-                            {product.priceBeforeDiscount.toLocaleString()}원
-                        </div>
+                        {product.isDiscount &&
+                            <div className="price-before-discount">
+                                {product.priceBeforeDiscount.toLocaleString()}원
+                            </div>
+                        }
                         <div className="benefit">
                            {checkObjectIsEmpty(user) ?
                                // user X
