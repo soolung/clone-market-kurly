@@ -1,14 +1,17 @@
 import "./CartProduct.scss";
 import AmountButton from "../../AmountButton/AmountButton";
 import Check from "../../Check/Check";
+import {Link} from "react-router-dom";
 
 export default function CartProduct(props) {
     return (
         <>
             <div className="cart-product">
                 <Check className="cart-product-check" isChecked={props.isChecked} willDo={props.toggleCheck}/>
-                <img src={props.product.productImage} alt="product"/>
-                <span className="cart-product-name">{props.product.productName}</span>
+                <Link to={`/product/${props.product.id}`}>
+                    <img src={props.product.productImage} alt="product"/>
+                    <span className="cart-product-name">{props.product.productName}</span>
+                </Link>
                 <AmountButton
                     minus={props.amountMinus}
                     plus={props.amountPlus}

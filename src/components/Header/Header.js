@@ -142,17 +142,17 @@ export default function Header() {
                             </div>
                         </li>
                         <li>
-                            <Link to="">
+                            <Link to="/newproduct">
                                 <span>신상품</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="" className="other-width">
+                            <Link to="/best" className="other-width">
                                 <span>베스트</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="">
+                            <Link to="/thrifty">
                                 <span>알뜰쇼핑</span>
                             </Link>
                         </li>
@@ -179,7 +179,7 @@ export default function Header() {
                             <div className="delivery-layer">
                                 {checkObjectIsEmpty(user) ?
                                     <div className="delivery-layer-inner">
-                                        <span className="purple">배송지를 등록</span>하고<br/>
+                                        <span className="text-purple">배송지를 등록</span>하고<br/>
                                         구매 가능한 상품을 확인하세요!
                                         <div className="delivery-layer-button">
                                             <Link to="/login">

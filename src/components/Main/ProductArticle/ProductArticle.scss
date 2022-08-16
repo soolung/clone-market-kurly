@@ -57,7 +57,7 @@ article {
       width: 60px;
       height: 60px;
       left: 0;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -90%);
       background: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_list_left_60_60.svg) 50% 50% no-repeat;
       content: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_list_left_over_60_60.svg);
       transition: background 0.5s ease 0s;
@@ -75,7 +75,7 @@ article {
       width: 60px;
       height: 60px;
       right: 0;
-      transform: translate(50%, -50%);
+      transform: translate(50%, -90%);
       background: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_list_right_60_60.svg) 50% 50% no-repeat;
       content: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_list_right_over_60_60.svg);
       transition: background 0.5s ease 0s;

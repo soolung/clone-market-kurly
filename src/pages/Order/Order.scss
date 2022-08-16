@@ -1,0 +1,425 @@
+@import "../../styles/common";
+
+section {
+  .order-title {
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 28px;
+  }
+
+  .order-product--light {
+    padding: 28px 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  .order-article--content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark-gray;
+
+    .order-article--content-title {
+      width: 160px;
+      margin-right: 30px;
+      font-weight: 500;
+      letter-spacing: -0.32px;
+    }
+
+    .order-article--content-content {
+      flex: 1 1 0;
+    }
+  }
+
+  .order-article--content-user {
+    padding: 10px 0;
+
+    .order-article--content {
+      padding: 8px 0;
+    }
+
+    .order-article--content-user--small-text {
+      margin-top: 10px;
+    }
+  }
+
+  .order-article--header-delivery {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: $light-gray;
+    text-align: right;
+    cursor: pointer;
+
+    span {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-top: 2px;
+      background: url(https://res.kurly.com/mobile/ico/2010/ico_question_v2.svg) 100% 50% / 20px 20px no-repeat;
+    }
+  }
+
+  .order-article--content-delivery {
+    .order-article--content-delivery-more {
+      color: $medium-gray;
+      font-size: 14px;
+      line-height: 24px;
+      margin: 9px 0 20px;
+
+      .order-article--content-delivery-more-bottom {
+        margin-top: 4px;
+      }
+
+      p {
+        display: flex;
+        align-items: center;
+
+        .bar {
+          background-color: #ddd;
+          margin: 0 8px;
+          width: 1px;
+          height: 14px;
+          display: inline-block;
+        }
+      }
+    }
+
+    .order-article--content-delivery-more-edit {
+      width: 60px;
+      height: 30px;
+      font-size: 12px;
+      line-height: 28px;
+      font-weight: 500;
+    }
+  }
+
+  .order-delivery-banner {
+    padding: 20px 0 60px 0;
+    width: 100%;
+  }
+
+  .order-price-area {
+    display: inline-block;
+    width: 100%;
+
+    .order-price-area--order-article {
+      width: 742px;
+      display: inline-block;
+      float: left;
+
+      .order-price-area--order-article--coupon {
+        position: relative;
+        width: 100%;
+        height: 44px;
+        padding: 0 54px 0 16px;
+        border: 1px solid #ddd;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        background: #fafafa;
+        color: #ccc;
+        margin-bottom: 10px;
+
+        .order-price-area--order-article--coupon-drop-down {
+          position: absolute;
+          top: 10px;
+          right: 16px;
+        }
+      }
+
+      .order-price-area--order-article--coupon-more {
+        color: $main-purple;
+      }
+
+      .order-price-area--order-article--accumulate-price {
+        color: #ccc;
+        background-color: #fafafa;
+        border-radius: 3px;
+        font-size: 14px;
+        height: 44px;
+        width: 168px;
+        margin-right: 8px;
+        padding: 0 11px 1px 15px;
+        border: 1px solid #ddd;
+        font-weight: 400;
+        line-height: 42px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .order-price-area--order-article--accumulate-price-use-all {
+        color: #ddd;
+        padding: 0 10px;
+        width: 100px;
+        height: 44px;
+        border-radius: 3px;
+        background-color: #fff;
+        font-size: 14px;
+        cursor: default;
+        border: 1px solid #ddd;
+        font-weight: 600;
+        letter-spacing: normal;
+      }
+
+      .order-price-area--order-article--accumulate-price-possible-to-use {
+        margin: 10px 0 16px;
+        font-size: 14px;
+        line-height: 20px;
+        color: $medium-gray;
+
+        .possible-to-use-price {
+          font-weight: bold;
+          color: $dark-gray;
+        }
+      }
+
+      .order-price-area--order-article--payment-next {
+        padding: 14px 0 9px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+
+        span {
+          margin-left: 8px;
+        }
+      }
+
+      .order-price-area--order-article--payment {
+        width: 414px;
+
+        .order-price-area--order-article--payment-collection {
+          width: 100%;
+          display: flex;
+          margin-top: 12px;
+
+          .order-price-area--order-article--payment-method:not(:last-of-type) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+
+          .order-price-area--order-article--payment-method:not(:first-of-type) {
+            border-left: none;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+          }
+        }
+
+        .order-price-area--order-article--payment-method {
+          width: 100%;
+          height: 48px;
+          border: 1px solid #ddd;
+          font-size: 14px;
+          font-weight: 600;
+          border-radius: 3px;
+          background-color: transparent;
+          letter-spacing: normal;
+
+          &.checked {
+            border: none;
+            background-color: $main-purple;
+            color: white;
+          }
+
+          &.kakopay {
+            &.checked {
+              background-color: #F6E500;
+            }
+          }
+        }
+      }
+
+      .order-price-area--order-article--payment-more {
+        padding-top: 20px;
+      }
+    }
+
+    .order-price-area--order-price-box {
+      position: sticky;
+      top: 55px;
+      width: 284px;
+      display: inline-block;
+      float: right;
+
+      .order-price-area--order-price-box--title {
+        padding: 16px 0;
+        font-weight: 500;
+        font-size: 20px;
+        color: $dark-gray;
+        line-height: 29px;
+        text-align: left;
+      }
+
+      .order-price-area--order-price-box--box {
+        padding: 17px 16px 18px 18px;
+        background-color: #fafafa;
+        border: 1px solid #f2f2f2;
+
+        dl {
+          width: 100%;
+          display: inline-block;
+
+          dt {
+            display: inline-block;
+            float: left;
+          }
+
+          dd {
+            display: inline-block;
+            float: right;
+          }
+        }
+
+        .order-price-area--order-price-box--box-price {
+          color: $dark-gray;
+          letter-spacing: -.5px;
+          margin-bottom: 16px;
+
+          dt {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+          }
+
+          dd {
+            font-size: 18px;
+            font-weight: 400;
+
+            .won {
+              font-size: 16px;
+            }
+          }
+
+          &.price-total-result {
+            padding-top: 16px;
+            border-top: 1px solid #f4f4f4;
+
+            dd {
+              font-size: 22px;
+              font-weight: bold;
+              color: $main-gray;
+
+              .won {
+                font-size: 16px;
+                font-weight: normal;
+                color: $dark-gray;
+              }
+            }
+          }
+        }
+
+        .order-price-area--order-price-box--box-price-more-wrapper {
+          margin-bottom: 8px;
+
+          .order-price-area--order-price-box--box-price-more {
+            color: $light-gray;
+            font-size: 14px;
+            letter-spacing: -.5px;
+            background-image: url(https://res.kurly.com/mobile/service/common/2003/ico_sub_price_dot.png);
+            background-repeat: no-repeat;
+            background-size: 16px 20px;
+            background-position: 0 50%;
+            padding-left: 16px;
+            margin-bottom: 8px;
+          }
+        }
+
+        .order-price-area--order-price-box--box-price-accumulation {
+          width: 100%;
+          height: 27px;
+          text-align: right;
+          font-size: 12px;
+          color: $medium-gray;
+          line-height: 16px;
+          font-weight: 400;
+          margin-top: -1px;
+
+          .badge {
+            height: 18px;
+            margin-right: 4px;
+            padding: 0 6px;
+            font-weight: 500;
+            line-height: 16px;
+            vertical-align: 1px;
+            display: inline-block;
+            border: 1px solid #ffbf01;
+            border-radius: 9px;
+            background-color: #ffbf00;
+            font-size: 10px;
+            color: #fff;
+          }
+
+          .bold {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  .order-price-area--order-article--agree-all-wrapper {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 12px;
+      line-height: normal;
+      color: $dark-gray;
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+
+  .order-price-area--order-article--agree-wrapper {
+    padding: 10px 0 20px;
+
+    .order-price-area--order-article--agree {
+      display: flex;
+      align-items: center;
+      margin-top: 6px;
+
+      span {
+        margin-left: 12px;
+        display: inline-block;
+        text-decoration: underline;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .order-price-area--order-article--agree-more {
+    padding-top: 20px;
+  }
+
+  .order-request-button {
+    padding: 0 10px;
+    width: 240px;
+    height: 56px;
+    margin: 40px auto 30px;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: normal;
+  }
+
+  .order-article--content-small-text {
+    font-size: 12px;
+    line-height: 21px;
+    color: $medium-gray;
+    text-align: left;
+  }
+
+  .order-request-more {
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+}

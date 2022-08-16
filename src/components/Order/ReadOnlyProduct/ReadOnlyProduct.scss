@@ -1,0 +1,51 @@
+@import "../../../styles/common";
+
+@import "../../../styles/common";
+
+.readonly-product {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+  width: 100%;
+
+  img {
+    width: 60px;
+    height: 78px;
+  }
+
+  .readonly-product-name {
+    width: 720px;
+    padding: 0 20px;
+    color: $dark-gray;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    flex: 1 1 0;
+  }
+
+  .readonly-product-amount {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .readonly-product-price {
+    width: 126px;
+    text-align: right;
+
+    .readonly-product-price-price {
+      display: block;
+      width: 100%;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .readonly-product-price-discount {
+      display: block;
+      width: 100%;
+      font-size: 14px;
+      color: $light-gray;
+      text-decoration: line-through;
+      padding-top: 6px;
+    }
+  }
+}
