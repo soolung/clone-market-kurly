@@ -10,8 +10,8 @@
 
 |github-profile|name|roles|
 |---|---|---|
-|<a target="_blank" href="https://github.com/gimhanul"><img alt="김한울" src="https://avatars.githubusercontent.com/gimhanul" width="150" /></a>|김한울|✔️ Header Component<br/>✔️ Main Page<br/>✔️ Login Page<br/>✔️ Cart Page<br/>✔️ Cart Modal|
-|<a target="_blank" href="https://github.com/sookyoungwoo"><img alt="우수경" src="https://avatars.githubusercontent.com/sookyoungwoo" width="150" /></a>|우수경|✔️ Footer Component<br/>✔️ Product Detail page|
+|<a target="_blank" href="https://github.com/gimhanul"><img alt="김한울" src="https://avatars.githubusercontent.com/gimhanul" width="150" /></a>|김한울|✔️ Header Component<br/>✔️ Main Page<br/>✔️ Login Page<br/>✔️ Cart Page<br/>✔️ Cart Modal<br/>✔️ Order Page|
+|<a target="_blank" href="https://github.com/sookyoungwoo"><img alt="우수경" src="https://avatars.githubusercontent.com/sookyoungwoo" width="150" /></a>|우수경|✔️ Footer Component<br/>✔️ Product Detail page<br/>✔️ Goods List Page|
 
 ### ∙∙∙ Skills and Tools
 `#ReactJS` `#JavaScript` `#Context-API` `#react-router-dom` `#scss` `#react-modal` `#swiper`
