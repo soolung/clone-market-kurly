@@ -79,7 +79,7 @@ export default function Login() {
         <section>
             <div className="section-wrapper">
                 <div className="section-inner">
-                    <h3 className="title">로그인</h3>
+                    <h3 className="title">짭 로그인</h3>
 
                     <div className="login-box">
                         <input type="text" name="id" className="id" placeholder="아이디를 입력해주세요" onChange={changeLoginInput}/>
@@ -103,7 +103,7 @@ export default function Login() {
                         <Link to="/">
                             <Button
                                 color="purple"
-                                text="로그인"
+                                text="짭 로그인"
                                 className="login"
                                 willDo={login}
                             />
